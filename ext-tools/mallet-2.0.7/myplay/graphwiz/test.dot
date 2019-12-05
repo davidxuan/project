@@ -1,0 +1,6 @@
+digraph {
+		D0 -> x1[label="A1(0.2)",weight="0.2"];
+		D0 -> x1[label="B1(0.2)",weight="0.2"];
+		D0 -> x2[label="A2(0.2)",weight="0.2"];
+		D0 -> x2[label="B2(-0.2)",weight="-0.2",color=red];
+	}

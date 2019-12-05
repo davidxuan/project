@@ -1,0 +1,3 @@
+#!/usr/bin/env bash
+
+../mallet cc.mallet.nitin.CRFModelReader $@

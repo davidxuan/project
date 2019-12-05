@@ -1,0 +1,358 @@
++ MODEL=model
++ SAMPLES=samples
++ CLASS=cc.mallet.fst.SimpleTagger
++ TRAINING_OPTS='--default-label D0 --fully-connected true --viterbi-output true --orders 1'
++ rm -rf target
++ mkdir -p target
++ TRAINING_SAMPLE=target/sample
++ SAME_SAMPLE=1
++ rm -rf model
++ SAMPLE_FILES=($(find ${SAMPLES} -type f))
+++ find samples -type f
++ for SAMPLE_FILE in '"${SAMPLE_FILES[@]}"'
++ echo 'Training file samples/training-sample-0'
+Training file samples/training-sample-0
++ cat samples/training-sample-0
+A1 B1 C1 D1 x1
+
+A2 B2 C2 D2 x2
+
+A3 B3 C3 D3 x3
++ '[' -f model ']'
++ cat samples/training-sample-0
++ ../mallet cc.mallet.fst.SimpleTagger --default-label D0 --fully-connected true --viterbi-output true --orders 1 --train true --model-file model target/sample
+Number of features in training data: 12
+Number of predicates: 12
+Labels: D0 x1 x2 x3
+Preparing D0
+D0->D0(D0) D0,D0
+D0->x1(x1) D0,x1
+D0->x2(x2) D0,x2
+D0->x3(x3) D0,x3
+State #0 "D0"
+initialWeight=0.0, finalWeight=0.0
+#destinations=4
+-> D0
+-> x1
+-> x2
+-> x3
+Preparing x1
+x1->D0(D0) x1,D0
+x1->x1(x1) x1,x1
+x1->x2(x2) x1,x2
+x1->x3(x3) x1,x3
+State #1 "x1"
+initialWeight=0.0, finalWeight=0.0
+#destinations=4
+-> D0
+-> x1
+-> x2
+-> x3
+Preparing x2
+x2->D0(D0) x2,D0
+x2->x1(x1) x2,x1
+x2->x2(x2) x2,x2
+x2->x3(x3) x2,x3
+State #2 "x2"
+initialWeight=0.0, finalWeight=0.0
+#destinations=4
+-> D0
+-> x1
+-> x2
+-> x3
+Preparing x3
+x3->D0(D0) x3,D0
+x3->x1(x1) x3,x1
+x3->x2(x2) x3,x2
+x3->x3(x3) x3,x3
+State #3 "x3"
+initialWeight=0.0, finalWeight=0.0
+#destinations=4
+-> D0
+-> x1
+-> x2
+-> x3
+Training on 3 instances
+CRF: Incremental training detected.  Adding weights for some unsupported features...
+CRF weights[D0,D0] num features = 12
+CRF weights[D0,x1] num features = 12
+CRF weights[D0,x2] num features = 12
+CRF weights[D0,x3] num features = 12
+CRF weights[x1,D0] num features = 0
+CRF weights[x1,x1] num features = 0
+CRF weights[x1,x2] num features = 0
+CRF weights[x1,x3] num features = 0
+CRF weights[x2,D0] num features = 0
+CRF weights[x2,x1] num features = 0
+CRF weights[x2,x2] num features = 0
+CRF weights[x2,x3] num features = 0
+CRF weights[x3,D0] num features = 0
+CRF weights[x3,x1] num features = 0
+CRF weights[x3,x2] num features = 0
+CRF weights[x3,x3] num features = 0
+Number of weights = 64
+CRF about to train with 1 iterations
+getValue() (loglikelihood, optimizable by label likelihood) = -4.1588830833596715
+getValue() (loglikelihood, optimizable by label likelihood) = -1.709900534886365
+getValue() (loglikelihood, optimizable by label likelihood) = -0.6449065127088269
+CRF finished one iteration of maximizer, i=0
+CRF about to train with 1 iterations
+getValue() (loglikelihood, optimizable by label likelihood) = -0.58106990324303
+CRF finished one iteration of maximizer, i=0
+CRF about to train with 1 iterations
+getValue() (loglikelihood, optimizable by label likelihood) = -0.5634423784083629
+CRF finished one iteration of maximizer, i=0
+CRF about to train with 1 iterations
+getValue() (loglikelihood, optimizable by label likelihood) = -0.5624623760819456
+CRF finished one iteration of maximizer, i=0
+CRF about to train with 1 iterations
+getValue() (loglikelihood, optimizable by label likelihood) = -0.5624115906259182
+Exiting L-BFGS on termination #1:
+value difference below tolerance (oldValue: -0.5624623760819456 newValue: -0.5624115906259182
+CRF finished one iteration of maximizer, i=0
+CRF training has converged, i=0
++ echo 'Test====>'
+Test====>
++ ./test
+Number of predicates: 12
+x1 x1 x1 x1 D0 x3 x3 x3 x3 x2 x2 x2 x2 D0 D0 D0 A1 B1 
+x3 x1 x2 D0 x3 x3 x2 x1 D0 x2 x3 D0 x1 x2 x1 D0 A3 B3 
+
++ echo '<====Test'
+<====Test
++ for SAMPLE_FILE in '"${SAMPLE_FILES[@]}"'
++ echo 'Training file samples/training-sample-1'
+Training file samples/training-sample-1
++ cat samples/training-sample-1
+A1 B1 x1
+A3 B3 x3
++ '[' -f model ']'
++ '[' 1 -eq 1 ']'
++ echo ''
++ cat samples/training-sample-1
++ ../mallet cc.mallet.fst.SimpleTagger --default-label D0 --fully-connected true --viterbi-output true --orders 1 --train true --model-file model target/sample
+Number of features in training data: 12
+Number of predicates: 12
+Labels: D0 x1 x2 x3
+Preparing D0
+D0->D0(D0) D0,D0
+D0->x1(x1) D0,x1
+D0->x2(x2) D0,x2
+D0->x3(x3) D0,x3
+State #0 "D0"
+initialWeight=0.0, finalWeight=0.0
+#destinations=4
+-> D0
+-> x1
+-> x2
+-> x3
+Preparing x1
+x1->D0(D0) x1,D0
+x1->x1(x1) x1,x1
+x1->x2(x2) x1,x2
+x1->x3(x3) x1,x3
+State #1 "x1"
+initialWeight=0.0, finalWeight=0.0
+#destinations=4
+-> D0
+-> x1
+-> x2
+-> x3
+Preparing x2
+x2->D0(D0) x2,D0
+x2->x1(x1) x2,x1
+x2->x2(x2) x2,x2
+x2->x3(x3) x2,x3
+State #2 "x2"
+initialWeight=0.0, finalWeight=0.0
+#destinations=4
+-> D0
+-> x1
+-> x2
+-> x3
+Preparing x3
+x3->D0(D0) x3,D0
+x3->x1(x1) x3,x1
+x3->x2(x2) x3,x2
+x3->x3(x3) x3,x3
+State #3 "x3"
+initialWeight=0.0, finalWeight=0.0
+#destinations=4
+-> D0
+-> x1
+-> x2
+-> x3
+Training on 4 instances
+CRF: Incremental training detected.  Adding weights for some unsupported features...
+CRF weights[D0,D0] num features = 12
+CRF weights[D0,x1] num features = 12
+CRF weights[D0,x2] num features = 12
+CRF weights[D0,x3] num features = 12
+CRF weights[x1,D0] num features = 0
+CRF weights[x1,x1] num features = 0
+CRF weights[x1,x2] num features = 0
+CRF weights[x1,x3] num features = 2
+CRF weights[x2,D0] num features = 0
+CRF weights[x2,x1] num features = 0
+CRF weights[x2,x2] num features = 0
+CRF weights[x2,x3] num features = 0
+CRF weights[x3,D0] num features = 0
+CRF weights[x3,x1] num features = 0
+CRF weights[x3,x2] num features = 0
+CRF weights[x3,x3] num features = 0
+Number of weights = 66
+CRF about to train with 1 iterations
+getValue() (loglikelihood, optimizable by label likelihood) = -6.931471805599452
+getValue() (loglikelihood, optimizable by label likelihood) = -3.3516540368023215
+getValue() (loglikelihood, optimizable by label likelihood) = -0.9095848489658966
+CRF finished one iteration of maximizer, i=0
+CRF about to train with 1 iterations
+getValue() (loglikelihood, optimizable by label likelihood) = -0.8479677055019833
+CRF finished one iteration of maximizer, i=0
+CRF about to train with 1 iterations
+getValue() (loglikelihood, optimizable by label likelihood) = -0.825664204408787
+CRF finished one iteration of maximizer, i=0
+CRF about to train with 1 iterations
+getValue() (loglikelihood, optimizable by label likelihood) = -0.8236984099640904
+CRF finished one iteration of maximizer, i=0
+CRF about to train with 1 iterations
+getValue() (loglikelihood, optimizable by label likelihood) = -0.8231476809965765
+CRF finished one iteration of maximizer, i=0
+CRF about to train with 1 iterations
+getValue() (loglikelihood, optimizable by label likelihood) = -0.8229399150283572
+CRF finished one iteration of maximizer, i=0
+CRF about to train with 1 iterations
+getValue() (loglikelihood, optimizable by label likelihood) = -0.8228760699512612
+Exiting L-BFGS on termination #1:
+value difference below tolerance (oldValue: -0.8229399150283572 newValue: -0.8228760699512612
+CRF finished one iteration of maximizer, i=0
+CRF training has converged, i=0
++ echo 'Test====>'
+Test====>
++ ./test
+Number of predicates: 12
+x1 x1 x1 x1 D0 x2 x2 x2 x2 x3 x3 x3 x3 D0 D0 D0 A1 B1 
+x3 x2 x1 D0 x3 D0 x1 x2 x3 D0 x1 x2 x3 x1 x2 D0 A3 B3 
+
++ echo '<====Test'
+<====Test
++ for SAMPLE_FILE in '"${SAMPLE_FILES[@]}"'
++ echo 'Training file samples/training-sample-2'
+Training file samples/training-sample-2
++ cat samples/training-sample-2
+A1 B1 x1
+A2 B2 x2
+A3 B3 x3
++ '[' -f model ']'
++ '[' 1 -eq 1 ']'
++ echo ''
++ cat samples/training-sample-2
++ ../mallet cc.mallet.fst.SimpleTagger --default-label D0 --fully-connected true --viterbi-output true --orders 1 --train true --model-file model target/sample
+Number of features in training data: 12
+Number of predicates: 12
+Labels: D0 x1 x2 x3
+Preparing D0
+D0->D0(D0) D0,D0
+D0->x1(x1) D0,x1
+D0->x2(x2) D0,x2
+D0->x3(x3) D0,x3
+State #0 "D0"
+initialWeight=0.0, finalWeight=0.0
+#destinations=4
+-> D0
+-> x1
+-> x2
+-> x3
+Preparing x1
+x1->D0(D0) x1,D0
+x1->x1(x1) x1,x1
+x1->x2(x2) x1,x2
+x1->x3(x3) x1,x3
+State #1 "x1"
+initialWeight=0.0, finalWeight=0.0
+#destinations=4
+-> D0
+-> x1
+-> x2
+-> x3
+Preparing x2
+x2->D0(D0) x2,D0
+x2->x1(x1) x2,x1
+x2->x2(x2) x2,x2
+x2->x3(x3) x2,x3
+State #2 "x2"
+initialWeight=0.0, finalWeight=0.0
+#destinations=4
+-> D0
+-> x1
+-> x2
+-> x3
+Preparing x3
+x3->D0(D0) x3,D0
+x3->x1(x1) x3,x1
+x3->x2(x2) x3,x2
+x3->x3(x3) x3,x3
+State #3 "x3"
+initialWeight=0.0, finalWeight=0.0
+#destinations=4
+-> D0
+-> x1
+-> x2
+-> x3
+Training on 5 instances
+CRF: Incremental training detected.  Adding weights for some unsupported features...
+CRF weights[D0,D0] num features = 12
+CRF weights[D0,x1] num features = 12
+CRF weights[D0,x2] num features = 12
+CRF weights[D0,x3] num features = 12
+CRF weights[x1,D0] num features = 0
+CRF weights[x1,x1] num features = 0
+CRF weights[x1,x2] num features = 2
+CRF weights[x1,x3] num features = 2
+CRF weights[x2,D0] num features = 0
+CRF weights[x2,x1] num features = 0
+CRF weights[x2,x2] num features = 0
+CRF weights[x2,x3] num features = 2
+CRF weights[x3,D0] num features = 0
+CRF weights[x3,x1] num features = 0
+CRF weights[x3,x2] num features = 0
+CRF weights[x3,x3] num features = 0
+Number of weights = 70
+CRF about to train with 1 iterations
+getValue() (loglikelihood, optimizable by label likelihood) = -11.090354888959123
+getValue() (loglikelihood, optimizable by label likelihood) = -6.112815646439942
+getValue() (loglikelihood, optimizable by label likelihood) = -1.5563738889491383
+CRF finished one iteration of maximizer, i=0
+CRF about to train with 1 iterations
+getValue() (loglikelihood, optimizable by label likelihood) = -1.346220755146628
+CRF finished one iteration of maximizer, i=0
+CRF about to train with 1 iterations
+getValue() (loglikelihood, optimizable by label likelihood) = -1.2770188469792594
+CRF finished one iteration of maximizer, i=0
+CRF about to train with 1 iterations
+getValue() (loglikelihood, optimizable by label likelihood) = -1.270190414094378
+CRF finished one iteration of maximizer, i=0
+CRF about to train with 1 iterations
+getValue() (loglikelihood, optimizable by label likelihood) = -1.2692237024133224
+CRF finished one iteration of maximizer, i=0
+CRF about to train with 1 iterations
+getValue() (loglikelihood, optimizable by label likelihood) = -1.2683822249187613
+CRF finished one iteration of maximizer, i=0
+CRF about to train with 1 iterations
+getValue() (loglikelihood, optimizable by label likelihood) = -1.2681610947244728
+CRF finished one iteration of maximizer, i=0
+CRF about to train with 1 iterations
+getValue() (loglikelihood, optimizable by label likelihood) = -1.2680700137724785
+Exiting L-BFGS on termination #1:
+value difference below tolerance (oldValue: -1.2681610947244728 newValue: -1.2680700137724785
+CRF finished one iteration of maximizer, i=0
+CRF training has converged, i=0
++ echo 'Test====>'
+Test====>
++ ./test
+Number of predicates: 12
+x1 x1 x1 x1 x2 D0 D0 x3 x3 x3 x2 x2 x3 x2 D0 D0 A1 B1 
+x3 x2 D0 x1 x3 x3 x1 D0 x1 x2 D0 x1 x3 x2 x2 D0 A3 B3 
+
++ echo '<====Test'
+<====Test

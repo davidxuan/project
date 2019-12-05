@@ -1,0 +1,479 @@
++ MODEL=model
++ SAMPLES=samples
++ CLASS=cc.mallet.fst.SimpleTagger
++ TRAINING_OPTS='--fully-connected false --orders 1'
++ rm -rf model
++ SAMPLE_FILES=($(find ${SAMPLES} -type f))
+++ find samples -type f
++ for SAMPLE_FILE in '"${SAMPLE_FILES[@]}"'
++ echo 'Training file samples/training-sample-0'
+Training file samples/training-sample-0
++ cat samples/training-sample-0
+NOUN BOLD P
+DATA NONBOLD V
+ELSE NONBOLD O
++ '[' -f model ']'
++ ../mallet cc.mallet.fst.SimpleTagger --fully-connected false --orders 1 --train true --model-file model samples/training-sample-0
+Number of features in training data: 5
+Number of predicates: 5
+Labels: O P V
+Preparing O
+O->O(O) O,O
+O->P(P) O,P
+O->V(V) O,V
+State #0 "O"
+initialWeight=0.0, finalWeight=0.0
+#destinations=3
+-> O
+-> P
+-> V
+Preparing P
+P->V(V) P,V
+State #1 "P"
+initialWeight=0.0, finalWeight=0.0
+#destinations=1
+-> V
+Preparing V
+V->O(O) V,O
+State #2 "V"
+initialWeight=0.0, finalWeight=0.0
+#destinations=1
+-> O
+Training on 1 instances
+CRF: Incremental training detected.  Adding weights for some unsupported features...
+CRF weights[O,O] num features = 5
+CRF weights[O,P] num features = 4
+CRF weights[O,V] num features = 4
+CRF weights[P,V] num features = 2
+CRF weights[V,O] num features = 3
+Number of weights = 23
+CRF about to train with 1 iterations
+getValue() (loglikelihood, optimizable by label likelihood) = -2.197224577336219
+getValue() (loglikelihood, optimizable by label likelihood) = -0.3461494544353318
+getValue() (loglikelihood, optimizable by label likelihood) = -0.21300976281936865
+CRF finished one iteration of maximizer, i=0
+CRF about to train with 1 iterations
+getValue() (loglikelihood, optimizable by label likelihood) = -0.1874339731439186
+CRF finished one iteration of maximizer, i=0
+CRF about to train with 1 iterations
+getValue() (loglikelihood, optimizable by label likelihood) = -0.18157781504296316
+CRF finished one iteration of maximizer, i=0
+CRF about to train with 1 iterations
+getValue() (loglikelihood, optimizable by label likelihood) = -0.18092215267158582
+CRF finished one iteration of maximizer, i=0
+CRF about to train with 1 iterations
+getValue() (loglikelihood, optimizable by label likelihood) = -0.18076706349230695
+CRF finished one iteration of maximizer, i=0
+CRF about to train with 1 iterations
+getValue() (loglikelihood, optimizable by label likelihood) = -0.18064771778213312
+CRF finished one iteration of maximizer, i=0
+CRF about to train with 1 iterations
+getValue() (loglikelihood, optimizable by label likelihood) = -0.18063337504385024
+Exiting L-BFGS on termination #1:
+value difference below tolerance (oldValue: -0.18064771778213312 newValue: -0.18063337504385024
+CRF finished one iteration of maximizer, i=0
+CRF training has converged, i=0
++ echo 'Test====>'
+Test====>
++ ./test
+Number of predicates: 5
+P 
+V 
+O 
+P 
+
++ echo '<====Test'
+<====Test
++ for SAMPLE_FILE in '"${SAMPLE_FILES[@]}"'
++ echo 'Training file samples/training-sample-1'
+Training file samples/training-sample-1
++ cat samples/training-sample-1
+VERB NONBOLD P
+ELSE BOLD O
+DATA NONBOLD V
++ '[' -f model ']'
++ ../mallet cc.mallet.fst.SimpleTagger --fully-connected false --orders 1 --train true --continue-training true --model-file model samples/training-sample-1
+Number of features in training data: 6
+Number of predicates: 6
+Labels: O P V
+Training on 1 instances
+CRF: Incremental training detected.  Adding weights for some unsupported features...
+CRF weights[O,O] num features = 6
+CRF weights[O,P] num features = 5
+CRF weights[O,V] num features = 5
+CRF weights[P,V] num features = 4
+CRF weights[V,O] num features = 4
+Number of weights = 29
+CRF about to train with 1 iterations
+linegroup0 has -infinite labeled weight.
+
+linegroup0 has -infinite weight; skipping.
+Number of instances with:
+	 -infinite labeled weight: 1
+	 -infinite unlabeled weight: 0
+	 -infinite weight: 1
+getValue() (loglikelihood, optimizable by label likelihood) = -0.1261212217085934
+linegroup0 has -infinite labeled weight.
+
+linegroup0 has -infinite weight; skipping.
+Number of instances with:
+	 -infinite labeled weight: 1
+	 -infinite unlabeled weight: 0
+	 -infinite weight: 1
+getValue() (loglikelihood, optimizable by label likelihood) = -0.14412635557421818
+linegroup0 has -infinite labeled weight.
+
+linegroup0 has -infinite weight; skipping.
+Number of instances with:
+	 -infinite labeled weight: 1
+	 -infinite unlabeled weight: 0
+	 -infinite weight: 1
+getValue() (loglikelihood, optimizable by label likelihood) = -0.12255565263618355
+linegroup0 has -infinite labeled weight.
+
+linegroup0 has -infinite weight; skipping.
+Number of instances with:
+	 -infinite labeled weight: 1
+	 -infinite unlabeled weight: 0
+	 -infinite weight: 1
+getValue() (loglikelihood, optimizable by label likelihood) = -22.113277862770957
+linegroup0 has -infinite labeled weight.
+
+linegroup0 has -infinite weight; skipping.
+Number of instances with:
+	 -infinite labeled weight: 1
+	 -infinite unlabeled weight: 0
+	 -infinite weight: 1
+getValue() (loglikelihood, optimizable by label likelihood) = -2.771520193008423
+linegroup0 has -infinite labeled weight.
+
+linegroup0 has -infinite weight; skipping.
+Number of instances with:
+	 -infinite labeled weight: 1
+	 -infinite unlabeled weight: 0
+	 -infinite weight: 1
+getValue() (loglikelihood, optimizable by label likelihood) = -0.8319452819195801
+linegroup0 has -infinite labeled weight.
+
+linegroup0 has -infinite weight; skipping.
+Number of instances with:
+	 -infinite labeled weight: 1
+	 -infinite unlabeled weight: 0
+	 -infinite weight: 1
+getValue() (loglikelihood, optimizable by label likelihood) = -0.32347730705220085
+linegroup0 has -infinite labeled weight.
+
+linegroup0 has -infinite weight; skipping.
+Number of instances with:
+	 -infinite labeled weight: 1
+	 -infinite unlabeled weight: 0
+	 -infinite weight: 1
+getValue() (loglikelihood, optimizable by label likelihood) = -0.18457318978777196
+linegroup0 has -infinite labeled weight.
+
+linegroup0 has -infinite weight; skipping.
+Number of instances with:
+	 -infinite labeled weight: 1
+	 -infinite unlabeled weight: 0
+	 -infinite weight: 1
+getValue() (loglikelihood, optimizable by label likelihood) = -0.14395359869787272
+linegroup0 has -infinite labeled weight.
+
+linegroup0 has -infinite weight; skipping.
+Number of instances with:
+	 -infinite labeled weight: 1
+	 -infinite unlabeled weight: 0
+	 -infinite weight: 1
+getValue() (loglikelihood, optimizable by label likelihood) = -0.1308519200385019
+linegroup0 has -infinite labeled weight.
+
+linegroup0 has -infinite weight; skipping.
+Number of instances with:
+	 -infinite labeled weight: 1
+	 -infinite unlabeled weight: 0
+	 -infinite weight: 1
+getValue() (loglikelihood, optimizable by label likelihood) = -0.12610310993021115
+linegroup0 has -infinite labeled weight.
+
+linegroup0 has -infinite weight; skipping.
+Number of instances with:
+	 -infinite labeled weight: 1
+	 -infinite unlabeled weight: 0
+	 -infinite weight: 1
+getValue() (loglikelihood, optimizable by label likelihood) = -0.12417921218141448
+linegroup0 has -infinite labeled weight.
+
+linegroup0 has -infinite weight; skipping.
+Number of instances with:
+	 -infinite labeled weight: 1
+	 -infinite unlabeled weight: 0
+	 -infinite weight: 1
+getValue() (loglikelihood, optimizable by label likelihood) = -0.12332989013335328
+linegroup0 has -infinite labeled weight.
+
+linegroup0 has -infinite weight; skipping.
+Number of instances with:
+	 -infinite labeled weight: 1
+	 -infinite unlabeled weight: 0
+	 -infinite weight: 1
+getValue() (loglikelihood, optimizable by label likelihood) = -0.122933385815907
+linegroup0 has -infinite labeled weight.
+
+linegroup0 has -infinite weight; skipping.
+Number of instances with:
+	 -infinite labeled weight: 1
+	 -infinite unlabeled weight: 0
+	 -infinite weight: 1
+getValue() (loglikelihood, optimizable by label likelihood) = -0.12274217283382997
+linegroup0 has -infinite labeled weight.
+
+linegroup0 has -infinite weight; skipping.
+Number of instances with:
+	 -infinite labeled weight: 1
+	 -infinite unlabeled weight: 0
+	 -infinite weight: 1
+getValue() (loglikelihood, optimizable by label likelihood) = -0.12264832613695295
+linegroup0 has -infinite labeled weight.
+
+linegroup0 has -infinite weight; skipping.
+Number of instances with:
+	 -infinite labeled weight: 1
+	 -infinite unlabeled weight: 0
+	 -infinite weight: 1
+getValue() (loglikelihood, optimizable by label likelihood) = -0.12260184273705477
+linegroup0 has -infinite labeled weight.
+
+linegroup0 has -infinite weight; skipping.
+Number of instances with:
+	 -infinite labeled weight: 1
+	 -infinite unlabeled weight: 0
+	 -infinite weight: 1
+getValue() (loglikelihood, optimizable by label likelihood) = -0.12257871102424078
+linegroup0 has -infinite labeled weight.
+
+linegroup0 has -infinite weight; skipping.
+Number of instances with:
+	 -infinite labeled weight: 1
+	 -infinite unlabeled weight: 0
+	 -infinite weight: 1
+getValue() (loglikelihood, optimizable by label likelihood) = -0.1225671726646176
+linegroup0 has -infinite labeled weight.
+
+linegroup0 has -infinite weight; skipping.
+Number of instances with:
+	 -infinite labeled weight: 1
+	 -infinite unlabeled weight: 0
+	 -infinite weight: 1
+getValue() (loglikelihood, optimizable by label likelihood) = -0.12255565263618355
+EXITING BACKTRACK: Jump too small (alamin=1.0990952767027468E-8). Exiting and using xold. Value=-0.12255565263618355
+cc.mallet.optimize.OptimizationException: Line search could not step in the current direction. (This is not necessarily cause for alarm. Sometimes this happens close to the maximum, where the function may be very flat.)
+	at cc.mallet.optimize.LimitedMemoryBFGS.optimize(LimitedMemoryBFGS.java:231)
+	at cc.mallet.fst.CRFTrainerByLabelLikelihood.train(CRFTrainerByLabelLikelihood.java:154)
+	at cc.mallet.fst.SimpleTagger.train(SimpleTagger.java:381)
+	at cc.mallet.fst.SimpleTagger.main(SimpleTagger.java:629)
+Catching exception; saying converged.
+CRF training has converged, i=0
++ echo 'Test====>'
+Test====>
++ ./test
+Number of predicates: 6
+P 
+V 
+O 
+P 
+
++ echo '<====Test'
+<====Test
++ for SAMPLE_FILE in '"${SAMPLE_FILES[@]}"'
++ echo 'Training file samples/training-sample-2'
+Training file samples/training-sample-2
++ cat samples/training-sample-2
+VERB BOLD P
+ELSE NONBOLD O
+ELSE NONBOLD O
+DATA BOLD V
++ '[' -f model ']'
++ ../mallet cc.mallet.fst.SimpleTagger --fully-connected false --orders 1 --train true --continue-training true --model-file model samples/training-sample-2
+Number of features in training data: 6
+Number of predicates: 6
+Labels: O P V
+Training on 1 instances
+CRF: Incremental training detected.  Adding weights for some unsupported features...
+CRF weights[O,O] num features = 6
+CRF weights[O,P] num features = 6
+CRF weights[O,V] num features = 5
+CRF weights[P,V] num features = 4
+CRF weights[V,O] num features = 4
+Number of weights = 30
+CRF about to train with 1 iterations
+linegroup0 has -infinite labeled weight.
+
+linegroup0 has -infinite weight; skipping.
+Number of instances with:
+	 -infinite labeled weight: 1
+	 -infinite unlabeled weight: 0
+	 -infinite weight: 1
+getValue() (loglikelihood, optimizable by label likelihood) = -0.12255565263618355
+linegroup0 has -infinite labeled weight.
+
+linegroup0 has -infinite weight; skipping.
+Number of instances with:
+	 -infinite labeled weight: 1
+	 -infinite unlabeled weight: 0
+	 -infinite weight: 1
+getValue() (loglikelihood, optimizable by label likelihood) = -0.14549718728865257
+linegroup0 has -infinite labeled weight.
+
+linegroup0 has -infinite weight; skipping.
+Number of instances with:
+	 -infinite labeled weight: 1
+	 -infinite unlabeled weight: 0
+	 -infinite weight: 1
+getValue() (loglikelihood, optimizable by label likelihood) = -0.12145045464020429
+linegroup0 has -infinite labeled weight.
+
+linegroup0 has -infinite weight; skipping.
+Number of instances with:
+	 -infinite labeled weight: 1
+	 -infinite unlabeled weight: 0
+	 -infinite weight: 1
+getValue() (loglikelihood, optimizable by label likelihood) = -2.353753133614421
+linegroup0 has -infinite labeled weight.
+
+linegroup0 has -infinite weight; skipping.
+Number of instances with:
+	 -infinite labeled weight: 1
+	 -infinite unlabeled weight: 0
+	 -infinite weight: 1
+getValue() (loglikelihood, optimizable by label likelihood) = -0.6401056363847136
+linegroup0 has -infinite labeled weight.
+
+linegroup0 has -infinite weight; skipping.
+Number of instances with:
+	 -infinite labeled weight: 1
+	 -infinite unlabeled weight: 0
+	 -infinite weight: 1
+getValue() (loglikelihood, optimizable by label likelihood) = -0.2840805938169794
+linegroup0 has -infinite labeled weight.
+
+linegroup0 has -infinite weight; skipping.
+Number of instances with:
+	 -infinite labeled weight: 1
+	 -infinite unlabeled weight: 0
+	 -infinite weight: 1
+getValue() (loglikelihood, optimizable by label likelihood) = -0.1785911613047219
+linegroup0 has -infinite labeled weight.
+
+linegroup0 has -infinite weight; skipping.
+Number of instances with:
+	 -infinite labeled weight: 1
+	 -infinite unlabeled weight: 0
+	 -infinite weight: 1
+getValue() (loglikelihood, optimizable by label likelihood) = -0.14397721724149556
+linegroup0 has -infinite labeled weight.
+
+linegroup0 has -infinite weight; skipping.
+Number of instances with:
+	 -infinite labeled weight: 1
+	 -infinite unlabeled weight: 0
+	 -infinite weight: 1
+getValue() (loglikelihood, optimizable by label likelihood) = -0.131202938258108
+linegroup0 has -infinite labeled weight.
+
+linegroup0 has -infinite weight; skipping.
+Number of instances with:
+	 -infinite labeled weight: 1
+	 -infinite unlabeled weight: 0
+	 -infinite weight: 1
+getValue() (loglikelihood, optimizable by label likelihood) = -0.1259489720284707
+linegroup0 has -infinite labeled weight.
+
+linegroup0 has -infinite weight; skipping.
+Number of instances with:
+	 -infinite labeled weight: 1
+	 -infinite unlabeled weight: 0
+	 -infinite weight: 1
+getValue() (loglikelihood, optimizable by label likelihood) = -0.1236052822291661
+linegroup0 has -infinite labeled weight.
+
+linegroup0 has -infinite weight; skipping.
+Number of instances with:
+	 -infinite labeled weight: 1
+	 -infinite unlabeled weight: 0
+	 -infinite weight: 1
+getValue() (loglikelihood, optimizable by label likelihood) = -0.12250426065839237
+linegroup0 has -infinite labeled weight.
+
+linegroup0 has -infinite weight; skipping.
+Number of instances with:
+	 -infinite labeled weight: 1
+	 -infinite unlabeled weight: 0
+	 -infinite weight: 1
+getValue() (loglikelihood, optimizable by label likelihood) = -0.12197145570522505
+linegroup0 has -infinite labeled weight.
+
+linegroup0 has -infinite weight; skipping.
+Number of instances with:
+	 -infinite labeled weight: 1
+	 -infinite unlabeled weight: 0
+	 -infinite weight: 1
+getValue() (loglikelihood, optimizable by label likelihood) = -0.12170947968669633
+linegroup0 has -infinite labeled weight.
+
+linegroup0 has -infinite weight; skipping.
+Number of instances with:
+	 -infinite labeled weight: 1
+	 -infinite unlabeled weight: 0
+	 -infinite weight: 1
+getValue() (loglikelihood, optimizable by label likelihood) = -0.1215795982919457
+linegroup0 has -infinite labeled weight.
+
+linegroup0 has -infinite weight; skipping.
+Number of instances with:
+	 -infinite labeled weight: 1
+	 -infinite unlabeled weight: 0
+	 -infinite weight: 1
+getValue() (loglikelihood, optimizable by label likelihood) = -0.12151493424819884
+linegroup0 has -infinite labeled weight.
+
+linegroup0 has -infinite weight; skipping.
+Number of instances with:
+	 -infinite labeled weight: 1
+	 -infinite unlabeled weight: 0
+	 -infinite weight: 1
+getValue() (loglikelihood, optimizable by label likelihood) = -0.12148267138973251
+linegroup0 has -infinite labeled weight.
+
+linegroup0 has -infinite weight; skipping.
+Number of instances with:
+	 -infinite labeled weight: 1
+	 -infinite unlabeled weight: 0
+	 -infinite weight: 1
+getValue() (loglikelihood, optimizable by label likelihood) = -0.12146655725135107
+linegroup0 has -infinite labeled weight.
+
+linegroup0 has -infinite weight; skipping.
+Number of instances with:
+	 -infinite labeled weight: 1
+	 -infinite unlabeled weight: 0
+	 -infinite weight: 1
+getValue() (loglikelihood, optimizable by label likelihood) = -0.12145045464020429
+EXITING BACKTRACK: Jump too small (alamin=4.586736319202528E-8). Exiting and using xold. Value=-0.12145045464020429
+cc.mallet.optimize.OptimizationException: Line search could not step in the current direction. (This is not necessarily cause for alarm. Sometimes this happens close to the maximum, where the function may be very flat.)
+	at cc.mallet.optimize.LimitedMemoryBFGS.optimize(LimitedMemoryBFGS.java:231)
+	at cc.mallet.fst.CRFTrainerByLabelLikelihood.train(CRFTrainerByLabelLikelihood.java:154)
+	at cc.mallet.fst.SimpleTagger.train(SimpleTagger.java:381)
+	at cc.mallet.fst.SimpleTagger.main(SimpleTagger.java:629)
+Catching exception; saying converged.
+CRF training has converged, i=0
++ echo 'Test====>'
+Test====>
++ ./test
+Number of predicates: 6
+P 
+V 
+O 
+P 
+
++ echo '<====Test'
+<====Test

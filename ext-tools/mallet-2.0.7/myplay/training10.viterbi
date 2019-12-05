@@ -1,0 +1,15 @@
+Viterbi path for training instance #0
+x1:1/x1:1  A1 B1 
+x3:2/x3:2  A3 B3 
+2/2  
+Viterbi path for training instance #1
+1/1  
+Viterbi path for training instance #2
+x1:1/x1:1  A1 B1 
+x2:2/x2:2  A2 B2 
+x3:3/x3:3  A3 B3 
+2/2  
+Viterbi path for training instance #3
+3/1  
+Viterbi path for training instance #4
+1/1  

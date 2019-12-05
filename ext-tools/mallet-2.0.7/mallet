@@ -1,0 +1,40 @@
+#!/usr/bin/env bash
+usage() {
+	echo "$0 <classname> <options>"
+}
+
+if [[ """" == ""$DEBUG"" ]]
+then
+	DEBUG_OPTS=""
+else
+	DEBUG_OPTS="-Xdebug -Xrunjdwp:server=y,transport=dt_socket,address=4000,suspend=y"
+fi
+
+CURR_PWD=${PWD}
+cd $(dirname $0)
+SCRIPT_PWD=${PWD}
+cd $CURR_PWD
+
+TARGET=${SCRIPT_PWD}/mallet-core/target
+
+if [ ! -d $TARGET ]
+then
+	(cd $SCRIPT_PWD && ./compile)
+fi
+
+DEPENDENCIES=${TARGET}/dependency
+
+if [ ! -d $DEPENDENCIES ]
+then
+	(cd $SCRIPT_PWD && mvn dependency:copy-dependencies)
+fi
+
+if [[ ""$@"" == """" ]]
+then
+	usage
+	exit 1
+fi
+
+java ${DEBUG_OPTS} -cp ${TARGET}/classes:$(echo $(ls ${DEPENDENCIES}/*.jar) | sed -e 's/ /:/g' ) $@
+
+

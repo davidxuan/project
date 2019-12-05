@@ -1,0 +1,11 @@
+#!/usr/bin/env bash
+DOT=$(which dot)
+
+if [ ! -x $DOT ]
+then
+	echo "Graphviz not installed" >&2
+	exit 1
+fi
+
+$DOT -Tpng $1 -o ${1}.png
+

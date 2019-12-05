@@ -1,0 +1,40 @@
+#!/usr/bin/env bash
+set -x
+
+if [[ ""$1"" != """" ]]
+then
+	MODEL=$1
+else
+	MODEL=model
+fi
+
+TESTS=testfiles
+CLASS=cc.mallet.fst.SimpleTagger
+TESTING_OPTS="--n-best 999 --include-input true"
+
+TEST_FILES=($(find ${TESTS} -type f))
+
+if [ ! -f $MODEL ]
+then
+	echo "Model not found $MODEL" >&2
+	exit 1
+fi
+
+for TEST_FILE in "${TEST_FILES[@]}"
+do
+	echo "Test file $TEST_FILE"
+	_TEST_FILE=$TEST_FILE
+	if [[ ""$2"" != """" ]]
+	then
+		_TEST_FILE=${TEST_FILE}.spaced
+		cat $TEST_FILE | awk ' { if ( $0 !~ /^$/ ) { ac++; a[ac]=$0 } } END {for (aa in a) { printf("%s\n\n",a[aa])} } ' >> ${_TEST_FILE}
+	fi
+	cat ${_TEST_FILE}
+	../mallet $CLASS ${TESTING_OPTS} --train false --model-file $MODEL ${_TEST_FILE}
+	if [[ ""$2"" != """" ]]
+	then
+		rm -rf ${_TEST_FILE}
+	fi
+
+done
+

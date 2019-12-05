@@ -1,0 +1,29 @@
+#!/usr/bin/env bash
+set -x
+
+MODEL=model
+SAMPLES=samples
+CLASS=cc.mallet.fst.SimpleTagger
+## --weights sparse
+TRAINING_OPTS="--fully-connected false --orders 1"
+
+rm -rf $MODEL
+
+SAMPLE_FILES=($(find ${SAMPLES} -type f))
+
+for SAMPLE_FILE in "${SAMPLE_FILES[@]}"
+do
+	echo "Training file $SAMPLE_FILE"
+	cat $SAMPLE_FILE
+
+	if [ -f $MODEL ]
+	then
+		../mallet $CLASS ${TRAINING_OPTS} --train true --continue-training true --model-file $MODEL $SAMPLE_FILE
+	else
+		../mallet $CLASS ${TRAINING_OPTS} --train true --model-file $MODEL $SAMPLE_FILE
+	fi
+
+	echo "Test====>"
+	./test
+	echo "<====Test"
+done
