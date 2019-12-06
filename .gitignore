@@ -1,8 +1,7 @@
-CS578-arcade.nosync.iml
 .idea
 out
 *.iml
 logs/
 libs/
 res/
-
+*.jar
