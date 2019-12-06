@@ -73,11 +73,11 @@ public class AcdcWithSmellDetection {
 		logger.debug("Get deps for revision " + revisionNumber);
 		
 		SourceToDepsBuilder builder = new JavaSourceToDepsBuilder();
-		if (args.length == 4) {
-			if (args[3].equals("c")) {
-				builder = new CSourceToDepsBuilder();
-			}
-		}
+//		if (args.length == 4) {
+////			if (args[3].equals("c")) {
+////				builder = new CSourceToDepsBuilder();
+////			}
+////		}
 		
 		builder.build(builderArgs);
 		if (builder.getEdges().size() == 0) {
@@ -86,7 +86,7 @@ public class AcdcWithSmellDetection {
 		
 		// acdcClusteredfile is the recovered architecture for acdc, one per subdirectory of dir
 		String acdcClusteredFile = outputDir.getAbsolutePath() + File.separatorChar + revisionNumber + "_acdc_clustered.rsf";
-		String[] acdcArgs = {depsRsfFile.getAbsolutePath(),acdcClusteredFile};
+		String[] acdcArgs = {depsRsfFile.getAbsolutePath(),acdcClusteredFile,args[3]};
 		
 		logger.debug("Running acdc for revision " + revisionNumber);
 		ACDC.main(acdcArgs);
