@@ -1,4 +1,5 @@
 package acdc;
+import java.io.IOException;
 import java.util.*;
 import javax.swing.tree.*;
 
@@ -18,7 +19,7 @@ public abstract class Pattern {
 		return name;
 	}
 
-	protected abstract void execute();
+	protected abstract void execute() throws IOException;
 
 	protected Vector nodeChildren(DefaultMutableTreeNode node) 
 	{

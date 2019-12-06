@@ -80,8 +80,9 @@ public class TAInput implements InputHandler
 						System.out.println("Quoted [" + m.group(1) + "]");
 						strTokList.add(m.group(1));
 					} else {
-						System.out.println("Plain [" + m.group(2) + "]");
-						strTokList.add(m.group(2));
+//						System.out.println("Plain [" + m.group(2) + "]");
+						strTokList.add(m.group(2
+						));
 					}
 				}
 

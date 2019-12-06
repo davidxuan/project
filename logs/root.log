@@ -42903,21 +42903,3 @@ DEBUG - org.apache.naming.factory.ResourceLinkFactory javax.naming.spi.ObjectFac
 DEBUG - org.apache.naming.factory.ResourceLinkFactory org.apache.naming.ResourceLinkRef
 DEBUG - org.apache.naming.factory.ResourceLinkFactory org.apache.naming.StringManager
 DEBUG - Running acdc for revision apache-tomcat-8.0.47
-DEBUG - Running smell detecion for revision apache-tomcat-8.0.47
-DEBUG - Elapsed time in milliseconds: 100
-DEBUG - Found and built clusters:
-DEBUG - orphanContainer.ss
-DEBUG - Elapsed time in milliseconds: 643
-DEBUG - No. of vertices: 1
-DEBUG - No. of edges: 0
-DEBUG - Number of strongly connected components: 0
-DEBUG - Computing the in and out degress of each vertex
-DEBUG - 	orphanContainer.ss
-DEBUG - 		 in degree: 0
-DEBUG - 		 out degree: 0
-DEBUG - mean of in degrees: 0.0
-DEBUG - mean of out degrees: 0.0
-DEBUG - mean of in plus out degrees: 0.0
-DEBUG - std dev of in degrees: 0.0
-DEBUG - std dev of out degrees: 0.0
-DEBUG - std dev of in plus out degrees: 0.0
