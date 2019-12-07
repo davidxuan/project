@@ -4,7 +4,7 @@
 
 The two recovery techniques we discussed in class, ACDC and ARC, are not suitable for recovering security architectural decisions which usually span more than one structural component. The purpose of this project is to implement changes to ACDC to address this issue.
 
-We have chosen Apache Tomcat 8.0.47 for this project.
+We have chosen Apache Tomcat 8.0.47 for this project([The vulnerability is fix in this version](https://tomcat.apache.org/security-8.html).
 
 ## Security Decision
 
@@ -52,7 +52,8 @@ We Also added a new file:
 | [Attach.java](src/acdc/Attach.java) | Design a new pattern to cluster files related to the architecture decision |
 
 Result cluster:
-![Image](/resources/new_cluser.png)
+Now we can see that the `JrePlatForm` also clustered to the `org.apache.catalina.webresources.ss` cluster.
+![Image](/resources/new_cluser_res.png)
 
 ## Visualization
 
