@@ -51,7 +51,7 @@ We Also added a new file:
 | [Attach.java](src/acdc/Attach.java) | Design a new pattern to cluster files related to the architecture decision  |
 
 Result cluster:
-![Image]()
+![Image](resources/result.png)
 
 ## Visualization
 
