@@ -19,7 +19,7 @@ Even though *AbstractFileResourceSet* is dependent on *JrePlatform*, the two are
 
 #### Why ACDC Failed to Recover
 
-When we took a closer look at the implementation of ACDC, we found the reason for this. The SubGraph module in ACDC searches for he dominated nodes of each dominator node. In order for a node to be considered as a dominted node, it must satisfy two requirements, as specified in the code comment:
+When we took a closer look at the implementation of ACDC, we found the reason for this. The SubGraph module in ACDC searches for the dominated nodes of each dominator node. In order for a node to be considered as a dominted node, it must satisfy two requirements, as specified in the code comment:
 
 ```text
 Returns the HashSet containing the passed arg, called "dominator node", and the set of its 
@@ -35,8 +35,7 @@ Therefore, when the following situation happens, the components will not be clus
 
 #### How We Solve the Problem
 
-In order to resolve the limitation of SubGraph, we created a new node to include the components that were not clustered previously. If a component is only used by one other component, we create a new node to be the dominator node of the two components. Then the two components wil be clustered together.
-We took the idea from the BodyHeader pattern.
+In order to resolve the limitation of SubGraph, we created a new node to include the components that were not clustered previously. Then the two components wil be clustered together.
 
 ![Image](/resources/after.png)
 
