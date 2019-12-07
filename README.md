@@ -15,7 +15,7 @@ We have chosen Apache Tomcat 8.0.47 for this project.
 Even though *AbstractFileResourceSet* is dependent on *JrePlatform*, the two are in different clusters. As shown below:
 ![AbstractFileResource](resources/AbstractFileResourceSet&#32;Cluster.png)
 ![JREPlatform](resources/JRE&#32;Cluster.png)
-When we took a closer look at the implementation of ACDC, we found the reason for this. The SubGraph module in ACD searches for direct children of each node. When a component is not a direct child of any dominator, XXXXXXXXX
+When we took a closer look at the implementation of ACDC, we found the reason for this. The SubGraph module in ACDC searches for direct children of each node. When a component is not a direct child of any dominator, XXXXXXXXX
 
 
 #### How We Solve the Problem
@@ -23,6 +23,7 @@ When we took a closer look at the implementation of ACDC, we found the reason fo
 In order to resolve the limitation of SubGraph, we created a new node to include the components that were not clustered previously.
 
 A list of files we modified: 
+
 | File | Reason |
 | --- | --- |
 | [ACDC.java](src/acdc/ACDC.java)           | XXXX |
@@ -30,9 +31,11 @@ A list of files we modified:
 
 
 We Also added a new file:
+
 | File | Reason |
 | --- | --- |
 | [XXX.java](src/acdc/XXX.java) | XXXX |
+
 
 Result cluster:
 ![Image]()
