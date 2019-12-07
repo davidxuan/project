@@ -1,0 +1,2408 @@
+[
+  {
+    "name": "org.apache.coyote",
+    "imports": [
+      "org.apache.tomcat.util.net.ContainerThreadMarker",
+      "org.apache.coyote.ContainerThreadMarker",
+      "org.apache.coyote.AbstractProcessorLight",
+      "org.apache.coyote.AsyncStateMachine",
+      "org.apache.coyote.AsyncStateMachine$AsyncState",
+      "org.apache.coyote.AbstractProtocol$AsyncTimeout",
+      "org.apache.coyote.AbstractProtocol",
+      "org.apache.coyote.AbstractProcessor$1",
+      "org.apache.coyote.AbstractProcessor"
+    ]
+  },
+  {
+    "name": "org.eclipse.jdt.internal.compiler.env",
+    "imports": [
+      "org.eclipse.jdt.internal.compiler.env.ITypeAnnotationWalker$1",
+      "org.eclipse.jdt.internal.compiler.env.ITypeAnnotationWalker",
+      "org.eclipse.jdt.internal.compiler.env.ISourceField",
+      "org.eclipse.jdt.internal.compiler.env.ISourceMethod",
+      "org.eclipse.jdt.internal.compiler.env.ISourceType"
+    ]
+  },
+  {
+    "name": "org.apache.catalina.valves",
+    "imports": [
+      "org.apache.catalina.valves.Constants",
+      "org.apache.catalina.valves.Constants$AccessLog",
+      "org.apache.catalina.valves.AbstractAccessLogValve$DateFormatCache",
+      "org.apache.catalina.valves.AbstractAccessLogValve$DateFormatCache$Cache",
+      "org.apache.catalina.valves.ExtendedAccessLogValve$TimeElement$1",
+      "org.apache.catalina.valves.ExtendedAccessLogValve$TimeElement",
+      "org.apache.catalina.valves.ExtendedAccessLogValve$DateElement",
+      "org.apache.catalina.valves.ExtendedAccessLogValve$DateElement$1",
+      "org.apache.catalina.valves.ErrorReportValve",
+      "org.apache.catalina.valves.StuckThreadDetectionValve$CompletedStuckThread",
+      "org.apache.catalina.valves.StuckThreadDetectionValve",
+      "org.apache.catalina.valves.StuckThreadDetectionValve$MonitoredThreadState",
+      "org.apache.catalina.valves.StuckThreadDetectionValve$MonitoredThread",
+      "org.apache.catalina.valves.ExtendedAccessLogValve$PatternTokenizer",
+      "org.apache.catalina.valves.AccessLogValve",
+      "org.apache.catalina.valves.ExtendedAccessLogValve$SessionAttributeElement",
+      "org.apache.catalina.valves.ExtendedAccessLogValve",
+      "org.apache.catalina.valves.ExtendedAccessLogValve$1",
+      "org.apache.catalina.valves.ExtendedAccessLogValve$2",
+      "org.apache.catalina.valves.ExtendedAccessLogValve$14",
+      "org.apache.catalina.valves.ExtendedAccessLogValve$ServletContextElement",
+      "org.apache.catalina.valves.ExtendedAccessLogValve$12",
+      "org.apache.catalina.valves.ExtendedAccessLogValve$13",
+      "org.apache.catalina.valves.ExtendedAccessLogValve$RequestHeaderElement",
+      "org.apache.catalina.valves.ExtendedAccessLogValve$3",
+      "org.apache.catalina.valves.ExtendedAccessLogValve$CookieElement",
+      "org.apache.catalina.valves.ExtendedAccessLogValve$6",
+      "org.apache.catalina.valves.ExtendedAccessLogValve$10",
+      "org.apache.catalina.valves.ExtendedAccessLogValve$9",
+      "org.apache.catalina.valves.ExtendedAccessLogValve$5",
+      "org.apache.catalina.valves.ExtendedAccessLogValve$7",
+      "org.apache.catalina.valves.ExtendedAccessLogValve$4",
+      "org.apache.catalina.valves.ExtendedAccessLogValve$ResponseHeaderElement",
+      "org.apache.catalina.valves.ExtendedAccessLogValve$8",
+      "org.apache.catalina.valves.ExtendedAccessLogValve$11",
+      "org.apache.catalina.valves.ExtendedAccessLogValve$RequestAttributeElement",
+      "org.apache.catalina.valves.ExtendedAccessLogValve$RequestParameterElement",
+      "org.apache.catalina.valves.ExtendedAccessLogValve$ResponseAllHeaderElement",
+      "org.apache.catalina.valves.AbstractAccessLogValve$ProtocolElement",
+      "org.apache.catalina.valves.AbstractAccessLogValve$SessionIdElement",
+      "org.apache.catalina.valves.AbstractAccessLogValve$LocalServerNameElement",
+      "org.apache.catalina.valves.AbstractAccessLogValve$SessionAttributeElement",
+      "org.apache.catalina.valves.AbstractAccessLogValve$DateAndTimeElement",
+      "org.apache.catalina.valves.AbstractAccessLogValve$PortElement",
+      "org.apache.catalina.valves.AbstractAccessLogValve$UserElement",
+      "org.apache.catalina.valves.AbstractAccessLogValve$2",
+      "org.apache.catalina.valves.AbstractAccessLogValve$CookieElement",
+      "org.apache.catalina.valves.AbstractAccessLogValve$FirstByteTimeElement",
+      "org.apache.catalina.valves.AbstractAccessLogValve$ConnectionStatusElement",
+      "org.apache.catalina.valves.AbstractAccessLogValve$PortType",
+      "org.apache.catalina.valves.AbstractAccessLogValve$ResponseHeaderElement",
+      "org.apache.catalina.valves.AbstractAccessLogValve$3",
+      "org.apache.catalina.valves.AbstractAccessLogValve",
+      "org.apache.catalina.valves.AbstractAccessLogValve$RequestAttributeElement",
+      "org.apache.catalina.valves.AbstractAccessLogValve$LogicalUserNameElement",
+      "org.apache.catalina.valves.AbstractAccessLogValve$HeaderElement",
+      "org.apache.catalina.valves.AbstractAccessLogValve$RequestElement",
+      "org.apache.catalina.valves.AbstractAccessLogValve$QueryElement",
+      "org.apache.catalina.valves.AbstractAccessLogValve$FormatType"
+    ]
+  },
+  {
+    "name": "org.apache.catalina.filters",
+    "imports": [
+      "org.apache.catalina.filters.RequestDumperFilter",
+      "org.apache.catalina.filters.RequestDumperFilter$1",
+      "org.apache.catalina.filters.RequestDumperFilter$Timestamp",
+      "org.apache.catalina.filters.CorsFilter$1",
+      "org.apache.catalina.filters.CorsFilter$CORSRequestType",
+      "org.apache.catalina.filters.CorsFilter",
+      "org.apache.catalina.filters.FailedRequestFilter",
+      "org.apache.catalina.filters.FailedRequestFilter$1",
+      "org.apache.catalina.filters.HttpHeaderSecurityFilter$XFrameOption",
+      "org.apache.catalina.filters.HttpHeaderSecurityFilter",
+      "org.apache.catalina.filters.AddDefaultCharsetFilter$ResponseWrapper",
+      "org.apache.catalina.filters.AddDefaultCharsetFilter",
+      "org.apache.catalina.filters.CsrfPreventionFilter$LruCache$1",
+      "org.apache.catalina.filters.CsrfPreventionFilter$LruCache",
+      "org.apache.catalina.filters.RemoteIpFilter$XForwardedRequest",
+      "org.apache.catalina.filters.RemoteIpFilter",
+      "org.apache.catalina.filters.RemoteIpFilter$XForwardedRequest$1",
+      "org.apache.catalina.filters.CsrfPreventionFilter",
+      "org.apache.catalina.filters.CsrfPreventionFilter$CsrfResponseWrapper",
+      "org.apache.catalina.filters.RestCsrfPreventionFilter$MethodType",
+      "org.apache.catalina.filters.RestCsrfPreventionFilter$1",
+      "org.apache.catalina.filters.RestCsrfPreventionFilter",
+      "org.apache.catalina.filters.RestCsrfPreventionFilter$FetchRequest",
+      "org.apache.catalina.filters.RestCsrfPreventionFilter$StateChangingRequest",
+      "org.apache.catalina.filters.RestCsrfPreventionFilter$RestCsrfPreventionStrategy",
+      "org.apache.catalina.filters.ExpiresFilter$DurationUnit",
+      "org.apache.catalina.filters.ExpiresFilter$XServletOutputStream",
+      "org.apache.catalina.filters.ExpiresFilter",
+      "org.apache.catalina.filters.ExpiresFilter$1",
+      "org.apache.catalina.filters.ExpiresFilter$XHttpServletResponse",
+      "org.apache.catalina.filters.ExpiresFilter$Duration",
+      "org.apache.catalina.filters.ExpiresFilter$StartingPoint",
+      "org.apache.catalina.filters.ExpiresFilter$XPrintWriter",
+      "org.apache.catalina.filters.ExpiresFilter$ExpiresConfiguration"
+    ]
+  },
+  {
+    "name": "org.apache.jasper.xmlparser",
+    "imports": [
+      "org.apache.jasper.xmlparser.SymbolTable",
+      "org.apache.jasper.xmlparser.SymbolTable$Entry",
+      "org.apache.jasper.xmlparser.XMLEncodingDetector$RewindableInputStream",
+      "org.apache.jasper.xmlparser.ASCIIReader",
+      "org.apache.jasper.xmlparser.UCSReader",
+      "org.apache.jasper.xmlparser.XMLChar",
+      "org.apache.jasper.xmlparser.XMLStringBuffer",
+      "org.apache.jasper.xmlparser.UTF8Reader",
+      "org.apache.jasper.xmlparser.XMLEncodingDetector",
+      "org.apache.jasper.xmlparser.XMLString",
+      "org.apache.jasper.xmlparser.EncodingMap"
+    ]
+  },
+  {
+    "name": "org.apache.tomcat.util.http.fileupload.util",
+    "imports": [
+      "org.apache.tomcat.util.http.fileupload.util.LimitedInputStream",
+      "org.apache.tomcat.util.http.fileupload.util.Streams",
+      "org.apache.tomcat.util.http.fileupload.InvalidFileNameException"
+    ]
+  },
+  {
+    "name": "javax.security.auth.message.callback",
+    "imports": [
+      "javax.security.auth.message.callback.SecretKeyCallback$Request",
+      "javax.security.auth.message.callback.SecretKeyCallback",
+      "javax.security.auth.message.callback.SecretKeyCallback$AliasRequest",
+      "javax.security.auth.message.callback.PrivateKeyCallback$IssuerSerialNumRequest",
+      "javax.security.auth.message.callback.PrivateKeyCallback$DigestRequest",
+      "javax.security.auth.message.callback.PrivateKeyCallback$Request",
+      "javax.security.auth.message.callback.PrivateKeyCallback$SubjectKeyIDRequest",
+      "javax.security.auth.message.callback.PrivateKeyCallback$AliasRequest",
+      "javax.security.auth.message.callback.PrivateKeyCallback"
+    ]
+  },
+  {
+    "name": "org.apache.tomcat.dbcp.dbcp2",
+    "imports": [
+      "org.apache.tomcat.dbcp.dbcp2.PoolingDriver$PoolGuardConnectionWrapper",
+      "org.apache.tomcat.dbcp.dbcp2.PoolingDriver",
+      "org.apache.tomcat.dbcp.dbcp2.ObjectNameWrapper",
+      "org.apache.tomcat.dbcp.dbcp2.PStmtKey$PreparedStatementWithColumnNames",
+      "org.apache.tomcat.dbcp.dbcp2.PStmtKey$StatementBuilder",
+      "org.apache.tomcat.dbcp.dbcp2.PStmtKey$PreparedStatementWithAutoGeneratedKeys",
+      "org.apache.tomcat.dbcp.dbcp2.PStmtKey$PreparedStatementWithResultSetConcurrency",
+      "org.apache.tomcat.dbcp.dbcp2.PStmtKey$PreparedCallWithResultSetConcurrency",
+      "org.apache.tomcat.dbcp.dbcp2.PStmtKey$PreparedStatementSQL",
+      "org.apache.tomcat.dbcp.dbcp2.PStmtKey$PreparedCallWithResultSetHoldability",
+      "org.apache.tomcat.dbcp.dbcp2.PStmtKey$PreparedStatementWithResultSetHoldability",
+      "org.apache.tomcat.dbcp.dbcp2.PStmtKey",
+      "org.apache.tomcat.dbcp.dbcp2.PStmtKey$PreparedStatementWithColumnIndexes",
+      "org.apache.tomcat.dbcp.dbcp2.PStmtKey$PreparedCallSQL",
+      "org.apache.tomcat.dbcp.dbcp2.PStmtKey$1",
+      "org.apache.tomcat.dbcp.dbcp2.PoolableConnection",
+      "org.apache.tomcat.dbcp.dbcp2.PoolableConnectionMXBean",
+      "org.apache.tomcat.dbcp.dbcp2.DelegatingPreparedStatement",
+      "org.apache.tomcat.dbcp.dbcp2.PoolingDataSource",
+      "org.apache.tomcat.dbcp.dbcp2.PoolingDataSource$PoolGuardConnectionWrapper",
+      "org.apache.tomcat.dbcp.dbcp2.DelegatingConnection",
+      "org.apache.tomcat.dbcp.dbcp2.BasicDataSource$1",
+      "org.apache.tomcat.dbcp.dbcp2.BasicDataSource$PaGetConnection",
+      "org.apache.tomcat.dbcp.dbcp2.BasicDataSourceMXBean",
+      "org.apache.tomcat.dbcp.dbcp2.DriverConnectionFactory",
+      "org.apache.tomcat.dbcp.dbcp2.BasicDataSource",
+      "org.apache.tomcat.dbcp.dbcp2.DelegatingDatabaseMetaData"
+    ]
+  },
+  {
+    "name": "org.apache.catalina.tribes.group.interceptors",
+    "imports": [
+      "org.apache.catalina.tribes.group.interceptors.TwoPhaseCommitInterceptor",
+      "org.apache.catalina.tribes.group.interceptors.TwoPhaseCommitInterceptor$MapEntry",
+      "org.apache.catalina.tribes.group.interceptors.DomainFilterInterceptorMBean",
+      "org.apache.catalina.tribes.group.interceptors.DomainFilterInterceptor",
+      "org.apache.catalina.tribes.group.interceptors.OrderInterceptor$Counter",
+      "org.apache.catalina.tribes.group.interceptors.OrderInterceptor$MessageOrder",
+      "org.apache.catalina.tribes.group.interceptors.OrderInterceptor",
+      "org.apache.catalina.tribes.group.interceptors.ThroughputInterceptorMBean",
+      "org.apache.catalina.tribes.group.interceptors.ThroughputInterceptor",
+      "org.apache.catalina.tribes.group.interceptors.FragmentationInterceptorMBean",
+      "org.apache.catalina.tribes.group.interceptors.FragmentationInterceptor",
+      "org.apache.catalina.tribes.group.interceptors.FragmentationInterceptor$FragKey",
+      "org.apache.catalina.tribes.group.interceptors.FragmentationInterceptor$FragCollection",
+      "org.apache.catalina.tribes.group.interceptors.GzipInterceptor",
+      "org.apache.catalina.tribes.group.interceptors.StaticMembershipInterceptorMBean",
+      "org.apache.catalina.tribes.group.interceptors.StaticMembershipInterceptor",
+      "org.apache.catalina.tribes.group.interceptors.StaticMembershipInterceptor$1",
+      "org.apache.catalina.tribes.group.interceptors.TcpPingInterceptor",
+      "org.apache.catalina.tribes.group.interceptors.TcpPingInterceptor$PingThread",
+      "org.apache.catalina.tribes.group.interceptors.TcpPingInterceptorMBean",
+      "org.apache.catalina.tribes.group.interceptors.EncryptInterceptor$ECBEncryptionManager",
+      "org.apache.catalina.tribes.group.interceptors.EncryptInterceptor$ChannelConfigException",
+      "org.apache.catalina.tribes.group.interceptors.EncryptInterceptor",
+      "org.apache.catalina.tribes.group.interceptors.EncryptInterceptorMBean",
+      "org.apache.catalina.tribes.group.interceptors.MessageDispatchInterceptor$1",
+      "org.apache.catalina.tribes.group.interceptors.MessageDispatchInterceptor",
+      "org.apache.catalina.tribes.group.interceptors.MessageDispatchInterceptorMBean",
+      "org.apache.catalina.tribes.group.interceptors.TcpFailureDetectorMBean",
+      "org.apache.catalina.tribes.group.interceptors.TcpFailureDetector",
+      "org.apache.catalina.tribes.group.interceptors.NonBlockingCoordinator$CoordinationMessage",
+      "org.apache.catalina.tribes.group.interceptors.NonBlockingCoordinator$CoordinationEvent",
+      "org.apache.catalina.tribes.group.interceptors.NonBlockingCoordinator",
+      "org.apache.catalina.tribes.group.interceptors.EncryptInterceptor$BaseEncryptionManager",
+      "org.apache.catalina.tribes.group.interceptors.EncryptInterceptor$GCMEncryptionManager"
+    ]
+  },
+  {
+    "name": "org.apache.tomcat.util.http",
+    "imports": [
+      "org.apache.tomcat.util.http.LegacyCookieProcessor$1",
+      "org.apache.tomcat.util.http.LegacyCookieProcessor",
+      "org.apache.tomcat.util.http.CookieProcessorBase",
+      "org.apache.tomcat.util.http.CookieProcessorBase$1",
+      "org.apache.tomcat.util.http.ResponseUtil",
+      "org.apache.tomcat.util.http.ResponseUtil$HeaderAdapter",
+      "org.apache.tomcat.util.http.ResponseUtil$ResponseAdapter",
+      "org.apache.tomcat.util.http.parser.Vary",
+      "org.apache.tomcat.util.http.ResponseUtil$Adapter",
+      "org.apache.tomcat.util.http.MimeHeaderField",
+      "org.apache.tomcat.util.http.MimeHeaders",
+      "org.apache.tomcat.util.http.NamesEnumerator",
+      "org.apache.tomcat.util.http.ValuesEnumerator",
+      "org.apache.tomcat.util.http.Parameters",
+      "org.apache.tomcat.util.http.Parameters$1"
+    ]
+  },
+  {
+    "name": "org.eclipse.jdt.core",
+    "imports": [
+      "org.eclipse.jdt.core.JDTCompilerAdapter",
+      "org.eclipse.jdt.core.JDTCompilerAdapter$1",
+      "org.eclipse.jdt.core.BuildJarIndex",
+      "org.eclipse.jdt.core.CheckDebugAttributes",
+      "org.eclipse.jdt.core.ToolFactory"
+    ]
+  },
+  {
+    "name": "org.apache.tomcat.jdbc.pool.interceptor",
+    "imports": [
+      "org.apache.tomcat.jdbc.pool.interceptor.StatementFinalizer",
+      "org.apache.tomcat.jdbc.pool.interceptor.StatementFinalizer$StatementEntry",
+      "org.apache.tomcat.jdbc.pool.interceptor.ResetAbandonedTimerMBean",
+      "org.apache.tomcat.jdbc.pool.interceptor.ResetAbandonedTimer",
+      "org.apache.tomcat.jdbc.pool.interceptor.AbstractQueryReport$StatementProxy",
+      "org.apache.tomcat.jdbc.pool.interceptor.AbstractQueryReport",
+      "org.apache.tomcat.jdbc.pool.interceptor.SlowQueryReport",
+      "org.apache.tomcat.jdbc.pool.interceptor.SlowQueryReport$QueryStatsComparator",
+      "org.apache.tomcat.jdbc.pool.interceptor.StatementCacheMBean",
+      "org.apache.tomcat.jdbc.pool.interceptor.StatementCache$CacheKey",
+      "org.apache.tomcat.jdbc.pool.interceptor.StatementCache$CachedStatement",
+      "org.apache.tomcat.jdbc.pool.interceptor.StatementCache",
+      "org.apache.tomcat.jdbc.pool.interceptor.StatementCache$1",
+      "org.apache.tomcat.jdbc.pool.interceptor.SlowQueryReportJmxMBean",
+      "org.apache.tomcat.jdbc.pool.interceptor.SlowQueryReportJmx"
+    ]
+  },
+  {
+    "name": "javax.servlet.jsp.tagext",
+    "imports": [
+      "javax.servlet.jsp.tagext.TagSupport",
+      "javax.servlet.jsp.tagext.BodyTagSupport",
+      "javax.servlet.jsp.tagext.TagAdapter",
+      "javax.servlet.jsp.tagext.SimpleTagSupport"
+    ]
+  },
+  {
+    "name": "org.apache.catalina.startup",
+    "imports": [
+      "org.apache.catalina.startup.SafeForkJoinWorkerThreadFactory",
+      "org.apache.catalina.startup.SafeForkJoinWorkerThreadFactory$SafeForkJoinWorkerThread",
+      "org.apache.catalina.startup.RealmRuleSet",
+      "org.apache.catalina.startup.CredentialHandlerRuleSet",
+      "org.apache.catalina.startup.ContextRuleSet",
+      "org.apache.catalina.startup.SetContextPropertiesRule",
+      "org.apache.catalina.startup.ClassLoaderFactory$2",
+      "org.apache.catalina.startup.ClassLoaderFactory",
+      "org.apache.catalina.startup.ClassLoaderFactory$1",
+      "org.apache.catalina.startup.UserConfig$DeployUserDirectory",
+      "org.apache.catalina.startup.UserConfig",
+      "org.apache.catalina.startup.WebAnnotationSet",
+      "org.apache.catalina.security.SecurityClassLoad",
+      "org.apache.catalina.startup.Bootstrap",
+      "org.apache.catalina.startup.ConnectorCreateRule",
+      "org.apache.catalina.startup.EngineRuleSet",
+      "org.apache.catalina.startup.SetParentClassLoaderRule",
+      "org.apache.catalina.security.SecurityConfig",
+      "org.apache.catalina.startup.Catalina$CatalinaShutdownHook",
+      "org.apache.catalina.startup.CertificateCreateRule",
+      "org.apache.catalina.startup.Catalina",
+      "org.apache.catalina.startup.Tomcat",
+      "org.apache.catalina.startup.Tomcat$1",
+      "org.apache.catalina.startup.Tomcat$ExistingStandardWrapper",
+      "org.apache.catalina.startup.Tomcat$DefaultWebXmlListener",
+      "org.apache.catalina.startup.HostConfig$DeployDescriptor",
+      "org.apache.catalina.startup.HostConfig",
+      "org.apache.catalina.startup.FailedContext",
+      "org.apache.catalina.startup.HostConfig$ExpandedDirectoryRemovalListener",
+      "org.apache.catalina.startup.HostConfig$DeployedApplication",
+      "org.apache.catalina.startup.HostConfig$DeployDirectory",
+      "org.apache.catalina.startup.HostConfig$DeployWar",
+      "org.apache.catalina.startup.ContextConfig",
+      "org.apache.catalina.startup.ContextConfig$DefaultWebXmlCacheEntry",
+      "org.apache.tomcat.util.bcel.classfile.Annotations",
+      "org.apache.catalina.startup.WebappServiceLoader",
+      "org.apache.tomcat.util.bcel.classfile.ClassParser",
+      "org.apache.catalina.startup.ContextConfig$JavaClassCacheEntry",
+      "org.apache.tomcat.util.bcel.classfile.JavaClass",
+      "org.apache.catalina.startup.CopyParentClassLoaderRule",
+      "org.apache.catalina.startup.HostRuleSet",
+      "org.apache.catalina.authenticator.NonLoginAuthenticator",
+      "org.apache.catalina.startup.Tomcat$FixContextListener"
+    ]
+  },
+  {
+    "name": "org.eclipse.jdt.internal.compiler.apt.model",
+    "imports": [
+      "org.eclipse.jdt.internal.compiler.apt.model.AnnotationValueImpl",
+      "org.eclipse.jdt.internal.compiler.apt.model.AnnotationMemberValue",
+      "org.eclipse.jdt.internal.compiler.apt.model.IElementInfo",
+      "org.eclipse.jdt.internal.compiler.apt.model.ElementImpl",
+      "org.eclipse.jdt.internal.compiler.apt.model.TypeElementImpl",
+      "org.eclipse.jdt.internal.compiler.apt.model.AnnotationMirrorImpl",
+      "org.eclipse.jdt.internal.compiler.apt.model.TypeParameterElementImpl",
+      "org.eclipse.jdt.internal.compiler.apt.model.ErrorTypeElement",
+      "org.eclipse.jdt.internal.compiler.apt.model.ErrorTypeImpl",
+      "org.eclipse.jdt.internal.compiler.apt.model.Factory",
+      "org.eclipse.jdt.internal.compiler.apt.model.ArrayTypeImpl",
+      "org.eclipse.jdt.internal.compiler.apt.model.TypeVariableImpl",
+      "org.eclipse.jdt.internal.compiler.apt.model.TypeElementImpl$SourceLocationComparator"
+    ]
+  },
+  {
+    "name": "org.apache.naming.factory",
+    "imports": [
+      "org.apache.naming.factory.LookupFactory",
+      "org.apache.naming.factory.LookupFactory$1",
+      "org.apache.naming.factory.SendMailFactory",
+      "org.apache.naming.factory.SendMailFactory$1",
+      "org.apache.naming.factory.DataSourceLinkFactory",
+      "org.apache.naming.factory.DataSourceLinkFactory$DataSourceHandler",
+      "org.apache.naming.factory.MailSessionFactory$1",
+      "org.apache.naming.factory.MailSessionFactory$1$1",
+      "org.apache.naming.factory.MailSessionFactory"
+    ]
+  },
+  {
+    "name": "org.eclipse.jdt.internal.compiler.parser.diagnose",
+    "imports": [
+      "org.eclipse.jdt.internal.compiler.parser.diagnose.RangeUtil",
+      "org.eclipse.jdt.internal.compiler.parser.diagnose.RangeUtil$RangeResult",
+      "org.eclipse.jdt.internal.compiler.parser.diagnose.LexStream",
+      "org.eclipse.jdt.internal.compiler.parser.diagnose.LexStream$Token",
+      "org.eclipse.jdt.internal.compiler.parser.diagnose.DiagnoseParser$SecondaryRepairInfo",
+      "org.eclipse.jdt.internal.compiler.parser.diagnose.DiagnoseParser$PrimaryRepairInfo",
+      "org.eclipse.jdt.internal.compiler.parser.diagnose.DiagnoseParser",
+      "org.eclipse.jdt.internal.compiler.parser.diagnose.DiagnoseParser$RepairCandidate",
+      "org.eclipse.jdt.internal.compiler.parser.diagnose.DiagnoseParser$StateInfo"
+    ]
+  },
+  {
+    "name": "org.eclipse.jdt.internal.compiler.lookup",
+    "imports": [
+      "org.eclipse.jdt.internal.compiler.lookup.AnnotationHolder$AnnotationMethodHolder",
+      "org.eclipse.jdt.internal.compiler.lookup.AnnotationHolder$MethodHolder",
+      "org.eclipse.jdt.internal.compiler.lookup.AnnotationHolder",
+      "org.eclipse.jdt.internal.compiler.lookup.ReductionResult",
+      "org.eclipse.jdt.internal.compiler.lookup.ReductionResult$1",
+      "org.eclipse.jdt.internal.compiler.lookup.ReductionResult$2",
+      "org.eclipse.jdt.internal.compiler.lookup.TypeSystem$HashedParameterizedTypes$InternalParameterizedTypeBinding",
+      "org.eclipse.jdt.internal.compiler.lookup.TypeSystem$HashedParameterizedTypes",
+      "org.eclipse.jdt.internal.compiler.lookup.TypeBindingVisitor",
+      "org.eclipse.jdt.internal.compiler.lookup.InferenceSubstitution$1",
+      "org.eclipse.jdt.internal.compiler.lookup.InferenceSubstitution",
+      "org.eclipse.jdt.internal.compiler.lookup.CaptureBinding18",
+      "org.eclipse.jdt.internal.compiler.lookup.CaptureBinding18$1",
+      "org.eclipse.jdt.internal.compiler.lookup.ParameterizedMethodBinding",
+      "org.eclipse.jdt.internal.compiler.lookup.ParameterizedMethodBinding$2",
+      "org.eclipse.jdt.internal.compiler.lookup.ParameterizedMethodBinding$1",
+      "org.eclipse.jdt.internal.compiler.lookup.LocalTypeBinding",
+      "org.eclipse.jdt.internal.compiler.lookup.InnerEmulationDependency",
+      "org.eclipse.jdt.internal.compiler.lookup.TypeBinding$1",
+      "org.eclipse.jdt.internal.compiler.lookup.TypeBinding",
+      "org.eclipse.jdt.internal.compiler.lookup.BoundSet$1",
+      "org.eclipse.jdt.internal.compiler.lookup.BoundSet",
+      "org.eclipse.jdt.internal.compiler.lookup.BoundSet$ThreeSets",
+      "org.eclipse.jdt.internal.compiler.lookup.ParameterizedGenericMethodBinding$LingeringTypeVariableEliminator",
+      "org.eclipse.jdt.internal.compiler.lookup.ParameterizedGenericMethodBinding",
+      "org.eclipse.jdt.internal.compiler.lookup.ReferenceBinding",
+      "org.eclipse.jdt.internal.compiler.lookup.ReferenceBinding$3",
+      "org.eclipse.jdt.internal.compiler.lookup.ReferenceBinding$1",
+      "org.eclipse.jdt.internal.compiler.lookup.ReferenceBinding$2",
+      "org.eclipse.jdt.internal.compiler.lookup.ParameterizedFieldBinding",
+      "org.eclipse.jdt.internal.compiler.lookup.ParameterizedTypeBinding",
+      "org.eclipse.jdt.internal.compiler.lookup.CompilationUnitScope",
+      "org.eclipse.jdt.internal.compiler.util.SimpleNameVector",
+      "org.eclipse.jdt.internal.compiler.util.CompoundNameVector",
+      "org.eclipse.jdt.internal.compiler.lookup.SyntheticFieldBinding",
+      "org.eclipse.jdt.internal.compiler.lookup.SourceTypeBinding",
+      "org.eclipse.jdt.internal.compiler.lookup.ConstraintExceptionFormula",
+      "org.eclipse.jdt.internal.compiler.lookup.InferenceContext18$6",
+      "org.eclipse.jdt.internal.compiler.lookup.InferenceContext18$5",
+      "org.eclipse.jdt.internal.compiler.lookup.InferenceContext18$InferenceOperation",
+      "org.eclipse.jdt.internal.compiler.lookup.InferenceContext18$3",
+      "org.eclipse.jdt.internal.compiler.lookup.InferenceContext18$4",
+      "org.eclipse.jdt.internal.compiler.lookup.InferenceContext18$2",
+      "org.eclipse.jdt.internal.compiler.lookup.InferenceContext18",
+      "org.eclipse.jdt.internal.compiler.lookup.ConstraintExpressionFormula",
+      "org.eclipse.jdt.internal.compiler.lookup.InferenceContext18$SuspendedInferenceRecord",
+      "org.eclipse.jdt.internal.compiler.lookup.InferenceContext18$1",
+      "org.eclipse.jdt.internal.compiler.lookup.InferenceContext18$7",
+      "org.eclipse.jdt.internal.compiler.env.INameEnvironmentExtension",
+      "org.eclipse.jdt.internal.compiler.lookup.LookupEnvironment",
+      "org.eclipse.jdt.internal.compiler.lookup.MethodVerifier15",
+      "org.eclipse.jdt.internal.compiler.lookup.Scope",
+      "org.eclipse.jdt.internal.compiler.lookup.MostSpecificExceptionMethodBinding",
+      "org.eclipse.jdt.internal.compiler.lookup.Scope$1",
+      "org.eclipse.jdt.internal.compiler.lookup.Scope$2",
+      "org.eclipse.jdt.internal.compiler.lookup.Scope$MethodClashException"
+    ]
+  },
+  {
+    "name": "org.apache.tomcat.jni",
+    "imports": [
+      "org.apache.tomcat.jni.BIOCallback",
+      "org.apache.tomcat.jni.SSL",
+      "org.apache.tomcat.jni.PasswordCallback"
+    ]
+  },
+  {
+    "name": "javax.security.auth.message",
+    "imports": [
+      "javax.security.auth.message.MessagePolicy$Target",
+      "javax.security.auth.message.MessagePolicy$ProtectionPolicy",
+      "javax.security.auth.message.MessagePolicy$TargetPolicy",
+      "javax.security.auth.message.MessagePolicy"
+    ]
+  },
+  {
+    "name": "org.apache.catalina.realm",
+    "imports": [
+      "org.apache.catalina.realm.MemoryRuleSet",
+      "org.apache.catalina.realm.MemoryUserRule",
+      "org.apache.catalina.realm.LockOutRealm",
+      "org.apache.catalina.realm.LockOutRealm$1",
+      "org.apache.catalina.realm.LockOutRealm$LockRecord",
+      "org.apache.catalina.realm.GenericPrincipal",
+      "org.apache.catalina.realm.GenericPrincipal$SerializablePrincipal",
+      "org.apache.catalina.realm.JAASRealm",
+      "org.apache.catalina.realm.JAASCallbackHandler",
+      "org.apache.catalina.realm.JAASMemoryLoginModule",
+      "org.apache.catalina.realm.RealmBase",
+      "org.apache.catalina.realm.SecretKeyCredentialHandler",
+      "org.apache.catalina.realm.X509UsernameRetriever",
+      "org.apache.catalina.realm.X509SubjectDnRetriever",
+      "org.apache.catalina.realm.JNDIRealm$User",
+      "org.apache.catalina.realm.JNDIRealm"
+    ]
+  },
+  {
+    "name": "org.apache.jasper",
+    "imports": [
+      "org.apache.jasper.JspC$1",
+      "org.apache.jasper.JspC$ProcessFile",
+      "org.apache.jasper.JspC",
+      "org.apache.jasper.servlet.JasperLoader",
+      "org.apache.jasper.JspCompilationContext"
+    ]
+  },
+  {
+    "name": "org.eclipse.jdt.internal.compiler.ast",
+    "imports": [
+      "org.eclipse.jdt.internal.compiler.ast.OperatorExpression$1Decode",
+      "org.eclipse.jdt.internal.compiler.ast.OperatorExpression",
+      "org.eclipse.jdt.internal.compiler.ast.ExpressionContext$3",
+      "org.eclipse.jdt.internal.compiler.ast.ExpressionContext",
+      "org.eclipse.jdt.internal.compiler.ast.ExpressionContext$4",
+      "org.eclipse.jdt.internal.compiler.ast.ExpressionContext$2",
+      "org.eclipse.jdt.internal.compiler.ast.ExpressionContext$1",
+      "org.eclipse.jdt.internal.compiler.ast.NullAnnotationMatching$CheckMode$1",
+      "org.eclipse.jdt.internal.compiler.ast.NullAnnotationMatching$CheckMode",
+      "org.eclipse.jdt.internal.compiler.ast.NullAnnotationMatching$CheckMode$3",
+      "org.eclipse.jdt.internal.compiler.ast.NullAnnotationMatching$CheckMode$2",
+      "org.eclipse.jdt.internal.compiler.ast.IntLiteralMinValue",
+      "org.eclipse.jdt.internal.compiler.ast.IntLiteral",
+      "org.eclipse.jdt.internal.compiler.ast.LongLiteral",
+      "org.eclipse.jdt.internal.compiler.ast.LongLiteralMinValue",
+      "org.eclipse.jdt.internal.compiler.ast.FakedTrackingVariable$IteratorForReporting$Stage",
+      "org.eclipse.jdt.internal.compiler.ast.FakedTrackingVariable$IteratorForReporting",
+      "org.eclipse.jdt.internal.compiler.ast.MemberValuePair",
+      "org.eclipse.jdt.internal.compiler.ast.MemberValuePair$1",
+      "org.eclipse.jdt.internal.compiler.ast.MemberValuePair$2",
+      "org.eclipse.jdt.internal.compiler.ast.FunctionalExpression",
+      "org.eclipse.jdt.internal.compiler.ast.FunctionalExpression$1BridgeCollector",
+      "org.eclipse.jdt.internal.compiler.ast.FunctionalExpression$VisibilityInspector",
+      "org.eclipse.jdt.internal.compiler.ast.Statement$2",
+      "org.eclipse.jdt.internal.compiler.ast.Statement",
+      "org.eclipse.jdt.internal.compiler.ast.Statement$1",
+      "org.eclipse.jdt.internal.compiler.ast.SwitchStatement$1StringSwitchCase",
+      "org.eclipse.jdt.internal.compiler.ast.SwitchStatement",
+      "org.eclipse.jdt.internal.compiler.ast.CastExpression$1",
+      "org.eclipse.jdt.internal.compiler.ast.CastExpression",
+      "org.eclipse.jdt.internal.compiler.ast.NullAnnotationMatching$SearchContradictions",
+      "org.eclipse.jdt.internal.compiler.ast.NullAnnotationMatching$Severity",
+      "org.eclipse.jdt.internal.compiler.ast.NullAnnotationMatching",
+      "org.eclipse.jdt.internal.compiler.ast.NullAnnotationMatching$1",
+      "org.eclipse.jdt.internal.compiler.ast.CompilationUnitDeclaration",
+      "org.eclipse.jdt.internal.compiler.util.HashSetOfInt",
+      "org.eclipse.jdt.internal.compiler.ast.CompilationUnitDeclaration$1",
+      "org.eclipse.jdt.internal.compiler.ast.TryStatement",
+      "org.eclipse.jdt.internal.compiler.codegen.MultiCatchExceptionLabel",
+      "org.eclipse.jdt.internal.compiler.ast.Annotation",
+      "org.eclipse.jdt.internal.compiler.ast.Annotation$1LocationCollector",
+      "org.eclipse.jdt.internal.compiler.ast.Annotation$1MissingTargetBuilder",
+      "org.eclipse.jdt.internal.compiler.ast.ReferenceExpression",
+      "org.eclipse.jdt.internal.compiler.ast.ReferenceExpression$2",
+      "org.eclipse.jdt.internal.compiler.ast.ReferenceExpression$1",
+      "org.eclipse.jdt.internal.compiler.ast.LambdaExpression$CopyFailureException",
+      "org.eclipse.jdt.internal.compiler.ast.LambdaExpression$1ShapeComputer",
+      "org.eclipse.jdt.internal.compiler.ast.LambdaExpression",
+      "org.eclipse.jdt.internal.compiler.ast.LambdaExpression$1NotPertientToApplicability",
+      "org.eclipse.jdt.internal.compiler.ast.LambdaExpression$1ResultsAnalyser",
+      "org.eclipse.jdt.internal.compiler.ast.LambdaExpression$1LambdaTypeBinding"
+    ]
+  },
+  {
+    "name": "org.apache.tomcat.dbcp.pool2.impl",
+    "imports": [
+      "org.apache.tomcat.dbcp.pool2.impl.DefaultEvictionPolicy",
+      "org.apache.tomcat.dbcp.pool2.impl.BaseObjectPoolConfig",
+      "org.apache.tomcat.dbcp.pool2.impl.ThrowableCallStack$Snapshot",
+      "org.apache.tomcat.dbcp.pool2.impl.ThrowableCallStack$1",
+      "org.apache.tomcat.dbcp.pool2.impl.ThrowableCallStack",
+      "org.apache.tomcat.dbcp.pool2.impl.EvictionTimer$EvictorThreadFactory$1",
+      "org.apache.tomcat.dbcp.pool2.impl.EvictionTimer$EvictorThreadFactory",
+      "org.apache.tomcat.dbcp.pool2.impl.DefaultPooledObjectInfo",
+      "org.apache.tomcat.dbcp.pool2.impl.DefaultPooledObjectInfoMBean",
+      "org.apache.tomcat.dbcp.pool2.impl.BaseGenericObjectPool$Evictor",
+      "org.apache.tomcat.dbcp.pool2.impl.NoOpCallStack",
+      "org.apache.tomcat.dbcp.pool2.impl.CallStackUtils",
+      "org.apache.tomcat.dbcp.pool2.impl.DefaultPooledObject",
+      "org.apache.tomcat.dbcp.pool2.impl.EvictionTimer",
+      "org.apache.tomcat.dbcp.pool2.impl.SecurityManagerCallStack",
+      "org.apache.tomcat.dbcp.pool2.impl.SecurityManagerCallStack$PrivateSecurityManager",
+      "org.apache.tomcat.dbcp.pool2.impl.SecurityManagerCallStack$Snapshot",
+      "org.apache.tomcat.dbcp.pool2.impl.SecurityManagerCallStack$1",
+      "org.apache.tomcat.dbcp.pool2.impl.SoftReferenceObjectPool",
+      "org.apache.tomcat.dbcp.pool2.BaseObjectPool",
+      "org.apache.tomcat.dbcp.pool2.impl.PooledSoftReference",
+      "org.apache.tomcat.dbcp.pool2.impl.LinkedBlockingDeque$Itr",
+      "org.apache.tomcat.dbcp.pool2.impl.LinkedBlockingDeque$1",
+      "org.apache.tomcat.dbcp.pool2.impl.LinkedBlockingDeque$AbstractItr",
+      "org.apache.tomcat.dbcp.pool2.impl.LinkedBlockingDeque$Node",
+      "org.apache.tomcat.dbcp.pool2.impl.InterruptibleReentrantLock",
+      "org.apache.tomcat.dbcp.pool2.impl.LinkedBlockingDeque",
+      "org.apache.tomcat.dbcp.pool2.impl.LinkedBlockingDeque$DescendingItr",
+      "org.apache.tomcat.dbcp.pool2.impl.PoolImplUtils",
+      "org.apache.tomcat.dbcp.pool2.impl.GenericObjectPool",
+      "org.apache.tomcat.dbcp.pool2.impl.GenericObjectPoolMXBean",
+      "org.apache.tomcat.dbcp.pool2.UsageTracking",
+      "org.apache.tomcat.dbcp.pool2.impl.GenericKeyedObjectPool$ObjectDeque",
+      "org.apache.tomcat.dbcp.pool2.impl.GenericKeyedObjectPoolMXBean",
+      "org.apache.tomcat.dbcp.pool2.impl.GenericKeyedObjectPool",
+      "org.apache.tomcat.dbcp.pool2.impl.BaseGenericObjectPool",
+      "org.apache.tomcat.dbcp.pool2.impl.BaseGenericObjectPool$StatsStore"
+    ]
+  },
+  {
+    "name": "org.apache.tomcat.util.compat",
+    "imports": [
+      "org.apache.tomcat.util.compat.JrePlatform",
+      "org.apache.tomcat.util.compat.JrePlatform$1",
+      "org.apache.tomcat.util.compat.Jre8Compat",
+      "org.apache.tomcat.util.compat.JreCompat",
+      "org.apache.tomcat.util.compat.Jre9Compat"
+    ]
+  },
+  {
+    "name": "org.eclipse.jdt.internal.compiler",
+    "imports": [
+      "org.eclipse.jdt.internal.compiler.DefaultErrorHandlingPolicies$4",
+      "org.eclipse.jdt.internal.compiler.DefaultErrorHandlingPolicies$1",
+      "org.eclipse.jdt.internal.compiler.DefaultErrorHandlingPolicies$5",
+      "org.eclipse.jdt.internal.compiler.DefaultErrorHandlingPolicies$3",
+      "org.eclipse.jdt.internal.compiler.DefaultErrorHandlingPolicies",
+      "org.eclipse.jdt.internal.compiler.DefaultErrorHandlingPolicies$2",
+      "org.eclipse.jdt.internal.compiler.ISourceElementRequestor$TypeInfo",
+      "org.eclipse.jdt.internal.compiler.ISourceElementRequestor$FieldInfo",
+      "org.eclipse.jdt.internal.compiler.ISourceElementRequestor",
+      "org.eclipse.jdt.internal.compiler.ISourceElementRequestor$MethodInfo",
+      "org.eclipse.jdt.internal.compiler.ISourceElementRequestor$TypeParameterInfo",
+      "org.eclipse.jdt.internal.compiler.SourceElementNotifier$LocalDeclarationVisitor",
+      "org.eclipse.jdt.internal.compiler.SourceElementNotifier",
+      "org.eclipse.jdt.internal.compiler.ISourceElementRequestor$ParameterInfo",
+      "org.eclipse.jdt.internal.compiler.util.HashtableOfObjectToInt",
+      "org.eclipse.jdt.internal.compiler.CompilationResult",
+      "org.eclipse.jdt.internal.compiler.CompilationResult$1",
+      "org.eclipse.jdt.internal.compiler.Compiler",
+      "org.eclipse.jdt.internal.compiler.IDebugRequestor",
+      "org.eclipse.jdt.internal.compiler.ProcessTaskManager",
+      "org.eclipse.jdt.internal.compiler.Compiler$APTProblem",
+      "org.eclipse.jdt.internal.compiler.Compiler$1",
+      "org.eclipse.jdt.internal.compiler.ClassFile$3",
+      "org.eclipse.jdt.internal.compiler.codegen.StackMapFrame",
+      "org.eclipse.jdt.internal.compiler.codegen.TypeAnnotationCodeStream",
+      "org.eclipse.jdt.internal.compiler.ClassFile",
+      "org.eclipse.jdt.internal.compiler.ClassFile$2",
+      "org.eclipse.jdt.internal.compiler.ClassFile$1",
+      "org.eclipse.jdt.core.IType",
+      "org.eclipse.jdt.core.JavaModelException",
+      "org.eclipse.jdt.internal.compiler.ExtraFlags"
+    ]
+  },
+  {
+    "name": "org.apache.tomcat.websocket.server",
+    "imports": [
+      "org.apache.tomcat.websocket.server.WsContextListener",
+      "javax.websocket.server.ServerApplicationConfig",
+      "org.apache.tomcat.websocket.server.WsSessionListener",
+      "org.apache.tomcat.websocket.server.WsSci",
+      "org.apache.tomcat.websocket.server.WsWriteTimeout",
+      "org.apache.tomcat.websocket.server.WsWriteTimeout$1",
+      "org.apache.tomcat.websocket.server.WsWriteTimeout$EndpointComparator",
+      "org.apache.tomcat.websocket.server.UriTemplate",
+      "org.apache.tomcat.websocket.server.UriTemplate$Segment",
+      "org.apache.tomcat.websocket.server.WsFrameServer$1",
+      "org.apache.tomcat.websocket.server.WsFrameServer",
+      "org.apache.tomcat.websocket.server.WsRemoteEndpointImplServer",
+      "org.apache.tomcat.websocket.server.WsRemoteEndpointImplServer$1",
+      "org.apache.tomcat.websocket.server.WsRemoteEndpointImplServer$OnResultRunnable",
+      "org.apache.tomcat.websocket.server.WsHttpUpgradeHandler$1",
+      "org.apache.tomcat.websocket.server.WsHttpUpgradeHandler",
+      "org.apache.tomcat.websocket.server.WsServerContainer$TemplatePathMatchComparator",
+      "org.apache.tomcat.websocket.server.WsServerContainer$TemplatePathMatch",
+      "javax.websocket.server.ServerContainer",
+      "org.apache.tomcat.websocket.server.WsServerContainer",
+      "org.apache.tomcat.websocket.server.WsFilter",
+      "org.apache.tomcat.websocket.server.WsMappingResult",
+      "org.apache.tomcat.websocket.server.UpgradeUtil",
+      "org.apache.tomcat.websocket.pojo.PojoEndpointServer",
+      "org.apache.tomcat.websocket.server.WsPerSessionServerEndpointConfig"
+    ]
+  },
+  {
+    "name": "javax.annotation.sql",
+    "imports": [
+      "javax.annotation.sql.DataSourceDefinition",
+      "javax.annotation.sql.DataSourceDefinitions"
+    ]
+  },
+  {
+    "name": "org.apache.jasper.compiler",
+    "imports": [
+      "org.apache.jasper.compiler.TextOptimizer$TextCatVisitor",
+      "org.apache.jasper.compiler.TextOptimizer",
+      "org.apache.jasper.compiler.ELInterpreterFactory$DefaultELInterpreter",
+      "org.apache.jasper.compiler.ELInterpreterFactory",
+      "org.apache.jasper.compiler.SmapStratum$1",
+      "org.apache.jasper.compiler.SmapStratum$LineInfo",
+      "org.apache.jasper.compiler.SmapStratum",
+      "org.apache.jasper.compiler.Collector$CollectVisitor",
+      "org.apache.jasper.compiler.Collector",
+      "org.apache.jasper.compiler.Collector$1",
+      "org.apache.jasper.compiler.EncodingDetector$BomResult",
+      "org.apache.jasper.compiler.EncodingDetector",
+      "org.apache.jasper.compiler.ScriptingVariabler$ScriptingVariableVisitor",
+      "org.apache.jasper.compiler.ScriptingVariabler$CustomTagCounter",
+      "org.apache.jasper.compiler.ScriptingVariabler$1",
+      "org.apache.jasper.compiler.ScriptingVariabler",
+      "org.apache.jasper.compiler.Node$NamedAttribute",
+      "org.apache.jasper.compiler.Node$NamedAttribute$1AttributeVisitor",
+      "org.apache.jasper.compiler.Generator$GenBuffer",
+      "org.apache.jasper.compiler.Generator$GenBuffer$1",
+      "org.apache.jasper.compiler.JspConfig",
+      "org.apache.jasper.compiler.JspConfig$JspPropertyGroup",
+      "org.apache.jasper.compiler.PageDataImpl",
+      "org.apache.jasper.compiler.PageDataImpl$SecondPassVisitor",
+      "org.apache.jasper.compiler.PageDataImpl$FirstPassVisitor",
+      "org.apache.jasper.compiler.ELParser",
+      "org.apache.jasper.compiler.ELParser$Token",
+      "org.apache.jasper.compiler.ELParser$Char",
+      "org.apache.jasper.compiler.ELParser$QuotedString",
+      "org.apache.jasper.compiler.ELParser$Id",
+      "org.apache.jasper.compiler.Validator",
+      "org.apache.jasper.compiler.Validator$TagExtraInfoVisitor",
+      "org.apache.jasper.compiler.Validator$DirectiveVisitor",
+      "org.apache.jasper.compiler.TldCache$TaglibXmlCacheEntry",
+      "org.apache.jasper.compiler.TldCache",
+      "org.apache.jasper.compiler.ErrorDispatcher$ErrorVisitor",
+      "org.apache.jasper.compiler.ErrorDispatcher",
+      "org.apache.jasper.compiler.ErrorHandler",
+      "org.apache.jasper.compiler.DefaultErrorHandler",
+      "org.apache.jasper.compiler.SmapUtil$1",
+      "org.apache.jasper.compiler.SmapUtil$SDEInstaller",
+      "org.apache.jasper.compiler.SmapGenerator",
+      "org.apache.jasper.compiler.SmapUtil$PreScanVisitor",
+      "org.apache.jasper.compiler.SmapUtil",
+      "org.apache.jasper.compiler.SmapUtil$SmapGenVisitor",
+      "javax.servlet.jsp.tagext.JspIdConsumer",
+      "javax.servlet.jsp.tagext.DynamicAttributes",
+      "org.apache.jasper.compiler.Node$CustomTag",
+      "javax.servlet.jsp.tagext.TryCatchFinally",
+      "org.apache.jasper.compiler.ParserController",
+      "org.apache.jasper.compiler.Parser",
+      "org.apache.jasper.compiler.AttributeParser",
+      "org.apache.jasper.compiler.TagFileProcessor$TagFileDirectiveVisitor",
+      "org.apache.jasper.compiler.TagFileProcessor$TagFileDirectiveVisitor$NameEntry",
+      "org.apache.jasper.compiler.TagFileProcessor",
+      "org.apache.jasper.compiler.TagFileProcessor$TagFileLoaderVisitor",
+      "org.apache.jasper.compiler.AntCompiler",
+      "org.apache.jasper.compiler.AntCompiler$SystemLogHandler",
+      "org.apache.jasper.compiler.JDTCompiler$2",
+      "org.apache.jasper.compiler.JDTCompiler$1CompilationUnit",
+      "org.apache.jasper.compiler.JDTCompiler",
+      "org.apache.jasper.compiler.JDTCompiler$1",
+      "org.apache.jasper.compiler.TagPluginManager$TagPluginContextImpl",
+      "org.apache.jasper.compiler.TagPluginManager$NodeVisitor",
+      "org.apache.jasper.compiler.TagPluginManager",
+      "org.apache.jasper.compiler.ELFunctionMapper$ELFunctionVisitor$1Fvisitor",
+      "org.apache.jasper.compiler.ELFunctionMapper$ELFunctionVisitor",
+      "org.apache.jasper.compiler.JspRuntimeContext$SecurityHolder",
+      "org.apache.jasper.compiler.JspRuntimeContext",
+      "org.apache.jasper.compiler.JspRuntimeContext$1",
+      "org.apache.jasper.compiler.TagLibraryInfoImpl",
+      "javax.servlet.jsp.tagext.TagLibraryValidator",
+      "org.apache.jasper.compiler.Generator$1TagHandlerPoolVisitor",
+      "org.apache.jasper.compiler.Generator$1DeclarationVisitor",
+      "org.apache.jasper.compiler.Generator$1ScriptingVarVisitor",
+      "org.apache.jasper.compiler.Generator",
+      "org.apache.jasper.compiler.Generator$GenerateVisitor",
+      "org.apache.jasper.compiler.Generator$GenerateVisitor$1ParamVisitor",
+      "org.apache.jasper.compiler.Generator$GenerateVisitor$2ParamVisitor",
+      "org.apache.jasper.compiler.JspDocumentParser$EnableDTDValidationException",
+      "org.apache.jasper.compiler.JspDocumentParser",
+      "org.apache.jasper.compiler.Validator$ValidateVisitor$1ValidateFunctionMapper",
+      "org.apache.jasper.compiler.Validator$ValidateVisitor",
+      "org.apache.jasper.compiler.Validator$ValidateVisitor$1FVVisitor",
+      "org.apache.jasper.compiler.Validator$ValidateVisitor$NamedAttributeVisitor",
+      "org.apache.jasper.compiler.Validator$ValidateVisitor$1MapperELVisitor",
+      "org.apache.jasper.compiler.Validator$ValidateVisitor$XmlEscapeNonELVisitor",
+      "org.apache.jasper.compiler.AntCompiler$JasperAntLogger"
+    ]
+  },
+  {
+    "name": "javax.security.auth.message.config",
+    "imports": [
+      "javax.security.auth.message.config.ClientAuthContext",
+      "javax.security.auth.message.config.ClientAuthConfig",
+      "javax.security.auth.message.config.AuthConfigFactory$1",
+      "javax.security.auth.message.config.AuthConfigFactory$2",
+      "javax.security.auth.message.config.AuthConfigFactory"
+    ]
+  },
+  {
+    "name": "org.apache.catalina.authenticator",
+    "imports": [
+      "org.apache.catalina.authenticator.BasicAuthenticator",
+      "org.apache.catalina.authenticator.BasicAuthenticator$BasicCredentials",
+      "org.apache.catalina.authenticator.DigestAuthenticator",
+      "org.apache.catalina.authenticator.DigestAuthenticator$NonceInfo",
+      "org.apache.catalina.authenticator.DigestAuthenticator$1",
+      "org.apache.catalina.authenticator.FormAuthenticator",
+      "org.apache.catalina.authenticator.SavedRequest",
+      "org.apache.catalina.authenticator.SpnegoAuthenticator$AuthenticateAction",
+      "org.apache.catalina.authenticator.SpnegoAuthenticator$SpnegoTokenFixer",
+      "org.apache.catalina.authenticator.SpnegoAuthenticator$AcceptAction",
+      "org.apache.catalina.authenticator.SpnegoAuthenticator",
+      "org.apache.catalina.authenticator.AuthenticatorBase$JaspicState",
+      "org.apache.catalina.authenticator.jaspic.MessageInfoImpl",
+      "org.apache.catalina.authenticator.AuthenticatorBase$1",
+      "org.apache.catalina.authenticator.AuthenticatorBase",
+      "org.apache.catalina.authenticator.AuthenticatorBase$NoOpAuthConfigProvider",
+      "org.apache.tomcat.util.http.parser.Authorization",
+      "org.apache.catalina.authenticator.DigestAuthenticator$DigestInfo",
+      "org.apache.catalina.authenticator.SpnegoAuthenticator$1"
+    ]
+  },
+  {
+    "name": "org.apache.tomcat.util.bcel.classfile",
+    "imports": [
+      "org.apache.tomcat.util.bcel.classfile.ConstantPool",
+      "org.apache.tomcat.util.bcel.classfile.SimpleElementValue",
+      "org.apache.tomcat.util.bcel.classfile.ElementValue",
+      "org.apache.tomcat.util.bcel.classfile.ClassElementValue",
+      "org.apache.tomcat.util.bcel.classfile.EnumElementValue"
+    ]
+  },
+  {
+    "name": "org.apache.tomcat.util.descriptor.tld",
+    "imports": [
+      "org.apache.tomcat.util.descriptor.tld.ImplicitTldRuleSet",
+      "org.apache.tomcat.util.descriptor.tld.ImplicitTldRuleSet$ElementNotAllowedRule",
+      "org.apache.tomcat.util.descriptor.tld.ImplicitTldRuleSet$1",
+      "org.apache.tomcat.util.scan.ReferenceCountedJar",
+      "org.apache.tomcat.util.descriptor.tld.TldResourcePath",
+      "org.apache.tomcat.util.descriptor.tld.TldRuleSet$GenericBooleanRule",
+      "org.apache.tomcat.util.descriptor.tld.TldRuleSet$1",
+      "org.apache.tomcat.util.descriptor.tld.TldRuleSet$ScriptVariableRule",
+      "org.apache.tomcat.util.descriptor.tld.TldRuleSet$Variable",
+      "org.apache.tomcat.util.descriptor.tld.TldRuleSet",
+      "org.apache.tomcat.util.descriptor.tld.TldRuleSet$Attribute",
+      "org.apache.tomcat.util.descriptor.tld.TldRuleSet$TagAttributeRule"
+    ]
+  },
+  {
+    "name": "org.apache.tomcat.util.http.fileupload",
+    "imports": [
+      "org.apache.tomcat.util.http.fileupload.ParameterParser",
+      "org.apache.tomcat.util.http.fileupload.FileUploadBase$FileItemIteratorImpl$FileItemStreamImpl$1",
+      "org.apache.tomcat.util.http.fileupload.FileUploadBase$FileItemIteratorImpl$FileItemStreamImpl",
+      "org.apache.tomcat.util.http.fileupload.MultipartStream",
+      "org.apache.tomcat.util.http.fileupload.MultipartStream$IllegalBoundaryException",
+      "org.apache.tomcat.util.http.fileupload.FileUploadBase$FileItemIteratorImpl$1",
+      "org.apache.tomcat.util.http.fileupload.FileUploadBase$FileItemIteratorImpl",
+      "org.apache.tomcat.util.http.fileupload.FileUploadBase$IOFileUploadException",
+      "org.apache.tomcat.util.http.fileupload.FileUploadBase",
+      "org.apache.tomcat.util.http.fileupload.util.FileItemHeadersImpl",
+      "org.apache.tomcat.util.http.fileupload.FileUtils",
+      "org.apache.tomcat.util.http.fileupload.DeferredFileOutputStream",
+      "org.apache.tomcat.util.http.fileupload.ByteArrayOutputStream",
+      "org.apache.tomcat.util.http.fileupload.ThresholdingOutputStream"
+    ]
+  },
+  {
+    "name": "org.apache.coyote.ajp",
+    "imports": [
+      "org.apache.coyote.ajp.AjpNioProtocol",
+      "org.apache.coyote.ajp.AjpProtocol",
+      "org.apache.coyote.ajp.Constants",
+      "org.apache.coyote.ajp.AjpProcessor$SocketInputBuffer",
+      "org.apache.coyote.ajp.AjpProcessor$SocketOutputBuffer",
+      "org.apache.coyote.ajp.AjpProcessor",
+      "org.apache.coyote.ajp.AjpMessage"
+    ]
+  },
+  {
+    "name": "org.eclipse.jdt.internal.compiler.flow",
+    "imports": [
+      "org.eclipse.jdt.internal.compiler.flow.FlowInfo",
+      "org.eclipse.jdt.internal.compiler.flow.ConditionalFlowInfo",
+      "org.eclipse.jdt.internal.compiler.flow.UnconditionalFlowInfo$AssertionFailedException",
+      "org.eclipse.jdt.internal.compiler.flow.UnconditionalFlowInfo",
+      "org.eclipse.jdt.internal.compiler.flow.LoopingFlowContext$EscapingExceptionCatchSite",
+      "org.eclipse.jdt.internal.compiler.flow.LoopingFlowContext",
+      "org.eclipse.jdt.internal.compiler.codegen.ObjectCache",
+      "org.eclipse.jdt.internal.compiler.flow.ExceptionHandlingFlowContext"
+    ]
+  },
+  {
+    "name": "org.apache.tomcat.util.log",
+    "imports": [
+      "org.apache.tomcat.util.log.UserDataHelper$Config",
+      "org.apache.tomcat.util.log.UserDataHelper",
+      "org.apache.tomcat.util.log.SystemLogHandler",
+      "org.apache.tomcat.util.log.CaptureLog"
+    ]
+  },
+  {
+    "name": "org.apache.coyote.http11",
+    "imports": [
+      "org.apache.coyote.http11.Http11NioProtocol",
+      "org.apache.coyote.http11.Http11Protocol",
+      "org.apache.coyote.http11.Http11OutputBuffer",
+      "org.apache.coyote.http11.Http11OutputBuffer$SocketOutputBuffer",
+      "org.apache.coyote.http11.Http11InputBuffer$HeaderParsePosition",
+      "org.apache.coyote.http11.Http11InputBuffer$SocketInputBuffer",
+      "org.apache.coyote.http11.Http11InputBuffer$HeaderParseStatus",
+      "org.apache.coyote.http11.Http11InputBuffer$1",
+      "org.apache.coyote.http11.Http11InputBuffer",
+      "org.apache.coyote.http11.Http11InputBuffer$HeaderParseData",
+      "org.apache.coyote.http11.AbstractHttp11Protocol",
+      "org.apache.coyote.http11.filters.VoidOutputFilter",
+      "org.apache.coyote.http11.filters.ChunkedInputFilter",
+      "org.apache.coyote.http11.Http11Processor$1",
+      "org.apache.coyote.http11.filters.ChunkedOutputFilter",
+      "org.apache.coyote.http11.Http11Processor",
+      "org.apache.coyote.http11.filters.VoidInputFilter",
+      "org.apache.coyote.http11.filters.IdentityOutputFilter",
+      "org.apache.coyote.http11.filters.IdentityInputFilter",
+      "org.apache.coyote.http11.filters.SavedRequestInputFilter"
+    ]
+  },
+  {
+    "name": "org.apache.tomcat.util.net.jsse",
+    "imports": [
+      "org.apache.tomcat.util.net.jsse.JSSEKeyManager",
+      "org.apache.tomcat.util.net.jsse.PEMFile",
+      "org.apache.tomcat.util.net.jsse.PEMFile$Part",
+      "org.apache.tomcat.util.net.jsse.PEMFile$1",
+      "org.apache.tomcat.util.net.SSLSessionManager",
+      "org.apache.tomcat.util.net.jsse.JSSESupport",
+      "org.apache.tomcat.util.compat.TLS",
+      "org.apache.tomcat.util.net.jsse.JSSEImplementation",
+      "org.apache.tomcat.util.net.jsse.JSSEUtil",
+      "org.apache.tomcat.util.net.jsse.JSSESSLContext"
+    ]
+  },
+  {
+    "name": "org.apache.tomcat.util.threads",
+    "imports": [
+      "org.apache.tomcat.util.threads.TaskThread$WrappingRunnable",
+      "org.apache.tomcat.util.threads.TaskThread",
+      "org.apache.tomcat.util.threads.LimitLatch",
+      "org.apache.tomcat.util.threads.TaskThreadFactory",
+      "org.apache.tomcat.util.threads.Constants",
+      "org.apache.tomcat.util.threads.ThreadPoolExecutor$RejectHandler",
+      "org.apache.tomcat.util.threads.ThreadPoolExecutor",
+      "org.apache.tomcat.util.threads.ThreadPoolExecutor$1",
+      "org.apache.tomcat.util.threads.LimitLatch$Sync"
+    ]
+  },
+  {
+    "name": "org.apache.el.util",
+    "imports": [
+      "org.apache.el.util.Validation$1",
+      "org.apache.el.util.Validation",
+      "org.apache.el.util.ReflectionUtil$PrivilegedGetTccl",
+      "org.apache.el.util.ReflectionUtil$MatchResult",
+      "org.apache.el.util.ReflectionUtil$1",
+      "org.apache.el.util.ReflectionUtil"
+    ]
+  },
+  {
+    "name": "org.apache.jasper.runtime",
+    "imports": [
+      "org.apache.jasper.runtime.HttpJspBase",
+      "org.apache.jasper.runtime.JspWriterImpl$1",
+      "org.apache.jasper.runtime.JspWriterImpl",
+      "org.apache.jasper.runtime.BodyContentImpl$2",
+      "org.apache.jasper.runtime.BodyContentImpl",
+      "org.apache.jasper.runtime.BodyContentImpl$1",
+      "org.apache.jasper.el.JasperELResolver",
+      "javax.servlet.jsp.el.ScopedAttributeELResolver",
+      "org.apache.jasper.runtime.JspApplicationContextImpl",
+      "org.apache.jasper.runtime.JspApplicationContextImpl$1",
+      "org.apache.jasper.runtime.JspFactoryImpl$1",
+      "org.apache.jasper.runtime.JspFactoryImpl$PrivilegedGetPageContext",
+      "org.apache.jasper.runtime.JspFactoryImpl$PrivilegedReleasePageContext",
+      "org.apache.jasper.runtime.JspFactoryImpl",
+      "org.apache.jasper.runtime.JspFactoryImpl$2",
+      "org.apache.jasper.runtime.JspFactoryImpl$PageContextPool",
+      "org.apache.jasper.runtime.PageContextImpl$10",
+      "org.apache.jasper.runtime.PageContextImpl$1",
+      "org.apache.jasper.runtime.PageContextImpl$3",
+      "org.apache.jasper.runtime.PageContextImpl$2",
+      "org.apache.jasper.runtime.PageContextImpl$11",
+      "org.apache.jasper.runtime.PageContextImpl$12",
+      "org.apache.jasper.el.VariableResolverImpl",
+      "org.apache.jasper.runtime.PageContextImpl$5",
+      "org.apache.jasper.runtime.PageContextImpl$6",
+      "org.apache.jasper.runtime.PageContextImpl$9",
+      "org.apache.jasper.runtime.PageContextImpl$4",
+      "org.apache.jasper.runtime.PageContextImpl$8",
+      "org.apache.jasper.runtime.PageContextImpl",
+      "org.apache.jasper.runtime.PageContextImpl$7"
+    ]
+  },
+  {
+    "name": "org.apache.jasper.servlet",
+    "imports": [
+      "org.apache.jasper.EmbeddedServletOptions",
+      "org.apache.jasper.servlet.JspServlet$1",
+      "org.apache.jasper.servlet.JspServlet",
+      "org.apache.jasper.servlet.TldScanner$TldScannerCallback",
+      "org.apache.jasper.servlet.TldScanner",
+      "org.apache.jasper.compiler.JarScannerFactory",
+      "org.apache.jasper.servlet.JasperInitializer",
+      "org.apache.jasper.servlet.TldScanner$TldScannerCallback$1"
+    ]
+  },
+  {
+    "name": "org.eclipse.jdt.internal.compiler.util",
+    "imports": [
+      "org.eclipse.jdt.internal.compiler.util.Sorting",
+      "org.eclipse.jdt.internal.compiler.util.Sorting$1",
+      "org.eclipse.jdt.internal.compiler.util.GenericXMLWriter",
+      "org.eclipse.jdt.internal.compiler.util.GenericXMLWriter$1",
+      "org.eclipse.jdt.internal.compiler.util.Messages$MessagesProperties",
+      "org.eclipse.jdt.internal.compiler.util.Messages",
+      "org.eclipse.jdt.internal.compiler.util.Util$Displayable",
+      "org.eclipse.jdt.internal.compiler.util.Util$1",
+      "org.eclipse.jdt.internal.compiler.util.Util"
+    ]
+  },
+  {
+    "name": "org.apache.tomcat.websocket",
+    "imports": [
+      "org.apache.tomcat.websocket.AsyncChannelGroupUtil$AsyncIOThreadFactory$NewThreadPrivilegedAction",
+      "org.apache.tomcat.websocket.AsyncChannelGroupUtil$AsyncIOThreadFactory",
+      "org.apache.tomcat.websocket.TransformationFactory",
+      "org.apache.tomcat.websocket.PerMessageDeflate",
+      "org.apache.tomcat.websocket.AsyncChannelWrapperNonSecure",
+      "org.apache.tomcat.websocket.AsyncChannelWrapperNonSecure$NoOpFuture",
+      "org.apache.tomcat.websocket.AsyncChannelWrapperNonSecure$1",
+      "org.apache.tomcat.websocket.BackgroundProcessManager",
+      "org.apache.tomcat.websocket.BackgroundProcessManager$WsBackgroundThread",
+      "org.apache.tomcat.websocket.AsyncChannelGroupUtil",
+      "org.apache.tomcat.websocket.WsFrameClient$1",
+      "org.apache.tomcat.websocket.WsFrameClient",
+      "org.apache.tomcat.websocket.WsFrameClient$WsFrameClientCompletionHandler",
+      "org.apache.tomcat.websocket.AsyncChannelWrapperSecure$WebSocketSslHandshakeThread",
+      "org.apache.tomcat.websocket.AsyncChannelWrapperSecure$WrapperFuture",
+      "org.apache.tomcat.websocket.AsyncChannelWrapperSecure",
+      "org.apache.tomcat.websocket.AsyncChannelWrapperSecure$SecureIOThreadFactory",
+      "org.apache.tomcat.websocket.AsyncChannelWrapperSecure$WriteTask",
+      "org.apache.tomcat.websocket.AsyncChannelWrapperSecure$ReadTask",
+      "org.apache.tomcat.websocket.AsyncChannelWrapperSecure$LongToIntegerFuture",
+      "org.apache.tomcat.websocket.AsyncChannelWrapperSecure$1",
+      "org.apache.tomcat.websocket.WsFrameBase$1",
+      "org.apache.tomcat.websocket.WsPongMessage",
+      "org.apache.tomcat.websocket.WsFrameBase$TerminalTransformation",
+      "org.apache.tomcat.websocket.WsFrameBase$State",
+      "org.apache.tomcat.websocket.WsFrameBase",
+      "org.apache.tomcat.websocket.WsFrameBase$UnmaskTransformation",
+      "org.apache.tomcat.websocket.WsFrameBase$NoopTransformation",
+      "org.apache.tomcat.websocket.Util",
+      "org.apache.tomcat.websocket.Util$TypeResult",
+      "org.apache.tomcat.websocket.WsSession$1",
+      "org.apache.tomcat.websocket.WsRemoteEndpointAsync",
+      "org.apache.tomcat.websocket.WsSession",
+      "org.apache.tomcat.websocket.WsRemoteEndpointBase",
+      "org.apache.tomcat.websocket.WsSession$State",
+      "org.apache.tomcat.websocket.WsRemoteEndpointBasic",
+      "org.apache.tomcat.websocket.WsRemoteEndpointImplBase$TextMessageSendHandler",
+      "org.apache.tomcat.websocket.WsRemoteEndpointImplBase$OutputBufferSendHandler",
+      "org.apache.tomcat.websocket.WsRemoteEndpointImplBase$WsOutputStream",
+      "org.apache.tomcat.websocket.WsRemoteEndpointImplBase$EncoderEntry",
+      "org.apache.tomcat.websocket.WsRemoteEndpointImplBase$State",
+      "org.apache.tomcat.websocket.WsRemoteEndpointImplBase$WsWriter",
+      "org.apache.tomcat.websocket.WsRemoteEndpointImplBase",
+      "org.apache.tomcat.websocket.WsRemoteEndpointImplBase$IntermediateMessageHandler",
+      "org.apache.tomcat.websocket.WsRemoteEndpointImplBase$BlockingSendHandler",
+      "org.apache.tomcat.util.buf.Utf8Encoder",
+      "org.apache.tomcat.websocket.WsRemoteEndpointImplBase$StateUpdateSendHandler",
+      "org.apache.tomcat.websocket.WsRemoteEndpointImplBase$StateMachine",
+      "org.apache.tomcat.websocket.WsRemoteEndpointImplBase$1",
+      "org.apache.tomcat.websocket.WsRemoteEndpointImplBase$OutputBufferFlushSendHandler",
+      "org.apache.tomcat.websocket.WsRemoteEndpointImplBase$EndMessageHandler",
+      "org.apache.tomcat.websocket.WsWebSocketContainer$HttpResponse",
+      "org.apache.tomcat.websocket.WsRemoteEndpointImplClient",
+      "org.apache.tomcat.websocket.Authenticator",
+      "org.apache.tomcat.websocket.AuthenticationException",
+      "org.apache.tomcat.websocket.pojo.PojoEndpointClient",
+      "org.apache.tomcat.websocket.WsWebSocketContainer",
+      "javax.websocket.ClientEndpoint",
+      "org.apache.tomcat.websocket.AuthenticatorFactory",
+      "org.apache.tomcat.websocket.DigestAuthenticator",
+      "org.apache.tomcat.websocket.BasicAuthenticator"
+    ]
+  },
+  {
+    "name": "org.eclipse.jdt.internal.compiler.tool",
+    "imports": [
+      "org.eclipse.jdt.internal.compiler.tool.EclipseCompilerImpl$3$2",
+      "org.eclipse.jdt.internal.compiler.tool.EclipseCompilerImpl$3$1",
+      "org.eclipse.jdt.internal.compiler.tool.EclipseCompilerImpl$3",
+      "org.eclipse.jdt.internal.compiler.tool.EclipseCompiler$1",
+      "org.eclipse.jdt.internal.compiler.tool.EclipseCompiler",
+      "org.eclipse.jdt.internal.compiler.tool.Util$EncodingErrorCollector",
+      "org.eclipse.jdt.internal.compiler.tool.Util",
+      "org.eclipse.jdt.internal.compiler.tool.Util$EncodingError",
+      "org.eclipse.jdt.internal.compiler.tool.EclipseFileManager",
+      "org.eclipse.jdt.internal.compiler.tool.Archive",
+      "org.eclipse.jdt.internal.compiler.tool.ArchiveFileObject",
+      "org.eclipse.jdt.internal.compiler.batch.ClasspathJsr199",
+      "org.eclipse.jdt.internal.compiler.tool.EclipseCompilerImpl",
+      "org.eclipse.jdt.internal.compiler.tool.EclipseCompilerImpl$1",
+      "org.eclipse.jdt.internal.compiler.tool.EclipseCompilerImpl$2",
+      "org.eclipse.jdt.internal.compiler.tool.EclipseCompilerImpl$4"
+    ]
+  },
+  {
+    "name": "javax.websocket",
+    "imports": [
+      "javax.websocket.CloseReason$CloseCodes",
+      "javax.websocket.CloseReason$CloseCodes$1",
+      "javax.websocket.ClientEndpointConfig$Builder",
+      "javax.websocket.DefaultClientEndpointConfig",
+      "javax.websocket.ClientEndpointConfig$Builder$1"
+    ]
+  },
+  {
+    "name": "org.apache.catalina.core",
+    "imports": [
+      "org.apache.catalina.core.ApplicationMapping",
+      "org.apache.catalina.core.ApplicationMapping$1",
+      "org.apache.catalina.core.ApplicationMapping$MappingImpl",
+      "org.apache.catalina.core.ApplicationFilterFactory$1",
+      "org.apache.catalina.core.ApplicationFilterFactory",
+      "org.apache.catalina.core.StandardService",
+      "org.apache.catalina.mapper.MapperListener",
+      "org.apache.catalina.core.ApplicationFilterChain$1",
+      "org.apache.catalina.core.ApplicationFilterChain",
+      "org.apache.catalina.realm.NullRealm",
+      "org.apache.catalina.core.StandardEngine",
+      "org.apache.catalina.core.StandardEngine$AccessLogListener",
+      "org.apache.catalina.core.StandardEngine$NoopAccessLog",
+      "org.apache.catalina.core.StandardEngineValve",
+      "org.apache.catalina.core.ApplicationHttpRequest",
+      "org.apache.catalina.servlet4preview.http.HttpServletRequestWrapper",
+      "org.apache.catalina.core.ApplicationHttpRequest$AttributeNamesEnumerator",
+      "org.apache.catalina.core.ApplicationContextFacade$PrivilegedExecuteMethod",
+      "org.apache.catalina.core.ApplicationContextFacade",
+      "org.apache.catalina.core.JreMemoryLeakPreventionListener",
+      "org.apache.catalina.core.StandardHost",
+      "org.apache.catalina.core.StandardHost$1",
+      "org.apache.catalina.core.StandardHost$MemoryLeakTrackingListener",
+      "org.apache.catalina.core.StandardServer",
+      "org.apache.catalina.core.ApplicationDispatcher$State",
+      "org.apache.catalina.core.ApplicationDispatcher$PrivilegedForward",
+      "org.apache.catalina.core.ApplicationDispatcher",
+      "org.apache.catalina.core.ApplicationDispatcher$PrivilegedInclude",
+      "org.apache.catalina.core.ApplicationRequest",
+      "org.apache.catalina.core.ApplicationHttpResponse",
+      "org.apache.catalina.core.ApplicationResponse",
+      "org.apache.catalina.core.ApplicationDispatcher$PrivilegedDispatch",
+      "org.apache.catalina.core.DefaultInstanceManager$AnnotationCacheEntryType",
+      "org.apache.catalina.core.DefaultInstanceManager$3",
+      "org.apache.catalina.core.DefaultInstanceManager$1",
+      "org.apache.catalina.core.DefaultInstanceManager$2",
+      "org.apache.catalina.core.DefaultInstanceManager$AnnotationCacheEntry",
+      "org.apache.catalina.core.DefaultInstanceManager",
+      "org.apache.catalina.core.AsyncListenerWrapper",
+      "org.apache.catalina.core.AsyncContextImpl$RunnableWrapper",
+      "org.apache.catalina.core.AsyncContextImpl$DebugException",
+      "org.apache.catalina.core.AsyncContextImpl$1",
+      "org.apache.catalina.core.AsyncContextImpl$AsyncRunnable",
+      "org.apache.catalina.core.AsyncContextImpl",
+      "org.apache.catalina.core.ContainerBase$PrivilegedAddChild",
+      "org.apache.catalina.core.ContainerBase",
+      "org.apache.catalina.core.ContainerBase$StopChild",
+      "org.apache.catalina.core.AccessLogAdapter",
+      "org.apache.catalina.core.ContainerBase$StartChild",
+      "org.apache.catalina.core.ContainerBase$StartStopThreadFactory",
+      "org.apache.tomcat.util.MultiThrowable",
+      "org.apache.catalina.core.ContainerBase$ContainerBackgroundProcessor",
+      "org.apache.catalina.core.StandardPipeline",
+      "org.apache.catalina.core.StandardWrapper",
+      "org.apache.catalina.core.StandardWrapperValve",
+      "org.apache.naming.HandlerRef",
+      "org.apache.catalina.core.NamingContextListener",
+      "org.apache.naming.ServiceRef",
+      "org.apache.catalina.core.ApplicationContext",
+      "org.apache.catalina.core.ApplicationFilterRegistration",
+      "org.apache.catalina.core.ApplicationContext$DispatchData",
+      "org.apache.catalina.core.StandardContext$2",
+      "org.apache.catalina.core.StandardContext$1",
+      "org.apache.catalina.core.StandardContextValve",
+      "org.apache.catalina.util.CharsetMapper",
+      "org.apache.catalina.core.StandardContext$ContextFilterMaps",
+      "org.apache.catalina.util.ErrorPageSupport",
+      "org.apache.catalina.core.StandardContext",
+      "org.apache.catalina.core.StandardContext$NoPluggabilityServletContext",
+      "org.apache.tomcat.util.http.Rfc6265CookieProcessor",
+      "org.apache.catalina.core.ThreadLocalLeakPreventionListener",
+      "org.apache.catalina.core.StandardThreadExecutor"
+    ]
+  },
+  {
+    "name": "org.apache.catalina.ant",
+    "imports": [
+      "org.apache.catalina.ant.BaseRedirectorHelperTask",
+      "org.apache.catalina.ant.AbstractCatalinaTask",
+      "org.apache.catalina.ant.AbstractCatalinaTask$1",
+      "org.apache.catalina.ant.AbstractCatalinaTask$TaskAuthenticator"
+    ]
+  },
+  {
+    "name": "org.eclipse.jdt.internal.compiler.classfmt",
+    "imports": [
+      "org.eclipse.jdt.internal.compiler.classfmt.AnnotationMethodInfo",
+      "org.eclipse.jdt.internal.compiler.classfmt.AnnotationMethodInfoWithAnnotations",
+      "org.eclipse.jdt.internal.compiler.classfmt.NonNullDefaultAwareTypeAnnotationWalker$1",
+      "org.eclipse.jdt.internal.compiler.classfmt.NonNullDefaultAwareTypeAnnotationWalker",
+      "org.eclipse.jdt.internal.compiler.classfmt.MethodInfoWithTypeAnnotations",
+      "org.eclipse.jdt.internal.compiler.classfmt.MethodInfoWithParameterAnnotations",
+      "org.eclipse.jdt.internal.compiler.classfmt.MethodInfo",
+      "org.eclipse.jdt.internal.compiler.classfmt.ExternalAnnotationProvider$SingleMarkerAnnotation",
+      "org.eclipse.jdt.internal.compiler.classfmt.ExternalAnnotationProvider$MethodAnnotationWalker",
+      "org.eclipse.jdt.internal.compiler.classfmt.ExternalAnnotationProvider$1",
+      "org.eclipse.jdt.internal.compiler.classfmt.ExternalAnnotationProvider",
+      "org.eclipse.jdt.internal.compiler.classfmt.ExternalAnnotationProvider$BasicAnnotationWalker",
+      "org.eclipse.jdt.internal.compiler.classfmt.ExternalAnnotationProvider$2",
+      "org.eclipse.jdt.internal.compiler.classfmt.ExternalAnnotationProvider$DispatchingAnnotationWalker",
+      "org.eclipse.jdt.internal.compiler.classfmt.ExternalAnnotationProvider$FieldAnnotationWalker",
+      "org.eclipse.jdt.internal.compiler.classfmt.ExternalAnnotationProvider$TypeParametersAnnotationWalker",
+      "org.eclipse.jdt.internal.compiler.classfmt.ExternalAnnotationProvider$SuperTypesAnnotationWalker",
+      "org.eclipse.jdt.internal.compiler.classfmt.FieldInfoWithTypeAnnotation",
+      "org.eclipse.jdt.internal.compiler.classfmt.FieldInfoWithAnnotation",
+      "org.eclipse.jdt.internal.compiler.classfmt.FieldInfo",
+      "org.eclipse.jdt.internal.compiler.classfmt.InnerClassInfo",
+      "org.eclipse.jdt.internal.compiler.classfmt.ClassFileReader"
+    ]
+  },
+  {
+    "name": "org.apache.catalina.tribes.util",
+    "imports": [
+      "org.apache.catalina.tribes.util.ExecutorFactory$TribesThreadPoolExecutor",
+      "org.apache.catalina.tribes.util.ExecutorFactory$TaskQueue",
+      "org.apache.catalina.tribes.util.ExecutorFactory",
+      "org.apache.catalina.tribes.util.TcclThreadFactory",
+      "org.apache.catalina.tribes.util.TcclThreadFactory$1",
+      "org.apache.catalina.tribes.util.StringManager",
+      "org.apache.catalina.tribes.util.StringManager$1"
+    ]
+  },
+  {
+    "name": "org.apache.tomcat.util.buf",
+    "imports": [
+      "org.apache.tomcat.util.buf.StringUtils$1",
+      "org.apache.tomcat.util.buf.StringUtils",
+      "org.apache.tomcat.util.buf.CharChunk",
+      "org.apache.tomcat.util.buf.CharChunk$CharInputChannel",
+      "org.apache.tomcat.util.buf.CharChunk$CharOutputChannel",
+      "org.apache.tomcat.util.buf.MessageBytes$MessageBytesFactory",
+      "org.apache.tomcat.util.buf.MessageBytes$1",
+      "org.apache.tomcat.util.buf.MessageBytes",
+      "org.apache.tomcat.util.buf.ByteChunk",
+      "org.apache.tomcat.util.buf.ByteChunk$ByteOutputChannel",
+      "org.apache.tomcat.util.buf.StringCache$ByteEntry",
+      "org.apache.tomcat.util.buf.StringCache$CharEntry",
+      "org.apache.tomcat.util.buf.StringCache",
+      "org.apache.tomcat.util.buf.StringCache$1",
+      "org.apache.tomcat.util.buf.UDecoder$DecodeException",
+      "org.apache.tomcat.util.buf.UDecoder"
+    ]
+  },
+  {
+    "name": "org.apache.tomcat.util.http.parser",
+    "imports": [
+      "org.apache.tomcat.util.http.parser.Host$MessageBytesReader",
+      "org.apache.tomcat.util.http.parser.Host",
+      "org.apache.tomcat.util.http.parser.HttpParser",
+      "org.apache.tomcat.util.http.parser.HttpParser$DomainParseState",
+      "org.apache.tomcat.util.http.parser.Cookie$1",
+      "org.apache.tomcat.util.http.parser.Cookie",
+      "org.apache.tomcat.util.http.parser.Cookie$ByteBuffer",
+      "org.apache.tomcat.util.http.parser.MediaTypeCache",
+      "org.apache.tomcat.util.collections.ConcurrentCache"
+    ]
+  },
+  {
+    "name": "org.apache.el.stream",
+    "imports": [
+      "org.apache.el.stream.StreamELResolverImpl$ArrayIterator",
+      "org.apache.el.stream.StreamELResolverImpl",
+      "org.apache.el.stream.Stream$LambdaExpressionComparator",
+      "org.apache.el.stream.Stream$5",
+      "org.apache.el.stream.Stream",
+      "org.apache.el.stream.Stream$2",
+      "org.apache.el.stream.Stream$1",
+      "org.apache.el.stream.Stream$OpIterator",
+      "org.apache.el.stream.Stream$4",
+      "org.apache.el.stream.Stream$8",
+      "org.apache.el.stream.Stream$7",
+      "org.apache.el.stream.Stream$6",
+      "org.apache.el.stream.Stream$3"
+    ]
+  },
+  {
+    "name": "org.apache.tomcat.util.collections",
+    "imports": [
+      "org.apache.tomcat.util.collections.ManagedConcurrentWeakHashMap$1$1",
+      "org.apache.tomcat.util.collections.ManagedConcurrentWeakHashMap$1$1$1",
+      "org.apache.tomcat.util.collections.CaseInsensitiveKeyMap$EntrySet",
+      "org.apache.tomcat.util.collections.CaseInsensitiveKeyMap$EntryIterator",
+      "org.apache.tomcat.util.collections.CaseInsensitiveKeyMap$EntryImpl",
+      "org.apache.tomcat.util.collections.CaseInsensitiveKeyMap",
+      "org.apache.tomcat.util.collections.CaseInsensitiveKeyMap$Key"
+    ]
+  },
+  {
+    "name": "org.apache.catalina.ant.jmx",
+    "imports": [
+      "org.apache.catalina.ant.jmx.JMXAccessorConditionBase",
+      "org.apache.catalina.ant.jmx.JMXAccessorTask"
+    ]
+  },
+  {
+    "name": "org.apache.tomcat.util.net",
+    "imports": [
+      "org.apache.tomcat.util.net.WriteBuffer",
+      "org.apache.tomcat.util.buf.ByteBufferHolder",
+      "org.apache.tomcat.util.net.SocketProperties",
+      "org.apache.tomcat.util.net.SSLImplementation",
+      "org.apache.tomcat.util.net.Nio2Channel$1",
+      "org.apache.tomcat.util.net.Nio2Channel",
+      "org.apache.tomcat.util.net.SSLHostConfigCertificate",
+      "org.apache.tomcat.util.net.SSLHostConfigCertificate$StoreType",
+      "org.apache.tomcat.util.net.TLSClientHelloExtractor",
+      "org.apache.tomcat.util.net.NioBlockingSelector$BlockPoller$RunnableRemove",
+      "org.apache.tomcat.util.net.NioBlockingSelector$BlockPoller$RunnableCancel",
+      "org.apache.tomcat.util.net.NioBlockingSelector$BlockPoller",
+      "org.apache.tomcat.jni.File",
+      "org.apache.tomcat.util.net.AprEndpoint$Sendfile",
+      "org.apache.tomcat.util.net.SocketWrapperBase",
+      "org.apache.tomcat.util.net.SocketWrapperBase$3",
+      "org.apache.tomcat.util.net.SocketWrapperBase$1",
+      "org.apache.tomcat.util.net.SocketWrapperBase$2",
+      "org.apache.tomcat.util.net.SSLHostConfig",
+      "org.apache.tomcat.util.net.AbstractJsseEndpoint$1",
+      "org.apache.tomcat.util.net.AbstractJsseEndpoint",
+      "org.apache.tomcat.util.net.AprEndpoint$AprSocketWrapper",
+      "org.apache.tomcat.util.net.AprSSLSupport",
+      "org.apache.tomcat.util.net.Nio2Endpoint",
+      "org.apache.tomcat.util.net.Nio2Endpoint$SocketProcessor",
+      "org.apache.tomcat.util.net.Nio2Endpoint$Acceptor",
+      "org.apache.tomcat.util.net.SecureNioChannel",
+      "org.apache.tomcat.util.net.SecureNioChannel$1",
+      "org.apache.tomcat.util.net.NioEndpoint$SocketProcessor",
+      "org.apache.tomcat.util.net.NioEndpoint",
+      "org.apache.tomcat.util.net.NioEndpoint$Acceptor",
+      "org.apache.tomcat.util.net.SecureNio2Channel$HandshakeReadCompletionHandler",
+      "org.apache.tomcat.util.net.SecureNio2Channel$3",
+      "org.apache.tomcat.util.net.SecureNio2Channel$1",
+      "org.apache.tomcat.util.net.SecureNio2Channel$HandshakeWriteCompletionHandler",
+      "org.apache.tomcat.util.net.SecureNio2Channel$2",
+      "org.apache.tomcat.util.net.SecureNio2Channel$FutureRead",
+      "org.apache.tomcat.util.net.SecureNio2Channel$4",
+      "org.apache.tomcat.util.net.SecureNio2Channel$5",
+      "org.apache.tomcat.util.net.SecureNio2Channel",
+      "org.apache.tomcat.util.net.SecureNio2Channel$FutureWrite",
+      "org.apache.tomcat.util.net.SecureNio2Channel$FutureFlush",
+      "org.apache.tomcat.util.net.SSLUtilBase",
+      "org.apache.tomcat.util.net.AbstractEndpoint$BindState",
+      "org.apache.tomcat.util.net.AbstractEndpoint",
+      "org.apache.tomcat.util.net.Nio2Endpoint$Nio2SocketWrapper",
+      "org.apache.tomcat.util.net.Nio2Endpoint$Nio2SocketWrapper$OperationState",
+      "org.apache.tomcat.util.net.Nio2Endpoint$Nio2SocketWrapper$1",
+      "org.apache.tomcat.util.net.Nio2Endpoint$Nio2SocketWrapper$5",
+      "org.apache.tomcat.util.net.Nio2Endpoint$Nio2SocketWrapper$4",
+      "org.apache.tomcat.util.net.Nio2Endpoint$Nio2SocketWrapper$2",
+      "org.apache.tomcat.util.net.AprEndpoint$SocketWithOptionsProcessor",
+      "org.apache.tomcat.util.net.AprEndpoint$Acceptor",
+      "org.apache.tomcat.util.net.AprEndpoint$SocketProcessor",
+      "org.apache.tomcat.util.net.AprEndpoint",
+      "org.apache.tomcat.util.net.NioBlockingSelector$BlockPoller$RunnableAdd",
+      "org.apache.tomcat.util.net.Nio2Endpoint$Nio2SocketWrapper$3",
+      "org.apache.tomcat.util.net.Nio2Endpoint$Nio2SocketWrapper$VectoredIOCompletionHandler"
+    ]
+  },
+  {
+    "name": "org.apache.catalina.tribes.transport",
+    "imports": [
+      "org.apache.catalina.tribes.transport.PooledSender",
+      "org.apache.catalina.tribes.transport.PooledSender$SenderQueue",
+      "org.apache.catalina.tribes.transport.ReplicationTransmitter",
+      "org.apache.catalina.tribes.transport.nio.PooledParallelSender",
+      "org.apache.catalina.tribes.transport.nio.PooledParallelSenderMBean",
+      "org.apache.catalina.tribes.transport.ReceiverBase",
+      "org.apache.catalina.tribes.transport.ReceiverBase$TaskThreadFactory"
+    ]
+  },
+  {
+    "name": "org.apache.tomcat.util.codec.binary",
+    "imports": [
+      "org.apache.tomcat.util.codec.binary.StringUtils",
+      "org.apache.tomcat.util.codec.binary.Base64",
+      "org.apache.tomcat.util.codec.binary.BaseNCodec$Context",
+      "org.apache.tomcat.util.codec.EncoderException",
+      "org.apache.tomcat.util.codec.DecoderException",
+      "org.apache.tomcat.util.codec.binary.BaseNCodec"
+    ]
+  },
+  {
+    "name": "javax.websocket.server",
+    "imports": [
+      "javax.websocket.server.ServerEndpointConfig$Builder",
+      "javax.websocket.server.DefaultServerEndpointConfig",
+      "javax.websocket.server.ServerEndpointConfig$Configurator$PrivilegedLoadDefault",
+      "javax.websocket.server.ServerEndpointConfig$Configurator"
+    ]
+  },
+  {
+    "name": "org.apache.catalina.tribes.io",
+    "imports": [
+      "org.apache.catalina.tribes.io.BufferPool",
+      "org.apache.catalina.tribes.io.BufferPool$BufferPoolAPI",
+      "org.apache.catalina.tribes.io.BufferPool15Impl",
+      "org.apache.catalina.tribes.io.ReplicationStream"
+    ]
+  },
+  {
+    "name": "org.apache.jasper.tagplugins.jstl",
+    "imports": [
+      "org.apache.jasper.tagplugins.jstl.Util",
+      "javax.servlet.jsp.JspTagException",
+      "org.apache.jasper.tagplugins.jstl.Util$ImportResponseWrapper$1",
+      "org.apache.jasper.tagplugins.jstl.Util$ImportResponseWrapper"
+    ]
+  },
+  {
+    "name": "org.apache.catalina.authenticator.jaspic",
+    "imports": [
+      "org.apache.catalina.authenticator.jaspic.SimpleServerAuthContext",
+      "org.apache.catalina.authenticator.jaspic.SimpleServerAuthConfig",
+      "org.apache.catalina.authenticator.jaspic.SimpleAuthConfigProvider",
+      "org.apache.catalina.authenticator.jaspic.AuthConfigFactoryImpl$RegistrationListenerWrapper",
+      "org.apache.catalina.authenticator.jaspic.AuthConfigFactoryImpl$1",
+      "org.apache.catalina.authenticator.jaspic.AuthConfigFactoryImpl",
+      "org.apache.catalina.authenticator.jaspic.AuthConfigFactoryImpl$RegistrationContextImpl",
+      "javax.security.auth.message.callback.CallerPrincipalCallback",
+      "javax.security.auth.message.callback.GroupPrincipalCallback",
+      "org.apache.catalina.authenticator.jaspic.CallbackHandlerImpl"
+    ]
+  },
+  {
+    "name": "javax.el",
+    "imports": [
+      "javax.el.CompositeELResolver",
+      "javax.el.CompositeELResolver$FeatureIterator",
+      "javax.el.ELProcessor$MethodSignature",
+      "javax.el.ELProcessor",
+      "javax.el.StandardELContext$StandardFunctionMapper",
+      "javax.el.StandardELContext",
+      "javax.el.StandardELContext$1",
+      "javax.el.StandardELContext$StandardVariableMapper",
+      "javax.el.StandardELContext$StandardBeanNameResolver",
+      "javax.el.ImportHandler$NotFound",
+      "javax.el.ImportHandler",
+      "javax.el.BeanELResolver$BeanProperties",
+      "javax.el.BeanELResolver$1",
+      "javax.el.BeanELResolver$ConcurrentCache",
+      "javax.el.BeanELResolver$BeanProperty",
+      "javax.el.BeanELResolver",
+      "javax.el.ExpressionFactory$1",
+      "javax.el.ExpressionFactory$2",
+      "javax.el.ExpressionFactory$CacheValue",
+      "javax.el.ExpressionFactory$3",
+      "javax.el.ExpressionFactory$CacheKey",
+      "javax.el.ExpressionFactory",
+      "javax.el.Util$PrivilegedGetTccl",
+      "javax.el.Util$MethodWrapper",
+      "javax.el.Util$Wrapper",
+      "javax.el.Util$CacheValue",
+      "javax.el.Util",
+      "javax.el.Util$ConstructorWrapper",
+      "javax.el.Util$MatchResult",
+      "javax.el.Util$1",
+      "javax.el.Util$CacheKey"
+    ]
+  },
+  {
+    "name": "org.apache.tomcat.util.scan",
+    "imports": [
+      "org.apache.tomcat.util.scan.JarFactory",
+      "org.apache.tomcat.util.scan.JarFileUrlNestedJar",
+      "org.apache.tomcat.util.scan.JarFileUrlJar",
+      "org.apache.tomcat.util.scan.UrlJar",
+      "org.apache.tomcat.util.scan.NonClosingJarInputStream",
+      "org.apache.tomcat.util.scan.AbstractInputStreamJar",
+      "org.apache.tomcat.util.scan.StandardJarScanFilter$1",
+      "org.apache.tomcat.util.scan.StandardJarScanFilter",
+      "org.apache.tomcat.util.scan.StandardJarScanner$ClassPathEntry",
+      "org.apache.tomcat.util.scan.StandardJarScanner"
+    ]
+  },
+  {
+    "name": "org.apache.naming.java",
+    "imports": [
+      "org.apache.naming.java.javaURLContextFactory",
+      "org.apache.naming.SelectorContext"
+    ]
+  },
+  {
+    "name": "org.apache.catalina.servlet4preview.http",
+    "imports": ["org.apache.catalina.servlet4preview.http.HttpFilter"]
+  },
+  {
+    "name": "org.apache.catalina.mbeans",
+    "imports": [
+      "org.apache.catalina.mbeans.ClassNameMBean",
+      "org.apache.catalina.mbeans.ConnectorMBean",
+      "org.apache.catalina.mbeans.MBeanDumper",
+      "org.apache.catalina.realm.JDBCRealm",
+      "org.apache.catalina.realm.DataSourceRealm",
+      "org.apache.catalina.mbeans.MBeanFactory",
+      "org.apache.catalina.realm.UserDatabaseRealm"
+    ]
+  },
+  {
+    "name": "org.apache.catalina.webresources",
+    "imports": [
+      "org.apache.catalina.webresources.AbstractResource",
+      "org.apache.catalina.webresources.TrackedInputStream",
+      "org.apache.catalina.webresources.TomcatURLStreamHandlerFactory",
+      "org.apache.catalina.webresources.ClasspathURLStreamHandler",
+      "org.apache.catalina.webresources.Cache$EvictionOrder",
+      "org.apache.catalina.webresources.Cache",
+      "org.apache.catalina.webresources.CachedResource",
+      "org.apache.catalina.webresources.Cache$1",
+      "org.apache.catalina.webresources.AbstractArchiveResourceSet",
+      "org.apache.catalina.webresources.JarResourceRoot",
+      "org.apache.catalina.webresources.JarWarResourceSet",
+      "org.apache.catalina.webresources.JarWarResource",
+      "org.apache.catalina.webresources.JarWarResourceSet$VersionedJarEntry",
+      "org.apache.catalina.webresources.TomcatJarInputStream",
+      "org.apache.catalina.webresources.EmptyResourceSet",
+      "org.apache.catalina.webresources.StandardRoot",
+      "org.apache.catalina.webresources.StandardRoot$1",
+      "org.apache.catalina.webresources.StandardRoot$BaseLocation",
+      "org.apache.catalina.webresources.AbstractSingleArchiveResource",
+      "org.apache.catalina.webresources.AbstractFileResourceSet",
+      "org.apache.catalina.webresources.AbstractSingleArchiveResourceSet",
+      "org.apache.catalina.webresources.FileResource",
+      "org.apache.catalina.webresources.JarResourceSet",
+      "org.apache.catalina.webresources.JarResource",
+      "org.apache.catalina.webresources.DirResourceSet",
+      "org.apache.catalina.webresources.FileResourceSet",
+      "org.apache.catalina.webresources.VirtualResource",
+      "org.apache.catalina.webresources.WarResource",
+      "org.apache.catalina.webresources.WarResourceSet"
+    ]
+  },
+  {
+    "name": "javax.servlet.jsp.el",
+    "imports": [
+      "javax.servlet.jsp.el.ImplicitObjectELResolver$ScopeMap$ScopeEntry",
+      "javax.servlet.jsp.el.ImplicitObjectELResolver$ScopeMap",
+      "javax.servlet.jsp.el.ImplicitObjectELResolver$ScopeManager$2",
+      "javax.servlet.jsp.el.ImplicitObjectELResolver$ScopeManager$6",
+      "javax.servlet.jsp.el.ImplicitObjectELResolver$ScopeManager$4",
+      "javax.servlet.jsp.el.ImplicitObjectELResolver$ScopeManager",
+      "javax.servlet.jsp.el.ImplicitObjectELResolver$ScopeManager$10",
+      "javax.servlet.jsp.el.ImplicitObjectELResolver$ScopeManager$9",
+      "javax.servlet.jsp.el.ImplicitObjectELResolver$ScopeManager$7",
+      "javax.servlet.jsp.el.ImplicitObjectELResolver$ScopeManager$3",
+      "javax.servlet.jsp.el.ImplicitObjectELResolver$ScopeManager$5",
+      "javax.servlet.jsp.el.ImplicitObjectELResolver$ScopeManager$1",
+      "javax.servlet.jsp.el.ImplicitObjectELResolver$ScopeManager$8"
+    ]
+  },
+  {
+    "name": "javax.servlet.http",
+    "imports": [
+      "javax.servlet.http.RFC6265Validator",
+      "javax.servlet.http.Cookie",
+      "javax.servlet.http.RFC2109Validator",
+      "javax.servlet.http.CookieNameValidator",
+      "javax.servlet.http.HttpServlet",
+      "javax.servlet.http.NoBodyResponse",
+      "javax.servlet.http.NoBodyOutputStream"
+    ]
+  },
+  {
+    "name": "org.apache.el.lang",
+    "imports": [
+      "org.apache.el.lang.FunctionMapperImpl$Function",
+      "org.apache.el.lang.FunctionMapperImpl",
+      "org.apache.el.lang.ELArithmetic",
+      "org.apache.el.lang.ELArithmetic$LongDelegate",
+      "org.apache.el.lang.ELArithmetic$BigDecimalDelegate",
+      "org.apache.el.lang.ELArithmetic$BigIntegerDelegate",
+      "org.apache.el.lang.ELArithmetic$DoubleDelegate",
+      "org.apache.el.lang.ELSupport",
+      "org.apache.el.lang.ELSupport$1",
+      "org.apache.el.lang.ExpressionBuilder",
+      "org.apache.el.lang.FunctionMapperFactory",
+      "org.apache.el.util.ConcurrentCache",
+      "org.apache.el.MethodExpressionImpl",
+      "org.apache.el.MethodExpressionLiteral",
+      "org.apache.el.lang.ExpressionBuilder$SynchronizedStack",
+      "org.apache.el.lang.ExpressionBuilder$1",
+      "org.apache.el.lang.VariableMapperFactory",
+      "org.apache.el.lang.VariableMapperImpl"
+    ]
+  },
+  {
+    "name": "org.apache.tomcat.util.net.openssl",
+    "imports": [
+      "org.apache.tomcat.util.net.openssl.OpenSSLSessionContext",
+      "org.apache.tomcat.util.net.openssl.OpenSSLSessionContext$EmptyEnumeration",
+      "org.apache.tomcat.util.net.openssl.OpenSSLSessionContext$1",
+      "org.apache.tomcat.util.net.openssl.OpenSSLSessionStats",
+      "org.apache.tomcat.util.net.openssl.OpenSSLUtil",
+      "org.apache.tomcat.util.net.openssl.OpenSSLX509Certificate",
+      "org.apache.tomcat.jni.Buffer",
+      "org.apache.tomcat.util.net.openssl.OpenSSLEngine$ClientAuthMode",
+      "org.apache.tomcat.util.net.openssl.OpenSSLEngine",
+      "org.apache.tomcat.util.net.openssl.OpenSSLEngine$1",
+      "org.apache.tomcat.util.net.openssl.OpenSSLEngine$Accepted",
+      "org.apache.tomcat.util.net.openssl.OpenSSLContext",
+      "org.apache.tomcat.util.net.openssl.OpenSSLContext$2",
+      "org.apache.tomcat.util.net.openssl.OpenSSLContext$1",
+      "org.apache.tomcat.util.net.openssl.OpenSSLEngine$OpenSSLSession"
+    ]
+  },
+  {
+    "name": "org.apache.el",
+    "imports": [
+      "org.apache.el.ValueExpressionLiteral",
+      "org.apache.el.ExpressionFactoryImpl"
+    ]
+  },
+  {
+    "name": "org.apache.catalina.storeconfig",
+    "imports": [
+      "org.apache.catalina.storeconfig.CredentialHandlerSF",
+      "org.apache.catalina.realm.NestedCredentialHandler",
+      "org.apache.catalina.storeconfig.CatalinaClusterSF",
+      "org.apache.catalina.ha.session.ClusterSessionListener",
+      "org.apache.catalina.ha.session.JvmRouteBinderValve",
+      "org.apache.catalina.storeconfig.StoreConfigLifecycleListener",
+      "org.apache.catalina.storeconfig.StandardContextSF",
+      "org.apache.catalina.storeconfig.StoreLoader",
+      "org.apache.catalina.storeconfig.StoreFactoryRule"
+    ]
+  },
+  {
+    "name": "org.apache.tomcat.dbcp.dbcp2.datasources",
+    "imports": [
+      "org.apache.tomcat.dbcp.dbcp2.datasources.KeyedCPDSConnectionFactory",
+      "org.apache.tomcat.dbcp.dbcp2.datasources.SharedPoolDataSourceFactory",
+      "org.apache.tomcat.dbcp.dbcp2.datasources.SharedPoolDataSource",
+      "org.apache.tomcat.dbcp.dbcp2.datasources.PerUserPoolDataSource",
+      "org.apache.tomcat.dbcp.dbcp2.datasources.PoolKey",
+      "org.apache.tomcat.dbcp.dbcp2.datasources.CPDSConnectionFactory",
+      "org.apache.tomcat.dbcp.dbcp2.datasources.PerUserPoolDataSourceFactory",
+      "org.apache.tomcat.dbcp.dbcp2.ListException",
+      "org.apache.tomcat.dbcp.dbcp2.datasources.InstanceKeyDataSourceFactory"
+    ]
+  },
+  {
+    "name": "org.apache.catalina.valves.rewrite",
+    "imports": [
+      "org.apache.catalina.valves.rewrite.RewriteCond$ResourceCondition",
+      "org.apache.catalina.valves.rewrite.RewriteCond$LexicalCondition",
+      "org.apache.catalina.valves.rewrite.RewriteCond$Condition",
+      "org.apache.catalina.valves.rewrite.RewriteCond$PatternCondition",
+      "org.apache.catalina.valves.rewrite.RewriteCond",
+      "org.apache.catalina.valves.rewrite.Substitution",
+      "org.apache.catalina.valves.rewrite.Substitution$ServerVariableElement",
+      "org.apache.catalina.valves.rewrite.Substitution$RewriteCondBackReferenceElement",
+      "org.apache.catalina.valves.rewrite.Substitution$ServerVariableHttpElement",
+      "org.apache.catalina.valves.rewrite.Substitution$ServerVariableEnvElement",
+      "org.apache.catalina.valves.rewrite.Substitution$RewriteRuleBackReferenceElement",
+      "org.apache.catalina.valves.rewrite.Substitution$MapElement",
+      "org.apache.catalina.valves.rewrite.Substitution$SubstitutionElement",
+      "org.apache.catalina.valves.rewrite.Substitution$ServerVariableSslElement",
+      "org.apache.catalina.valves.rewrite.Substitution$StaticElement",
+      "org.apache.catalina.valves.rewrite.ResolverImpl",
+      "org.apache.catalina.valves.rewrite.RewriteValve",
+      "org.apache.catalina.valves.rewrite.RewriteRule"
+    ]
+  },
+  {
+    "name": "org.apache.coyote.http2",
+    "imports": [
+      "org.apache.coyote.http2.FrameType$1",
+      "org.apache.coyote.http2.FrameType$2",
+      "org.apache.coyote.http2.FrameType$3",
+      "org.apache.coyote.http2.FrameType",
+      "org.apache.coyote.http2.FrameType$IntPredicate",
+      "org.apache.coyote.http2.StreamStateMachine",
+      "org.apache.coyote.http2.StreamStateMachine$State",
+      "org.apache.coyote.http2.ConnectionSettingsBase$1",
+      "org.apache.coyote.http2.ConnectionSettingsBase",
+      "org.apache.coyote.http2.HPackHuffman",
+      "org.apache.coyote.http2.HPackHuffman$HuffmanCode",
+      "org.apache.coyote.http2.Http2Parser$1",
+      "org.apache.coyote.http2.Http2Parser",
+      "org.apache.coyote.http2.Flags",
+      "org.apache.coyote.http2.HpackEncoder$TableEntry",
+      "org.apache.coyote.http2.HpackEncoder$HpackHeaderFunction",
+      "org.apache.coyote.http2.HpackEncoder$DynamicTableEntry",
+      "org.apache.coyote.http2.HpackEncoder$1",
+      "org.apache.coyote.http2.HpackEncoder",
+      "org.apache.coyote.http2.Http2OutputBuffer",
+      "org.apache.coyote.http2.Stream$PrivilegedPush",
+      "org.apache.coyote.http2.Stream",
+      "org.apache.coyote.http2.Http2UpgradeHandler$ConnectionState",
+      "org.apache.coyote.http2.HeaderSink",
+      "org.apache.coyote.http2.Http2UpgradeHandler",
+      "org.apache.coyote.http2.StreamRunnable",
+      "org.apache.coyote.http2.Http2UpgradeHandler$PingRecord",
+      "org.apache.coyote.http2.Http2UpgradeHandler$1",
+      "org.apache.coyote.http2.Http2UpgradeHandler$PingManager"
+    ]
+  },
+  {
+    "name": "org.apache.catalina.tribes.membership",
+    "imports": [
+      "org.apache.catalina.tribes.membership.Membership$MemberComparator",
+      "org.apache.catalina.tribes.membership.Membership$1",
+      "org.apache.catalina.tribes.membership.Membership",
+      "org.apache.catalina.tribes.membership.McastServiceMBean",
+      "org.apache.catalina.tribes.membership.McastService",
+      "org.apache.catalina.tribes.membership.McastServiceImpl$2",
+      "org.apache.catalina.tribes.membership.McastServiceImpl$4",
+      "org.apache.catalina.tribes.membership.McastServiceImpl$ReceiverThread",
+      "org.apache.catalina.tribes.membership.McastServiceImpl",
+      "org.apache.catalina.tribes.membership.McastServiceImpl$RecoveryThread",
+      "org.apache.catalina.tribes.membership.McastServiceImpl$1",
+      "org.apache.catalina.tribes.membership.McastServiceImpl$SenderThread",
+      "org.apache.catalina.tribes.membership.McastServiceImpl$3"
+    ]
+  },
+  {
+    "name": "org.apache.coyote.http11.filters",
+    "imports": [
+      "org.apache.coyote.http11.filters.GzipOutputFilter$FakeOutputStream",
+      "org.apache.coyote.http11.filters.GzipOutputFilter",
+      "org.apache.coyote.http11.filters.BufferedInputFilter"
+    ]
+  },
+  {
+    "name": "org.apache.tomcat.jdbc.pool",
+    "imports": [
+      "org.apache.tomcat.jdbc.pool.StatementFacade$StatementProxy",
+      "org.apache.tomcat.jdbc.pool.StatementFacade",
+      "org.apache.tomcat.jdbc.pool.MultiLockFairBlockingQueue$ItemFuture",
+      "org.apache.tomcat.jdbc.pool.MultiLockFairBlockingQueue",
+      "org.apache.tomcat.jdbc.pool.MultiLockFairBlockingQueue$FairIterator",
+      "org.apache.tomcat.jdbc.pool.MultiLockFairBlockingQueue$ExchangeCountDownLatch",
+      "org.apache.tomcat.jdbc.pool.FairBlockingQueue",
+      "org.apache.tomcat.jdbc.pool.FairBlockingQueue$ExchangeCountDownLatch",
+      "org.apache.tomcat.jdbc.pool.FairBlockingQueue$FairIterator",
+      "org.apache.tomcat.jdbc.pool.FairBlockingQueue$ItemFuture",
+      "org.apache.tomcat.jdbc.pool.DataSource",
+      "org.apache.tomcat.jdbc.pool.DataSourceFactory",
+      "org.apache.tomcat.jdbc.pool.XADataSource",
+      "org.apache.tomcat.jdbc.pool.PoolProperties",
+      "org.apache.tomcat.jdbc.pool.TrapException",
+      "org.apache.tomcat.jdbc.pool.PooledConnectionMBean",
+      "org.apache.tomcat.jdbc.pool.PooledConnection",
+      "org.apache.tomcat.jdbc.pool.interceptor.ConnectionState",
+      "org.apache.tomcat.jdbc.pool.ConnectionPool$PoolCleaner",
+      "org.apache.tomcat.jdbc.pool.ConnectionPool$ConnectionFuture",
+      "org.apache.tomcat.jdbc.pool.ConnectionPool",
+      "org.apache.tomcat.jdbc.pool.ConnectionPool$PrivilegedNewTimer",
+      "org.apache.tomcat.jdbc.pool.DisposableConnectionFacade",
+      "org.apache.tomcat.jdbc.pool.PoolExhaustedException",
+      "org.apache.tomcat.jdbc.pool.ProxyConnection",
+      "org.apache.tomcat.jdbc.pool.ConnectionPool$1"
+    ]
+  },
+  {
+    "name": "org.apache.catalina.ha.backend",
+    "imports": [
+      "org.apache.catalina.ha.backend.Sender",
+      "org.apache.catalina.ha.backend.HeartbeatListener",
+      "org.apache.catalina.ha.backend.TcpSender",
+      "org.apache.catalina.ha.backend.MultiCastSender",
+      "org.apache.catalina.ha.backend.CollectedInfo",
+      "org.apache.catalina.ha.backend.Proxy"
+    ]
+  },
+  {
+    "name": "org.apache.catalina.users",
+    "imports": [
+      "org.apache.catalina.users.AbstractGroup",
+      "org.apache.catalina.users.MemoryGroup",
+      "org.apache.catalina.users.MemoryGroup$1",
+      "org.apache.catalina.users.MemoryUser$3",
+      "org.apache.catalina.users.MemoryUser$1",
+      "org.apache.catalina.users.MemoryUser$2",
+      "org.apache.catalina.users.MemoryUser$4",
+      "org.apache.catalina.users.MemoryUser",
+      "org.apache.catalina.users.AbstractUser",
+      "org.apache.tomcat.util.digester.AbstractObjectCreationFactory",
+      "org.apache.catalina.users.MemoryUserCreationFactory",
+      "org.apache.catalina.users.MemoryUserDatabase",
+      "org.apache.catalina.users.MemoryRoleCreationFactory",
+      "org.apache.catalina.users.MemoryGroupCreationFactory",
+      "org.apache.catalina.users.MemoryRole",
+      "org.apache.catalina.users.AbstractRole"
+    ]
+  },
+  {
+    "name": "org.apache.catalina.tribes.transport.bio",
+    "imports": [
+      "org.apache.catalina.tribes.transport.bio.MultipointBioSender",
+      "org.apache.catalina.tribes.transport.bio.BioSender",
+      "org.apache.catalina.tribes.transport.bio.PooledMultiSender",
+      "org.apache.catalina.tribes.transport.bio.BioReplicationTask",
+      "org.apache.catalina.tribes.transport.bio.BioReceiver"
+    ]
+  },
+  {
+    "name": "org.apache.jasper.el",
+    "imports": [
+      "org.apache.jasper.el.ELContextImpl",
+      "org.apache.jasper.el.ELContextImpl$1",
+      "org.apache.jasper.el.ELContextImpl$VariableMapperImpl",
+      "org.apache.jasper.el.JspPropertyNotWritableException",
+      "org.apache.jasper.el.JspValueExpression",
+      "org.apache.jasper.el.JspMethodExpression",
+      "org.apache.jasper.el.JspMethodNotFoundException",
+      "org.apache.jasper.el.ExpressionEvaluatorImpl",
+      "javax.servlet.jsp.el.ELParseException",
+      "org.apache.jasper.el.FunctionMapperImpl",
+      "org.apache.jasper.el.ELResolverImpl",
+      "org.apache.jasper.el.ExpressionImpl"
+    ]
+  },
+  {
+    "name": "org.apache.catalina.ha.deploy",
+    "imports": [
+      "org.apache.catalina.ha.deploy.WarWatcher",
+      "org.apache.catalina.ha.deploy.WarWatcher$WarFilter",
+      "org.apache.catalina.ha.deploy.WarWatcher$WarInfo",
+      "org.apache.catalina.ha.deploy.FileMessage",
+      "org.apache.catalina.ha.deploy.UndeployMessage",
+      "org.apache.catalina.ha.deploy.FileMessageFactory",
+      "org.apache.catalina.ha.deploy.FarmWarDeployer"
+    ]
+  },
+  {
+    "name": "org.apache.catalina.ha.context",
+    "imports": [
+      "org.apache.catalina.ha.context.ReplicatedContext",
+      "org.apache.catalina.ha.context.ReplicatedContext$ReplApplContext",
+      "org.apache.catalina.ha.context.ReplicatedContext$MultiEnumeration"
+    ]
+  },
+  {
+    "name": "org.apache.tomcat.util.res",
+    "imports": [
+      "org.apache.tomcat.util.res.StringManager",
+      "org.apache.tomcat.util.res.StringManager$1"
+    ]
+  },
+  {
+    "name": "javax.servlet.jsp",
+    "imports": [
+      "javax.servlet.jsp.PageContext",
+      "javax.servlet.jsp.ErrorData",
+      "javax.servlet.jsp.HttpJspPage",
+      "javax.servlet.jsp.JspPage"
+    ]
+  },
+  {
+    "name": "org.eclipse.jdt.internal.compiler.apt.dispatch",
+    "imports": [
+      "org.eclipse.jdt.internal.compiler.apt.util.ManyToMany",
+      "org.eclipse.jdt.internal.compiler.apt.dispatch.BaseAnnotationProcessorManager",
+      "org.eclipse.jdt.internal.compiler.apt.dispatch.IProcessorProvider",
+      "org.eclipse.jdt.internal.compiler.apt.dispatch.AnnotationDiscoveryVisitor",
+      "org.eclipse.jdt.internal.compiler.apt.dispatch.RoundEnvImpl",
+      "org.eclipse.jdt.internal.compiler.apt.dispatch.RoundDispatcher",
+      "org.eclipse.jdt.internal.compiler.apt.model.TypesImpl",
+      "org.eclipse.jdt.internal.compiler.apt.model.ElementsImpl",
+      "org.eclipse.jdt.internal.compiler.apt.dispatch.BaseProcessingEnvImpl",
+      "org.eclipse.jdt.internal.compiler.apt.dispatch.HookedJavaFileObject$ForwardingWriter",
+      "org.eclipse.jdt.internal.compiler.apt.dispatch.HookedJavaFileObject",
+      "org.eclipse.jdt.internal.compiler.apt.dispatch.HookedJavaFileObject$ForwardingOutputStream",
+      "org.eclipse.jdt.internal.compiler.apt.dispatch.BatchFilerImpl",
+      "org.eclipse.jdt.internal.compiler.apt.dispatch.BatchAnnotationProcessorManager",
+      "org.eclipse.jdt.internal.compiler.apt.util.EclipseFileObject",
+      "org.eclipse.jdt.internal.compiler.apt.util.ArchiveFileObject",
+      "org.eclipse.jdt.internal.compiler.apt.dispatch.BatchProcessingEnvImpl",
+      "org.eclipse.jdt.internal.compiler.apt.util.Archive",
+      "org.eclipse.jdt.internal.compiler.apt.util.Options",
+      "org.eclipse.jdt.internal.compiler.apt.util.EclipseFileManager",
+      "org.eclipse.jdt.internal.compiler.apt.dispatch.BatchMessagerImpl",
+      "org.eclipse.jdt.internal.compiler.apt.dispatch.AptProblem",
+      "org.eclipse.jdt.internal.compiler.apt.dispatch.BaseMessagerImpl"
+    ]
+  },
+  { "name": "org.apache.catalinai", "imports": [] },
+  {
+    "name": "org.eclipse.jdt.internal.compiler.apt.util",
+    "imports": [
+      "org.eclipse.jdt.internal.compiler.apt.util.Util",
+      "org.eclipse.jdt.internal.compiler.apt.util.Util$EncodingError",
+      "org.eclipse.jdt.internal.compiler.apt.util.Util$EncodingErrorCollector"
+    ]
+  },
+  {
+    "name": "org.eclipse.jdt.internal.compiler.parser",
+    "imports": [
+      "org.eclipse.jdt.internal.compiler.parser.Scanner$VanguardParser",
+      "org.eclipse.jdt.internal.compiler.parser.Scanner",
+      "org.eclipse.jdt.internal.compiler.parser.Scanner$Goal",
+      "org.eclipse.jdt.internal.compiler.parser.Scanner$VanguardScanner",
+      "org.eclipse.jdt.internal.compiler.parser.Parser",
+      "org.eclipse.jdt.internal.compiler.parser.Parser$1",
+      "org.eclipse.jdt.internal.compiler.ast.CombinedBinaryExpression",
+      "org.eclipse.jdt.internal.compiler.parser.Parser$1TypeVisitor",
+      "org.eclipse.jdt.internal.compiler.parser.Parser$LocalTypeKind",
+      "org.eclipse.jdt.internal.compiler.parser.Parser$1MethodVisitor",
+      "org.eclipse.jdt.internal.compiler.parser.RecoveredUnit",
+      "org.eclipse.jdt.internal.compiler.parser.RecoveredImport",
+      "org.eclipse.jdt.internal.compiler.parser.JavadocParser",
+      "org.eclipse.jdt.internal.compiler.parser.AbstractCommentParser"
+    ]
+  },
+  {
+    "name": "org.apache.el.parser",
+    "imports": [
+      "org.apache.el.parser.AstLambdaExpression$1",
+      "org.apache.el.parser.AstLambdaExpression",
+      "org.apache.el.parser.AstLambdaExpression$NestedState",
+      "org.apache.el.parser.AstValue",
+      "org.apache.el.parser.AstValue$Target",
+      "org.apache.el.parser.Token",
+      "org.apache.el.parser.AstFalse",
+      "org.apache.el.parser.AstGreaterThan",
+      "org.apache.el.parser.AstConcatenation",
+      "org.apache.el.parser.ELParserConstants",
+      "org.apache.el.parser.AstLessThan",
+      "org.apache.el.parser.AstEmpty",
+      "org.apache.el.parser.AstInteger",
+      "org.apache.el.parser.ArithmeticNode",
+      "org.apache.el.parser.ELParser",
+      "org.apache.el.parser.AstEqual",
+      "org.apache.el.parser.AstAssign",
+      "org.apache.el.parser.AstDiv",
+      "org.apache.el.parser.AstMod",
+      "org.apache.el.parser.AstLessThanEqual",
+      "org.apache.el.parser.ParseException",
+      "org.apache.el.parser.AstTrue",
+      "org.apache.el.parser.ELParser$1",
+      "org.apache.el.parser.AstGreaterThanEqual",
+      "org.apache.el.parser.AstMapEntry",
+      "org.apache.el.parser.AstNot",
+      "org.apache.el.parser.ELParser$JJCalls",
+      "org.apache.el.parser.AstOr",
+      "org.apache.el.parser.AstMinus",
+      "org.apache.el.parser.AstFloatingPoint",
+      "org.apache.el.parser.AstString",
+      "org.apache.el.parser.JJTELParserState",
+      "org.apache.el.parser.AstAnd",
+      "org.apache.el.parser.AstSemicolon",
+      "org.apache.el.parser.AstDotSuffix",
+      "org.apache.el.parser.AstNotEqual",
+      "org.apache.el.parser.AstMapData",
+      "org.apache.el.parser.ELParser$LookaheadSuccess",
+      "org.apache.el.parser.SimpleCharStream",
+      "org.apache.el.parser.AstChoice",
+      "org.apache.el.parser.AstMult",
+      "org.apache.el.parser.AstBracketSuffix",
+      "org.apache.el.parser.AstPlus",
+      "org.apache.el.parser.AstListData",
+      "org.apache.el.parser.AstNegative",
+      "org.apache.el.parser.AstNull",
+      "org.apache.el.parser.AstSetData",
+      "org.apache.el.parser.BooleanNode",
+      "org.apache.el.parser.TokenMgrError",
+      "org.apache.el.parser.ELParserTokenManager"
+    ]
+  },
+  {
+    "name": "org.apache.catalina.util",
+    "imports": [
+      "org.apache.catalina.util.CustomObjectInputStream",
+      "org.apache.catalina.util.Extension",
+      "org.apache.catalina.util.ExtensionValidator",
+      "org.apache.catalina.util.ManifestResource",
+      "org.apache.catalina.util.Introspection",
+      "org.apache.catalina.util.Introspection$1",
+      "org.apache.catalina.util.Introspection$2",
+      "org.apache.catalina.util.DOMWriter"
+    ]
+  },
+  {
+    "name": "org.apache.catalina.manager",
+    "imports": [
+      "org.apache.catalina.manager.JMXProxyServlet",
+      "org.apache.catalina.manager.StatusTransformer",
+      "org.apache.catalina.manager.StatusManagerServlet",
+      "org.apache.catalina.manager.HTMLManagerServlet",
+      "org.apache.catalina.manager.HTMLManagerServlet$8",
+      "org.apache.catalina.manager.HTMLManagerServlet$5",
+      "org.apache.catalina.manager.DummyProxySession",
+      "org.apache.catalina.manager.HTMLManagerServlet$10",
+      "org.apache.catalina.manager.HTMLManagerServlet$9",
+      "org.apache.catalina.manager.HTMLManagerServlet$1",
+      "org.apache.catalina.manager.HTMLManagerServlet$7",
+      "org.apache.catalina.manager.HTMLManagerServlet$4",
+      "org.apache.catalina.manager.HTMLManagerServlet$2",
+      "org.apache.catalina.manager.HTMLManagerServlet$6",
+      "org.apache.catalina.manager.HTMLManagerServlet$3",
+      "org.apache.catalina.manager.JspHelper",
+      "org.apache.catalina.manager.ManagerServlet"
+    ]
+  },
+  {
+    "name": "org.apache.catalina.connector",
+    "imports": [
+      "org.apache.catalina.connector.ResponseFacade$DateHeaderPrivilegedAction",
+      "org.apache.catalina.connector.ResponseFacade",
+      "org.apache.catalina.connector.ResponseFacade$SetContentTypePrivilegedAction",
+      "org.apache.catalina.connector.ResponseFacade$1",
+      "org.apache.catalina.connector.CoyoteInputStream$1",
+      "org.apache.catalina.connector.CoyoteInputStream$6",
+      "org.apache.catalina.connector.CoyoteInputStream$2",
+      "org.apache.catalina.connector.CoyoteInputStream",
+      "org.apache.catalina.connector.CoyoteInputStream$5",
+      "org.apache.catalina.connector.CoyoteInputStream$3",
+      "org.apache.catalina.connector.CoyoteInputStream$4",
+      "org.apache.catalina.connector.OutputBuffer",
+      "org.apache.catalina.connector.OutputBuffer$2",
+      "org.apache.catalina.connector.OutputBuffer$1",
+      "org.apache.catalina.connector.InputBuffer",
+      "org.apache.catalina.connector.InputBuffer$1",
+      "org.apache.catalina.connector.Connector",
+      "org.apache.catalina.core.AprLifecycleListener",
+      "org.apache.catalina.connector.RequestFacade$GetHeadersPrivilegedAction",
+      "org.apache.catalina.connector.RequestFacade$GetLocalesPrivilegedAction",
+      "org.apache.catalina.connector.RequestFacade$GetAttributePrivilegedAction",
+      "org.apache.catalina.connector.RequestFacade$GetCharacterEncodingPrivilegedAction",
+      "org.apache.catalina.connector.RequestFacade",
+      "org.apache.catalina.connector.RequestFacade$GetHeaderNamesPrivilegedAction",
+      "org.apache.catalina.connector.RequestFacade$GetCookiesPrivilegedAction",
+      "org.apache.catalina.connector.RequestFacade$1",
+      "org.apache.catalina.connector.RequestFacade$GetRequestDispatcherPrivilegedAction",
+      "org.apache.catalina.connector.RequestFacade$GetSessionPrivilegedAction",
+      "org.apache.catalina.connector.RequestFacade$GetLocalePrivilegedAction",
+      "org.apache.catalina.connector.RequestFacade$GetParameterNamesPrivilegedAction",
+      "org.apache.catalina.connector.RequestFacade$GetParameterMapPrivilegedAction",
+      "org.apache.catalina.connector.RequestFacade$GetParameterPrivilegedAction",
+      "org.apache.catalina.connector.RequestFacade$GetParameterValuePrivilegedAction",
+      "org.apache.catalina.connector.CoyoteOutputStream",
+      "org.apache.catalina.connector.CoyoteWriter",
+      "org.apache.catalina.connector.Response$3",
+      "org.apache.catalina.connector.Response$2",
+      "org.apache.catalina.connector.Response",
+      "org.apache.tomcat.util.buf.UEncoder$SafeCharsSet",
+      "org.apache.tomcat.util.buf.UEncoder",
+      "org.apache.catalina.connector.Response$1",
+      "org.apache.catalina.connector.CoyoteAdapter$1",
+      "org.apache.catalina.connector.CoyotePrincipal",
+      "org.apache.catalina.connector.CoyoteAdapter",
+      "org.apache.catalina.connector.CoyoteAdapter$RecycleRequiredException",
+      "org.apache.catalina.connector.Request",
+      "org.apache.catalina.core.ApplicationPart",
+      "org.apache.tomcat.util.http.fileupload.servlet.ServletRequestContext",
+      "org.apache.catalina.connector.Request$3",
+      "org.apache.catalina.connector.Request$7",
+      "org.apache.catalina.connector.Request$SpecialAttributeAdapter",
+      "org.apache.tomcat.util.http.fileupload.disk.DiskFileItemFactory",
+      "org.apache.catalina.connector.Request$1",
+      "org.apache.tomcat.util.http.parser.AcceptLanguage",
+      "org.apache.catalina.connector.Request$4",
+      "org.apache.catalina.connector.CoyoteReader",
+      "org.apache.catalina.connector.Request$5",
+      "org.apache.catalina.connector.Request$2",
+      "org.apache.catalina.core.ApplicationPushBuilder",
+      "org.apache.catalina.connector.Request$6"
+    ]
+  },
+  {
+    "name": "org.apache.catalina.ha.authenticator",
+    "imports": [
+      "org.apache.catalina.ha.authenticator.ClusterSingleSignOn",
+      "org.apache.catalina.ha.authenticator.ClusterSingleSignOnListener"
+    ]
+  },
+  {
+    "name": "org.eclipse.jdt.internal.compiler.batch",
+    "imports": [
+      "org.eclipse.jdt.internal.compiler.batch.FileSystem",
+      "org.eclipse.jdt.internal.compiler.batch.ClasspathSourceJar",
+      "org.eclipse.jdt.internal.compiler.batch.ClasspathJar",
+      "org.eclipse.jdt.internal.compiler.util.ManifestAnalyzer",
+      "org.eclipse.jdt.internal.compiler.batch.ClasspathDirectory$1",
+      "org.eclipse.jdt.internal.compiler.batch.ClasspathDirectory",
+      "org.eclipse.jdt.internal.compiler.batch.Main$Logger$1",
+      "org.eclipse.jdt.internal.compiler.batch.Main$Logger",
+      "org.eclipse.jdt.internal.compiler.batch.Main$2",
+      "org.eclipse.jdt.internal.compiler.batch.Main",
+      "org.eclipse.jdt.internal.compiler.batch.Main$3",
+      "org.eclipse.jdt.internal.compiler.batch.Main$1",
+      "org.eclipse.jdt.internal.compiler.batch.FileFinder"
+    ]
+  },
+  {
+    "name": "org.apache.tomcat.util.descriptor.tagplugin",
+    "imports": [
+      "org.apache.tomcat.util.descriptor.tagplugin.TagPluginParser$TagPluginRuleSet",
+      "org.apache.tomcat.util.descriptor.tagplugin.TagPluginParser$1",
+      "org.apache.tomcat.util.descriptor.tagplugin.TagPluginParser"
+    ]
+  },
+  {
+    "name": "org.apache.catalina.ha.session",
+    "imports": [
+      "org.apache.catalina.ha.session.DeltaRequest",
+      "org.apache.catalina.ha.session.DeltaRequest$AttributeInfo",
+      "org.apache.catalina.ha.session.BackupManager",
+      "org.apache.catalina.tribes.tipis.LazyReplicatedMap"
+    ]
+  },
+  {
+    "name": "org.apache.tomcat.dbcp.pool2",
+    "imports": [
+      "org.apache.tomcat.dbcp.pool2.PoolUtils$SynchronizedKeyedPooledObjectFactory",
+      "org.apache.tomcat.dbcp.pool2.PoolUtils$SynchronizedObjectPool",
+      "org.apache.tomcat.dbcp.pool2.PoolUtils$ErodingKeyedObjectPool",
+      "org.apache.tomcat.dbcp.pool2.PoolUtils$ErodingFactor",
+      "org.apache.tomcat.dbcp.pool2.PoolUtils$ErodingObjectPool",
+      "org.apache.tomcat.dbcp.pool2.PoolUtils$KeyedObjectPoolMinIdleTimerTask",
+      "org.apache.tomcat.dbcp.pool2.PoolUtils",
+      "org.apache.tomcat.dbcp.pool2.PoolUtils$SynchronizedKeyedObjectPool",
+      "org.apache.tomcat.dbcp.pool2.PoolUtils$TimerHolder",
+      "org.apache.tomcat.dbcp.pool2.PoolUtils$ObjectPoolMinIdleTimerTask",
+      "org.apache.tomcat.dbcp.pool2.PoolUtils$ErodingPerKeyKeyedObjectPool",
+      "org.apache.tomcat.dbcp.pool2.PoolUtils$SynchronizedPooledObjectFactory"
+    ]
+  },
+  {
+    "name": "org.apache.catalina.manager.host",
+    "imports": [
+      "org.apache.catalina.manager.host.HTMLHostManagerServlet",
+      "org.apache.catalina.manager.host.HostManagerServlet"
+    ]
+  },
+  {
+    "name": "org.apache.tomcat.dbcp.dbcp2.cpdsadapter",
+    "imports": [
+      "org.apache.tomcat.dbcp.dbcp2.cpdsadapter.PooledConnectionImpl",
+      "org.apache.tomcat.dbcp.dbcp2.cpdsadapter.ConnectionImpl"
+    ]
+  },
+  {
+    "name": "org.apache.catalina.tribes.group",
+    "imports": [
+      "org.apache.catalina.tribes.group.RpcChannel$1",
+      "org.apache.catalina.tribes.group.RpcChannel$RpcCollector",
+      "org.apache.catalina.tribes.group.RpcChannel$RpcCollectorKey",
+      "org.apache.catalina.tribes.group.RpcChannel",
+      "org.apache.catalina.tribes.group.ExtendedRpcCallback",
+      "org.apache.catalina.tribes.group.ChannelCoordinator",
+      "org.apache.catalina.tribes.group.GroupChannel$InterceptorIterator",
+      "org.apache.catalina.tribes.group.GroupChannelMBean",
+      "org.apache.catalina.tribes.group.GroupChannel$HeartbeatThread",
+      "org.apache.catalina.tribes.group.GroupChannel"
+    ]
+  },
+  {
+    "name": "org.apache.tomcat.util.descriptor.web",
+    "imports": [
+      "org.apache.tomcat.util.descriptor.web.SetPublicIdRule",
+      "org.apache.tomcat.util.descriptor.web.ServletDefCreateRule",
+      "org.apache.tomcat.util.descriptor.web.AbsoluteOrderingRule",
+      "org.apache.tomcat.util.descriptor.web.LifecycleCallbackRule",
+      "org.apache.tomcat.util.descriptor.web.MappedNameRule",
+      "org.apache.tomcat.util.descriptor.web.WebRuleSet",
+      "org.apache.tomcat.util.descriptor.web.SetAuthConstraintRule",
+      "org.apache.tomcat.util.descriptor.web.NameRule",
+      "org.apache.tomcat.util.descriptor.web.SetSessionConfig",
+      "org.apache.tomcat.util.descriptor.web.SoapHeaderRule",
+      "org.apache.tomcat.util.descriptor.web.ServiceQnameRule",
+      "org.apache.tomcat.util.descriptor.web.SetDistributableRule",
+      "org.apache.tomcat.util.descriptor.web.SetJspConfig",
+      "org.apache.tomcat.util.descriptor.web.RelativeOrderingRule",
+      "org.apache.tomcat.util.descriptor.web.IgnoreAnnotationsRule",
+      "org.apache.tomcat.util.descriptor.web.SetDenyUncoveredHttpMethodsRule",
+      "org.apache.tomcat.util.descriptor.web.VersionRule",
+      "org.apache.tomcat.util.descriptor.web.SetOverrideRule",
+      "org.apache.tomcat.util.descriptor.web.TaglibLocationRule",
+      "org.apache.tomcat.util.descriptor.web.CallParamMultiRule",
+      "org.apache.tomcat.util.descriptor.web.CallMethodMultiRule",
+      "org.apache.tomcat.util.descriptor.web.SetLoginConfig",
+      "org.apache.tomcat.util.descriptor.web.JspPropertyGroupDescriptorImpl",
+      "org.apache.tomcat.util.descriptor.web.JspConfigDescriptorImpl",
+      "org.apache.tomcat.util.descriptor.web.TaglibDescriptorImpl",
+      "org.apache.tomcat.util.descriptor.web.WebXml"
+    ]
+  },
+  {
+    "name": "org.apache.catalina.security",
+    "imports": [
+      "org.apache.catalina.security.SecurityUtil$1",
+      "org.apache.catalina.security.SecurityUtil",
+      "org.apache.catalina.security.DeployXmlPermission"
+    ]
+  },
+  {
+    "name": "org.eclipse.jdt.internal.compiler.codegen",
+    "imports": [
+      "org.eclipse.jdt.internal.compiler.codegen.StackMapFrameCodeStream$FramePosition",
+      "org.eclipse.jdt.internal.compiler.codegen.StackMapFrameCodeStream",
+      "org.eclipse.jdt.internal.compiler.codegen.CachedIndexEntry",
+      "org.eclipse.jdt.internal.compiler.codegen.ConstantPool",
+      "org.eclipse.jdt.internal.compiler.codegen.IntegerCache",
+      "org.eclipse.jdt.internal.compiler.codegen.LongCache",
+      "org.eclipse.jdt.internal.compiler.classfmt.ClassFileConstants",
+      "org.eclipse.jdt.internal.compiler.codegen.DoubleCache",
+      "org.eclipse.jdt.internal.compiler.codegen.FloatCache"
+    ]
+  },
+  {
+    "name": "org.apache.tomcat.websocket.pojo",
+    "imports": [
+      "javax.websocket.OnClose",
+      "javax.websocket.OnMessage",
+      "org.apache.tomcat.websocket.pojo.PojoPathParam",
+      "javax.websocket.server.PathParam",
+      "org.apache.tomcat.websocket.pojo.PojoMessageHandlerPartialText",
+      "org.apache.tomcat.websocket.pojo.PojoMethodMapping$MessageHandlerInfo",
+      "org.apache.tomcat.websocket.pojo.PojoMethodMapping$MethodType",
+      "org.apache.tomcat.websocket.pojo.PojoMessageHandlerWholePong",
+      "org.apache.tomcat.websocket.pojo.PojoMethodMapping",
+      "javax.websocket.OnError",
+      "javax.websocket.OnOpen"
+    ]
+  },
+  {
+    "name": "org.apache.catalina.mapper",
+    "imports": [
+      "org.apache.catalina.mapper.Mapper$MappedHost",
+      "org.apache.catalina.mapper.Mapper",
+      "org.apache.catalina.mapper.Mapper$MappedContext",
+      "org.apache.catalina.mapper.Mapper$ContextList",
+      "org.apache.catalina.mapper.Mapper$ContextVersion",
+      "org.apache.catalina.mapper.Mapper$MappedWrapper",
+      "org.apache.catalina.mapper.Mapper$MapElement"
+    ]
+  },
+  {
+    "name": "org.apache.catalina.servlets",
+    "imports": [
+      "org.apache.catalina.servlets.CGIServlet$CGIRunner",
+      "org.apache.catalina.servlets.CGIServlet$CGIRunner$1",
+      "org.apache.catalina.servlets.CGIServlet",
+      "org.apache.catalina.servlets.WebdavServlet",
+      "org.apache.catalina.servlets.WebdavServlet$1",
+      "org.apache.catalina.servlets.WebdavServlet$LockInfo",
+      "org.apache.catalina.servlets.WebdavStatus",
+      "org.apache.catalina.util.XMLWriter",
+      "org.apache.catalina.servlets.WebdavServlet$WebdavResolver",
+      "org.apache.catalina.servlets.DefaultServlet$CompressionFormat",
+      "org.apache.catalina.servlets.DefaultServlet$1",
+      "org.apache.catalina.servlets.DefaultServlet$PrecompressedResource",
+      "org.apache.catalina.servlets.DefaultServlet$SecureEntityResolver",
+      "org.apache.catalina.servlets.DefaultServlet",
+      "org.apache.catalina.servlets.DefaultServlet$Range",
+      "org.apache.catalina.servlets.CGIServlet$CGIEnvironment"
+    ]
+  },
+  {
+    "name": "org.apache.catalina.tribes.transport.nio",
+    "imports": [
+      "org.apache.catalina.tribes.transport.nio.NioSender",
+      "org.apache.catalina.tribes.transport.nio.ParallelNioSender$1",
+      "org.apache.catalina.tribes.transport.nio.ParallelNioSender",
+      "org.apache.catalina.tribes.transport.nio.ParallelNioSender$SendResult",
+      "org.apache.catalina.tribes.transport.nio.NioReplicationTask$1",
+      "org.apache.catalina.tribes.transport.nio.NioReplicationTask$2",
+      "org.apache.catalina.tribes.transport.nio.NioReplicationTask",
+      "org.apache.catalina.tribes.transport.nio.NioReceiver",
+      "org.apache.catalina.tribes.util.ExceptionUtils",
+      "org.apache.catalina.tribes.transport.nio.NioReceiverMBean"
+    ]
+  },
+  {
+    "name": "org.apache.tomcat.util.modeler",
+    "imports": [
+      "org.apache.tomcat.util.modeler.Registry",
+      "org.apache.tomcat.util.modeler.RegistryMBean",
+      "org.apache.tomcat.util.modeler.ManagedBean$1",
+      "org.apache.tomcat.util.modeler.ManagedBean",
+      "org.apache.tomcat.util.modeler.NotificationInfo",
+      "org.apache.tomcat.util.modeler.BaseModelMBean",
+      "org.apache.tomcat.util.modeler.BaseAttributeFilter",
+      "org.apache.tomcat.util.modeler.BaseNotificationBroadcasterEntry",
+      "org.apache.tomcat.util.modeler.BaseNotificationBroadcaster"
+    ]
+  },
+  {
+    "name": "org.apache.naming",
+    "imports": [
+      "org.apache.naming.NamingEntry",
+      "org.apache.naming.NamingContext",
+      "org.apache.naming.NamingContextEnumeration",
+      "org.apache.naming.NameParserImpl",
+      "org.apache.naming.NamingContextBindingsEnumeration"
+    ]
+  },
+  {
+    "name": "org.apache.catalina.loader",
+    "imports": [
+      "org.apache.catalina.loader.ParallelWebappClassLoader",
+      "org.apache.catalina.loader.WebappLoader",
+      "org.apache.catalina.loader.WebappClassLoaderBase$PrivilegedGetClassLoader",
+      "org.apache.catalina.loader.WebappClassLoaderBase$CombinedEnumeration",
+      "org.apache.catalina.loader.WebappClassLoaderBase$1",
+      "org.apache.catalina.loader.WebappClassLoaderBase$PrivilegedJavaseGetResource",
+      "org.apache.catalina.loader.ResourceEntry",
+      "org.apache.catalina.loader.WebappClassLoaderBase$PrivilegedFindClassByName",
+      "org.apache.catalina.loader.WebappClassLoaderBase",
+      "org.apache.catalina.loader.WebappClassLoaderBase$PrivilegedHasLoggingConfig"
+    ]
+  },
+  {
+    "name": "org.apache.catalina.session",
+    "imports": [
+      "org.apache.catalina.session.PersistentManagerBase$PrivilegedStoreKeys",
+      "org.apache.catalina.session.PersistentManagerBase$PrivilegedStoreLoad",
+      "org.apache.catalina.session.PersistentManagerBase",
+      "org.apache.catalina.session.PersistentManagerBase$PrivilegedStoreClear",
+      "org.apache.catalina.session.PersistentManagerBase$PrivilegedStoreRemove",
+      "org.apache.catalina.session.PersistentManagerBase$PrivilegedStoreSave",
+      "org.apache.catalina.session.StandardManager$PrivilegedDoLoad",
+      "org.apache.catalina.session.StandardManager$PrivilegedDoUnload",
+      "org.apache.catalina.session.StandardManager",
+      "org.apache.catalina.session.ManagerBase",
+      "org.apache.catalina.session.TooManyActiveSessionsException",
+      "org.apache.catalina.session.ManagerBase$SessionTiming",
+      "org.apache.catalina.session.StandardSession",
+      "org.apache.catalina.session.StandardSession$1",
+      "org.apache.catalina.session.StandardSessionContext",
+      "org.apache.catalina.session.StandardSessionFacade",
+      "javax.servlet.http.HttpSessionBindingListener",
+      "javax.servlet.http.HttpSessionActivationListener",
+      "org.apache.catalina.session.Constants",
+      "org.apache.catalina.valves.CrawlerSessionManagerValve"
+    ]
+  },
+  {
+    "name": "org.apache.catalina.tribes.tipis",
+    "imports": [
+      "org.apache.catalina.tribes.tipis.AbstractReplicatedMap$State",
+      "org.apache.catalina.tribes.tipis.AbstractReplicatedMap"
+    ]
+  },
+  {
+    "name": "org.apache.tomcat.util.digester",
+    "imports": [
+      "org.apache.tomcat.util.digester.RulesBase",
+      "org.apache.tomcat.util.digester.Digester",
+      "org.apache.tomcat.util.digester.Rules",
+      "org.apache.tomcat.util.digester.FactoryCreateRule",
+      "org.apache.tomcat.util.digester.SetPropertiesRule",
+      "org.apache.tomcat.util.digester.Digester$1",
+      "org.apache.tomcat.util.digester.ObjectCreateRule",
+      "org.apache.tomcat.util.digester.Digester$SystemPropertySource"
+    ]
+  },
+  {
+    "name": "org.eclipse.jdt.internal.compiler.problem",
+    "imports": [
+      "org.eclipse.jdt.internal.compiler.problem.ProblemHandler",
+      "org.eclipse.jdt.internal.compiler.problem.ProblemReporter"
+    ]
+  },
+  {
+    "name": "org.apache.catalina.webresources.war",
+    "imports": [
+      "org.apache.catalina.webresources.war.WarURLConnection",
+      "org.apache.catalina.webresources.war.Handler"
+    ]
+  },
+  {
+    "name": "org.apache.coyote.http11.upgrade",
+    "imports": [
+      "org.apache.coyote.http11.upgrade.UpgradeProcessorExternal",
+      "org.apache.coyote.http11.upgrade.UpgradeServletOutputStream",
+      "org.apache.coyote.http11.upgrade.UpgradeServletInputStream"
+    ]
+  },
+  {
+    "name": "org.apache.tomcat.util.http.fileupload.servlet",
+    "imports": [
+      "org.apache.tomcat.util.http.fileupload.FileUpload",
+      "org.apache.tomcat.util.http.fileupload.servlet.ServletFileUpload"
+    ]
+  },
+  {
+    "name": "org.apache.tomcat.util.http.fileupload.disk",
+    "imports": ["org.apache.tomcat.util.http.fileupload.disk.DiskFileItem"]
+  },
+  {
+    "name": "org.apache.tomcat.util.codec",
+    "imports": [
+      "org.apache.tomcat.util.codec.BinaryDecoder",
+      "org.apache.tomcat.util.codec.Decoder",
+      "org.apache.tomcat.util.codec.Encoder",
+      "org.apache.tomcat.util.codec.BinaryEncoder"
+    ]
+  },
+  {
+    "name": "org.apache.tomcat.util",
+    "imports": ["org.apache.tomcat.util.Diagnostics"]
+  }
+]
