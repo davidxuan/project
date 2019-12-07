@@ -4,13 +4,13 @@ import javax.swing.tree.DefaultMutableTreeNode;
 import java.io.*;
 import java.nio.file.Files;
 import java.nio.file.Paths;
-import java.util.ArrayList;
-import java.util.Arrays;
-import java.util.HashMap;
-import java.util.List;
+import java.util.*;
+import java.util.regex.Pattern;
 
-public class NewPattern extends Pattern {
+public class NewPattern extends acdc.Pattern {
     String path;
+    HashMap<String, HashMap<String, List<String>>> map = new HashMap<>();
+
     public NewPattern(DefaultMutableTreeNode _root, String p) {
         super(_root);
         name = "New Pattern";
@@ -18,7 +18,6 @@ public class NewPattern extends Pattern {
     }
 
     public void execute() throws IOException {
-//        System.out.println(path);
         processInput(path);
     }
 
@@ -28,7 +27,7 @@ public class NewPattern extends Pattern {
             String fn = f.getName().substring(f.getName().lastIndexOf("/") + 1);
             String cn = fn.substring(0, fn.lastIndexOf("."));
             HashMap<String, List<String>> parsed = parseFile(f);
-            System.out.println(parsed.get("imports"));
+            map.put(cn, parsed);
         }
     }
 
@@ -49,22 +48,35 @@ public class NewPattern extends Pattern {
         return fileList;
     }
 
-
     public HashMap<String, List<String>> parseFile(File f) throws IOException {
-        BufferedReader reader = new BufferedReader(new FileReader(f.toString()));
         String content = new String(Files.readAllBytes(Paths.get(f.toString())));
         String[] content_list = content.split("\n");
         HashMap<String, List<String>> ret = new HashMap<>();
         ret.put("package", new ArrayList<>());
         ret.put("imports", new ArrayList<>());
+        ret.put("extends", new ArrayList<>());
+        ret.put("implements", new ArrayList<>());
 
         for (String line : content_list) {
-            if (line.startsWith("import")) {
-                String[] l = line.split(" ");
-                ret.get("imports").add(l[1]);
-            } else if (line.startsWith("package")) {
+            if (line.trim().matches("package ([\\w&&\\D]([\\w\\.]*[\\w])?);")) {
                 String[] l = line.split(" ");
                 ret.get("package").add(l[1]);
+            }
+            else if (line.trim().matches("import ([\\w&&\\D]([\\w\\.]*[\\w])?);")) {
+                String[] l = line.split(" ");
+                ret.get("imports").add(l[1]);
+            }
+
+            else if (Pattern.compile(" class ([\\w&&\\D]([\\w\\.]*[\\w])?) extends ([\\w&&\\D]([\\w\\.]*[\\w])?)").matcher(line).find()) {
+                String[] l = line.trim().split(" ");
+                int idx = Arrays.asList(l).indexOf("extends");
+                ret.get("extends").add(l[idx+1]);
+            }
+
+            else if (Pattern.compile("class ([\\w&&\\D]([\\w\\.]*[\\w])?) implements ([\\w&&\\D]([\\w\\.]*[\\w])?)").matcher(line).find()) {
+                String[] l = line.trim().split(" ");
+                int idx = Arrays.asList(l).indexOf("implements");
+                ret.get("implements").addAll(Arrays.asList(Arrays.copyOfRange(l, idx+1, l.length-1)));
             }
         }
         return ret;
