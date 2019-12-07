@@ -51,9 +51,9 @@ We Also added a new file:
 | ----------------------------------- | -------------------------------------------------------------------------- |
 | [Attach.java](src/acdc/Attach.java) | Design a new pattern to cluster files related to the architecture decision |
 
-Result cluster:
+#### Result cluster:
 Now we can see that the `JrePlatForm` also clustered to the `org.apache.catalina.webresources.ss` cluster.
-![Image](/resources/new_cluser_res.png)
+![Image](/resources/new_cluster_res.png)
 
 ## Visualization
 
