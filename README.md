@@ -31,12 +31,14 @@ dominated nodes, N = n(i), i:1,2,...m,  which have the following properties:
 ```
 
 Therefore, when the following situation happens, the components will not be clustered together.
-![Image]()
+![Image](/resources/prev.png)
 
 #### How We Solve the Problem
 
 In order to resolve the limitation of SubGraph, we created a new node to include the components that were not clustered previously. If a component is only used by one other component, we create a new node to be the dominator node of the two components. Then the two components wil be clustered together.
-We took the idea from the BodyHeader pattern
+We took the idea from the BodyHeader pattern.
+
+![Image](/resources/after.png)
 
 A list of files we modified:
 
@@ -52,7 +54,7 @@ We Also added a new file:
 | [XXX.java](src/acdc/XXX.java) | XXXX   |
 
 Result cluster:
-![Image]()
+![Image](/resources/new_cluser.png)
 
 ## Visualization
 

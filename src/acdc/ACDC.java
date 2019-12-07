@@ -1,5 +1,6 @@
 package acdc;
 
+import java.io.IOException;
 import java.util.*;
 
 import javax.swing.JFrame;
@@ -84,7 +85,7 @@ public class ACDC {
 		return result.toString();
 	}
 
-	public static void main(String[] args) {
+	public static void main(String[] args) throws IOException {
 		String run_name = "java acdc.ACDC";
 		for (int i = 0; i < args.length; i++) {
 			if (args[i].equals("-6431"))
