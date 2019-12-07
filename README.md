@@ -42,14 +42,13 @@ A list of files we modified:
 
 | File                                      | Reason |
 | ----------------------------------------- | ------ |
-| [ACDC.java](src/acdc/ACDC.java)           | XXXX   |
-| [RSFOutput.java](src/acdc/RSFOutput.java) | XXXX   |
+| [ACDC.java](src/acdc/ACDC.java)           | add a new pattern   |
 
 We Also added a new file:
 
 | File                          | Reason |
 | ----------------------------- | ------ |
-| [XXX.java](src/acdc/XXX.java) | XXXX   |
+| [Attach.java](src/acdc/Attach.java) | Design a new pattern to cluster files related to the architecture decision  |
 
 Result cluster:
 ![Image]()
