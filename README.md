@@ -23,15 +23,16 @@ When we took a closer look at the implementation of ACDC, we found the reason fo
 In order to resolve the limitation of SubGraph, we created a new node to include the components that were not clustered previously.
 
 A list of files we modified: 
-| File                                      | Reason |
-| ----------------------------------------- | ------ |
-| [ACDC.java](src/acdc/ACDC.java)           | XXXX   |
-| [RSFOutput.java](src/acdc/RSFOutput.java) | XXXX   |
+| File | Reason |
+| --- | --- |
+| [ACDC.java](src/acdc/ACDC.java)           | XXXX |
+| [RSFOutput.java](src/acdc/RSFOutput.java) | XXXX |
+
 
 We Also added a new file:
-| File                          | Reason |
-| ----------------------------- | ------ |
-| [XXX.java](src/acdc/XXX.java) | XXXX   |
+| File | Reason |
+| --- | --- |
+| [XXX.java](src/acdc/XXX.java) | XXXX |
 
 Result cluster:
 ![Image]()
