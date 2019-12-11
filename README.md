@@ -6,6 +6,22 @@ The two recovery techniques we discussed in class, ACDC and ARC, are not suitabl
 
 We have chosen Apache Tomcat 8.0.47 for this project.
 
+## How to Run
+1. Clone this repository
+    ```
+    git clone https://github.com/davidxuan/project.git
+    ```
+2. Import the project to IntellijIDEA
+3. Create a new run configuration as follows, but change the paths in the program arguments
+![Run Configuration](/resources/run_config.png)
+4. Click the run icon
+5. View the output at the output directory set in the run configuration
+6. (Optional) Generate JSON file from the output, change the path at line 3 to the path of the output file before running the following command
+   ```
+   python3 visualization/parse_output.py
+   ```
+7. (Optional) Fork this [Observable repository](https://observablehq.com/@d3/chord-dependency-diagram), and upload [visualization/cluster.json](visualization/cluster.json) to view the visualization
+
 ## Security Decision
 
 ### CVE-2017-12617
